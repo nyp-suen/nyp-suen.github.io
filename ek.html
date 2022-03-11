@@ -38,6 +38,7 @@
         var game = new Phaser.Game(config);
         var bombs;
         var stars;
+        var jmpSnd;
         function preload() {
             this.load.image('sky', 'assets/sky.png');
             this.load.image('ground', 'assets/platform.png');
@@ -47,6 +48,8 @@
                 'assets/dude.png',
                 { frameWidth: 32, frameHeight: 48 }
             );
+            this.load.audio('jmpSnd', [
+        'assets/snd/jmp.mp3']);
         }
 
         function create() {
@@ -108,6 +111,10 @@
 
             this.physics.add.collider(player, bombs, hitBomb, null, this);
             title = this.add.text(30, 8, 'My first phaser game!-Eat all stars', { fontSize: '20px', fill: '#FF0' });
+            jmpSnd = this.sound.add('jmpSnd');
+
+            jmpSnd.play();
+
         }
         function hitBomb(player, bomb) {
             this.physics.pause();
@@ -138,6 +145,7 @@
 
             if (cursors.up.isDown && player.body.touching.down) {
                 player.setVelocityY(-600);
+                jmpSnd.play();
             }
         }
         function collectStar(player, star) {
