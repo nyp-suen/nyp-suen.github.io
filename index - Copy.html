@@ -1,0 +1,58 @@
+<style>
+    *{transition:all 0.5s}
+    .darkmode{color:white;background:black}
+    .highlight{border:1px solid red;background:greenyellow;font-size:2em}
+    .visualimpairmode{color:cyan;background:darkslateblue;font-size:1.5em}
+    .hideme{display:none}
+</style>
+    <body>
+        <h1>Demo17jULY2023</h1>
+        <div>
+            <h2>Chapter 1</h2>
+            <p>generate using loren ipsum generator</p>
+        </div>
+        <div>
+            <h2>Chapter 2 </h2>
+            <p>generate using loren ipsum generator</p>
+        </div>
+        <div>
+            <h2>Chapter 3</h2>
+            <p>generate using loren ipsum generator</p>
+        </div>
+        <button id="darkmode">Toggle Dark Mode</button>
+        <button id="nohighlights">Reset Highlights</button>
+        <button id="hicontrastmode">Toggle Hi Contrast Mode</button>
+    </body>
+    <script>
+        let darkmodeButton=document.querySelector("#darkmode");
+        darkmodeButton.addEventListener("click",SwitchDarkMode)
+        let bodyElement=document.querySelector("body");
+
+        function SwitchDarkMode(){
+            bodyElement.classList.toggle("darkmode");
+        }
+        document.querySelector("#hicontrastmode").addEventListener("click",()=>{
+            bodyElement.classList.toggle("visualimpairmode");
+        })
+
+        // document.querySelector("p").addEventListener("click",(evt)=>{
+        //     evt.currentTarget.classList.add("highlight");
+        // })
+
+        paras=document.querySelectorAll("p"); //store all ps in array
+        for(let i=0;i<paras.length;i++){ //loop through the array
+            paras[i].addEventListener("click",(evt)=>{ //for each p addeventlist
+                evt.currentTarget.classList.add("highlight");
+            });
+        }
+
+        h2list=document.querySelectorAll("h2"); //store all h2 in array
+        for(let i=0;i<h2list.length;i++){ //loop through the array
+            h2list[i].addEventListener("click",(evt)=>{ //for each h2 addeventlist
+                //find nextEmement Sibling and hide it!
+                evt.currentTarget.nextElementSibling.classList.toggle("hideme");
+            });
+        }
+
+
+    </script>
