@@ -1,0 +1,1638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+
+    /* ---------------------Header---------------------  */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(45deg, rgb(50, 38, 38), rgb(67, 45, 43), rgb(81, 49, 46), rgb(101, 67, 53), rgb(111, 78, 55));
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    /* header content structure */
+    .header,
+    .navbar,
+    .navbar>ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        padding: 21px;
+        border-radius: 50px;
+        background-color: antiquewhite;
+    }
+
+    .navbar>ul>li {
+        list-style-type: none;
+        margin: 0 20px;
+    }
+
+    .navbar>ul>li>button {
+        border: none;
+        background-color: transparent;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    /* Hide the check box */
+    .navbar>input {
+        opacity: 0;
+    }
+
+    /*------------------- END Header --------------------*/
+
+    /* ---------------------Body--------------------- */
+    .mainBody {
+        border: 5px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("images/bg1.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mainContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* --------------------- END Body--------------------- */
+
+    /* --------------------- PageHome --------------------- */
+    .content-section {
+        width: 100%;
+    }
+
+    /* Individual section styling */
+    .section {
+        height: auto;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 23px;
+        padding: 20px;
+        border: 20px solid rgb(0, 0, 0);
+        margin-bottom: 100px;
+    }
+
+    .section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/bg2.jpeg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(2px) brightness(0.4);
+    }
+
+    .section>.titles {
+        font-size: 90px;
+        font-weight: 700;
+
+        margin: 0 auto;
+        animation: fadeIn 1s 0.25s ease-in-out 1 forwards;
+        background: linear-gradient(90deg, #EE9CA7 0%, #FFDDE1 100%);
+
+        background-clip: text;
+        color: transparent;
+
+        filter: blur(0px) brightness(3);
+    }
+
+    .section>.introduction {
+        font-size: 45px;
+        opacity: 0;
+        animation: fadeIn 1s 0.75s ease-in-out 1 forwards;
+        padding: 25px;
+
+        background: linear-gradient(90deg, #FFDDE1 0%, #EE9CA7 100%);
+        background-clip: text;
+        color: transparent;
+
+        filter: blur(0) brightness(3);
+
+    }
+
+    .section .sectionImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        filter: blur(0) brightness(1);
+    }
+
+    .section .sectionImage>img {
+        width: 800px;
+        height: 700px;
+    }
+
+    /* --------------------- END PageHome --------------------- */
+
+
+    /* --------------------- PageType --------------------- */
+    .items .more a {
+        opacity: 0;
+    }
+
+    .arrow,
+    .see-more {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .items .name,
+    .more .title {
+        text-align: center;
+        border: 10px solid rgb(89, 89, 89);
+        font-size: 65px;
+        font-weight: 800;
+
+        background: linear-gradient(90deg, #614385 0%, #516395 100%);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .introduction .title {
+        font-size: 95px;
+        font-weight: 800;
+
+        background: linear-gradient(90deg, #da4453 0%, #171fae 40%, #e109a3 100%);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .items .description {
+        font-size: 45px;
+        font-weight: 400;
+        background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+        background-clip: text;
+        color: transparent;
+        margin: 25px;
+    }
+
+    /* Enhance color contrast due to the background image color */
+    .items:nth-child(3) .description,
+    .items:nth-child(4) .description {
+        background: linear-gradient(90deg, #f30f3d 0%, #7303c0 100%);
+        background-clip: text;
+        color: transparent;
+        margin: 25px;
+    }
+
+    .items iframe {
+        margin: 0 auto;
+        display: block;
+        width: 800px;
+        max-width: 790px;
+        height: 490px;
+        border-radius: 20px;
+    }
+
+    .items a {
+        display: inline-block;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+
+    /* --------------------- END PageType --------------------- */
+
+
+
+    /* --------------------- PageGame --------------------- */
+
+    /* Hide the jumop */
+    #jumpBtn {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #pageGame {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .gameContent {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .gameContent .gameIntro .gameTitle {
+        margin: 10px;
+        font-size: 110px;
+        font-weight: 900;
+
+        background-image: linear-gradient(135deg, #D4145A 0%, #FBB03B 100%);
+        background-clip: text;
+        color: transparent;
+
+        text-align: center;
+    }
+
+    .gameContent .gameIntro .gameDetail {
+        background-image: linear-gradient(135deg, #EE9CA7 0%, #FFDDE1 100%);
+        border-radius: 15px;
+        margin: 10px;
+        font-size: 35px;
+        font-weight: 650;
+        text-align: center;
+    }
+
+    .gameContent .gameIntro .gameDetail span {
+        margin: 30px;
+    }
+
+    /* Basic Game Window Setting */
+    #pageGame .gameWindow {
+        height: 500px;
+        width: 1500px;
+        max-width: 65%;
+
+        border: 10px solid black;
+        background-color: aliceblue;
+        border-radius: 25px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-image: url('images/banner.png');
+        background-size: cover;
+    }
+
+    .gameContent .gameWindow #mc {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 400px;
+        left: 30px;
+        background-position: center;
+        background-image: url("images/dino_NoBG.png");
+        background-size: 130% auto;
+        background-repeat: no-repeat;
+    }
+
+    .gameContent .gameWindow #coffee {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 300px;
+        left: 650px;
+        background-image: url("images/coffee.png");
+        background-position: center;
+        background-size: 130% auto;
+        background-repeat: no-repeat;
+    }
+
+    .jump {
+        animation: playerJump 600ms;
+    }
+
+    .coffeeAnim {
+        animation: coffee 3s linear infinite;
+    }
+
+    .backgroundAnim {
+        animation: moveBackground 3s linear infinite;
+    }
+
+    #pageGame .gameWindow .startBtn,
+    .gameContent #jumpBtn {
+        width: 4em;
+        height: 2em;
+        font-size: 25px;
+        margin-left: 40%;
+        border-radius: 25px;
+    }
+
+    .energy {
+        text-align: center;
+    }
+
+    /* FeedBack Form */
+    .feedBack {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px black;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+
+    input,
+    textarea {
+        border: none;
+        color: black;
+        margin-bottom: 25px;
+        font: 900 40px '';
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    #userName {
+        height: 90px;
+    }
+
+    #message {
+        height: 250px;
+    }
+
+    .feedBack h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 60px;
+
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+
+        letter-spacing: 10px;
+
+    }
+
+    #submitBtn {
+        right: 0;
+        bottom: 0;
+        font-weight: 900;
+
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+
+        width: 100px;
+        height: 40px;
+
+        border-radius: 45px;
+    }
+
+    /* FeedBack Board */
+    #feedBackBoard {
+        width: 100%;
+        text-align: left;
+    }
+
+    .feedbacks {
+        width: 500px;
+        opacity: 0;
+        padding: 10px;
+        animation: messageFadeIn 0.5s ease forwards;
+
+        background-image: linear-gradient(135deg, #02AABD 0%, #00CDAC 100%);
+        background-color: white;
+
+        margin: 80px auto;
+        border-radius: 10px;
+
+        box-shadow: 0 10px 20px black;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .feedBack-info {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+    }
+
+    .info {
+        transform: translateY(-50px);
+    }
+
+    /* User image properties */
+    .info img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid white;
+        background-image: url("images/profile-default.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* User name properties */
+    strong {
+        width: 800px;
+        letter-spacing: 3px;
+        top: -25px;
+        left: 10px;
+    }
+
+    /* Publish time properties */
+    .feedBack-info span {
+        top: -30px;
+        right: 10px;
+    }
+
+    .feedback-comment {
+        font-size: 25px;
+        width: 95%;
+    }
+
+    /* --------------------- END PageGame --------------------- */
+
+    /* ------------ Content <About>   -------------*/
+    #pageAbout {
+        background-image: url("images/bg3.png");
+    }
+
+    .aboutContainer {
+        margin: 0 auto;
+        width: 3000px;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    /* Box properties for container */
+    .box {
+        height: 100vh;
+        width: 30%;
+        background-color: #02AABD;
+        position: relative;
+        overflow: scroll;
+    }
+
+    /* Background effect for top container */
+    #top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/bg_coffee.gif");
+        background-size: cover;
+        background-position: center;
+        filter: blur(0.9px) brightness(0.7);
+        opacity: 0.7;
+    }
+
+    #bottom {
+        position: relative;
+    }
+
+    /* Background effect for bottom container */
+    #bottom::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/200w.gif");
+        background-position: left;
+        background-size: cover;
+        background-size: auto;
+        filter: blur(0) brightness(1.2);
+        opacity: 0.9;
+    }
+
+    /* Element in container need to be highlighted */
+    #top span,
+    #top p,
+    #mid h1 {
+        font-size: 110px;
+        margin: 0 auto;
+        filter: blur(0) brightness(2);
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+        margin: 15px;
+        overflow: hidden;
+    }
+
+    #top p {
+        font-size: 45px;
+    }
+
+    #mid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: scroll;
+        flex-wrap: wrap-reverse;
+    }
+
+    #mid h1 {
+        font-size: 120px;
+        order: 2;
+    }
+
+    #mid ul {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    #mid ul hr {
+        border: 2px dotted;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+
+    /* --------------------- Animation for desktop --------------------- */
+    @keyframes fadeIn {
+        from {
+            transform: translateY(50px);
+            filter: blur(20px);
+        }
+
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    @keyframes coffee {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: -50px;
+        }
+    }
+
+    @keyframes playerJump {
+        0% {
+            top: 440px;
+        }
+
+        40% {
+            top: 270px;
+        }
+
+        70% {
+            top: 270px;
+        }
+
+
+        100% {
+            top: 440px;
+        }
+    }
+
+    @keyframes messageFadeIn {
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes moveBackground {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -1500px 0;
+        }
+    }
+
+
+    /* ---------------------Footer--------------------- */
+    .footer {
+        text-align: center;
+        background-color: aquamarine;
+        height: 3em;
+        margin-top: 1.5em;
+        color: white;
+        background: linear-gradient(135deg, #614385 0%, #516395 100%);
+    }
+}
+
+/* ----------- Back-to-top/bottom  ---------------*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    background-color: rgb(246, 51, 51);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.back-to-bottom {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: rgb(246, 51, 51);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: smaller;
+    padding: 0.5rem;
+
+    z-index: 1000;
+}
+
+/* ----------- Back-to-top/bottom  ---------------*/
+
+
+/* ---------------------Mobile--------------------- */
+@media screen and (max-width:800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    /* ---------------------Header--------------------- */
+    header {
+        border-top: 2px solid grey;
+        height: 28%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        bottom: 0;
+        z-index: 100;
+        order: 2;
+    }
+
+    /* Style the background color of header */
+    header::before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: linear-gradient(45deg, rgb(50, 38, 38), rgb(67, 45, 43), rgb(81, 49, 46), rgb(101, 67, 53), rgb(111, 78, 55));
+        position: absolute;
+
+        z-index: -2;
+    }
+
+    /* header content structure */
+    .header,
+    .navbar,
+    .navbar>ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Hide the UI button by default in mobile version */
+    .navbar>ul {
+        width: 0;
+        overflow: hidden;
+        transition: all 0.5s
+    }
+
+    /* Expand the UI when the box is checked */
+    .navbar>input:checked~ul {
+        width: 350px;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 20px;
+        border-radius: 50px;
+        background-color: antiquewhite;
+    }
+
+    .navbar>ul>li {
+        list-style-type: none;
+        margin: 0 10px;
+    }
+
+    .navbar>ul>li>button {
+        border: none;
+        background-color: transparent;
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    .navbar>input {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+
+        /* cursor: pointer; */
+    }
+
+    /* Change the bar color and rotation when checked */
+    .navbar>input:checked~span:nth-child(2) {
+        top: calc(50% - 2px);
+        transform: rotate(-45deg);
+        background-color: rgb(242, 148, 245);
+        transition: top 0.3s ease-in-out,
+            transform 0.3s ease-in-out 0.3s;
+    }
+
+    .navbar>input:checked~span:nth-child(3) {
+        top: calc(50% - 2px);
+        transform: rotate(45deg);
+        background-color: rgb(242, 148, 245);
+
+    }
+
+    .navbar>span {
+        position: absolute;
+        left: 24px;
+        top: calc(50% - 10px);
+        width: 32.5px;
+        height: 4px;
+        background-color: grey;
+        border-radius: 15px;
+        pointer-events: none;
+        transition: transform 0.3s ease-in-out 0.3s,
+            top 0.3s ease-in-out;
+    }
+
+    .navbar>span:nth-child(2) {
+        top: calc(50% + 6px);
+    }
+
+
+    /* ---------------------Body--------------------- */
+    .mainBody {
+        border: 5px solid grey;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url("images/bg1.jpeg");
+        background-position: center;
+        padding-bottom: 1.25em;
+        order: 0;
+    }
+
+    .mainContent {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ------------ Content <Home>   -------------*/
+    #pageHome {
+        position: relative;
+        height: 91vh;
+    }
+
+    /* Content container for home page */
+    .content-section {
+        height: auto;
+        width: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 100px;
+    }
+
+    .section {
+        height: 100%;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        position: relative;
+    }
+
+    /* Back ground image effect */
+    .section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background-image: url("images/bg3.png");
+        background-size: cover;
+        background-position: center;
+        filter: blur(1.4px) brightness(0.4);
+    }
+
+    .section>.titles {
+        font-size: 45px;
+        font-weight: 700;
+        display: flex;
+        justify-content: left;
+        margin: 0 auto;
+        opacity: 0;
+        animation: fadeIn 1s 0.25s ease-in-out 1 forwards;
+        padding-top: 20px;
+        background: linear-gradient(90deg, #D4145A 0%, #FBB03B 100%);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .section>.introduction {
+        font-size: 35px;
+        display: flex;
+        justify-content: left;
+
+        opacity: 0;
+        animation: fadeIn 1s 0.75s ease-in-out 1 forwards;
+
+        padding-left: 20px;
+
+        background: linear-gradient(90deg, #FBB03B 0%, #D4145A 100%);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .section .sectionImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 46%;
+        height: 46%;
+        z-index: 1;
+    }
+
+    .section .sectionImage>img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* ------------ Content <Type>   -------------*/
+
+    #pageType {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        border: 5px solid rgb(205, 15, 15);
+    }
+
+    .items-list {
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .items-list>.items {
+        position: absolute;
+        height: 100%;
+        font-size: 20px;
+    }
+
+    .items-list>.items>img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    /* Hide all the detail description by default */
+    .items-list .items .more {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        opacity: 0;
+        pointer-events: none;
+        position: relative;
+        font-size: 22px;
+    }
+
+    .more .title {
+        margin: 10px;
+        font-weight: 700;
+    }
+
+    .more .description {
+        font-size: 80px;
+        font-weight: 700;
+        margin: 10px;
+
+    }
+
+    /* Hide all the introduction by default */
+    .items-list .items .introduction {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Styling for introduction title */
+    .items-list .items .introduction .title {
+        font-size: 1.3em;
+    }
+
+    .items-list .items .introduction .name {
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .items-list>.items>.introduction>.description {
+        font-size: 36px;
+        border: 3px solid grey;
+    }
+
+    .items-list>.items>.introduction>.see-more {
+        background-color: bisque;
+        font-weight: 900;
+        padding: 8px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+
+    /* Hide all the items by default */
+    .items-list>.items:nth-child(n + 4) {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Enable the first introduction by default */
+    .items-list>.items:nth-child(2)>.introduction {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Enable the first items by default */
+    .items-list>.items:nth-child(2) {
+        transform: translate(0, 0);
+        z-index: 20;
+        opacity: 1;
+    }
+
+    /* Arrange the items */
+    .items-list>.items:nth-child(1) {
+        transform: translate(-110%, -100%) scale(1.25);
+        filter: blur(2px);
+        z-index: 21;
+        opacity: 1;
+    }
+
+    .items-list>.items:nth-child(3) {
+        transform: translate(110%, 30%) scale(0.85);
+        filter: blur(2px);
+        z-index: 19;
+        opacity: 1;
+    }
+
+    /* Arrow for user to select next or previous items */
+    .arrow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 590px;
+        width: 100%;
+        gap: 90px;
+        z-index: 99;
+    }
+
+    /* Three button attribute on style */
+    .items-list>.arrow>#previous,
+    .items-list>.arrow>#next {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 3px solid grey;
+        font-size: 45px;
+        z-index: 99;
+    }
+
+    .items-list>.arrow>#previous {
+        background-image: url("images/arrow-left-1.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .items-list>.arrow>#next {
+        background-image: url("images/arrow-right-1.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .items-list>.arrow>#back {
+        font-weight: 500;
+        border: none;
+        border-bottom: 5px solid rgb(48, 48, 48);
+        background-color: transparent;
+        opacity: 0;
+        font-size: 25px;
+        pointer-events: none;
+        z-index: 99;
+    }
+
+    /* Embedded video properties */
+    .items iframe {
+        opacity: 0;
+    }
+
+
+    /* Text Animation * child 2 is current active items on the web */
+    .items-list>.items:nth-child(2)>.introduction>.title,
+    .items-list>.items:nth-child(2)>.introduction>.name,
+    .items-list>.items:nth-child(2)>.introduction>.description,
+    .items-list>.items:nth-child(2)>.introduction>.see-more {
+        opacity: 0;
+        animation: fadeIn 1s 0.25s ease-in-out 1 forwards;
+        background: linear-gradient(90deg, #D4145A 0%, #FBB03B 100%);
+    }
+
+    /* Animation for text to show up in sequence */
+    .items-list>.items>.introduction>.title {
+        animation-delay: 0.75s;
+    }
+
+    .items-list>.items>.introduction>.name {
+        animation-delay: 1s;
+
+        background-image: linear-gradient(135deg, #FD8451 0%, #FFBD6F 100%);
+
+        background-clip: text;
+
+        font-weight: 900;
+    }
+
+    .items-list>.items>.introduction>.description,
+    .items-list>.items>.introduction>.see-more {
+        animation-delay: 1.25s;
+    }
+
+    .items-list .items:nth-child(2) img {
+        transition: right 0.5s;
+    }
+
+    /* Show the details pages of selected coffee */
+    .items-list.showDetails .items:nth-child(2) .more {
+        opacity: 1;
+        pointer-events: auto;
+        position: absolute;
+        width: 91%;
+        top: 12em;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .more .title {
+        font-weight: bolder;
+        font-size: 3em;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .more .description {
+        font-size: 1.1em;
+    }
+
+    .items-list.showDetails .items:nth-child(2) {
+        width: 100%;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .introduction {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Apply animation to the more class */
+    .items-list.showDetails .items:nth-child(2) .more .title,
+    .items-list.showDetails .items:nth-child(2) .more .description {
+        opacity: 0;
+        animation: fadeIn 1s 0.25s ease-in-out 1 forwards;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .more .title {
+        animation-delay: 0.55s;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .more .description {
+        animation-delay: 0.8s;
+    }
+
+    .items-list.showDetails .items:nth-child(2) .more a {
+        animation-delay: 0.8s;
+    }
+
+    /* Show the back button and hide the left and right button  */
+    .items-list.showDetails #previous,
+    .items-list.showDetails #next {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .items-list.showDetails #back {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    @keyframes fadeIn {
+        from {
+            transform: translateY(50px);
+            filter: blur(20px);
+        }
+
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+            filter: blur(0);
+        }
+    }
+
+    /* ------------ Content <Game>   -------------*/
+
+    #pageGame {
+        position: relative;
+        height: 90vh;
+        width: 100%;
+        overflow: scroll;
+        border: 5px solid rgb(205, 161, 15);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .gameContent {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .gameContent .gameIntro .gameTitle {
+        margin: 10px;
+        font-size: 75px;
+        font-weight: 900;
+
+        background-image: linear-gradient(135deg, #D4145A 0%, #FBB03B 100%);
+        background-clip: text;
+        color: transparent;
+
+
+    }
+
+    .gameContent .gameIntro .gameDetail {
+        background-image: linear-gradient(135deg, #EE9CA7 0%, #FFDDE1 100%);
+        border-radius: 15px;
+        margin: 10px;
+        font-size: 30px;
+        font-weight: 650;
+    }
+
+    .gameContent .gameIntro .gameDetail span {
+        margin: 30px;
+    }
+
+    /* Basic Game Window Setting */
+    #pageGame .gameWindow {
+        height: 500px;
+        width: 90%;
+        border: 10px solid black;
+        background-color: aliceblue;
+        border-radius: 25px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-image: url('images/banner.png');
+        background-size: cover;
+    }
+
+    /* Player */
+    .gameContent .gameWindow #mc {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 400px;
+        left: 30px;
+        background-image: url("images/dino_NoBG.png");
+        background-size: 130% auto;
+        background-repeat: no-repeat;
+
+    }
+
+    /* Coffee */
+    .gameContent .gameWindow #coffee {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 300px;
+        left: 650px;
+        background-image: url("images/coffee.png");
+        background-position: center;
+        background-size: 130% auto;
+        background-repeat: no-repeat;
+
+    }
+
+    /* Background */
+    .backgroundAnim {
+        animation: moveBackground 5s linear infinite;
+    }
+
+    /* Animation for game page */
+    @keyframes coffee {
+        0% {
+            left: 650px;
+        }
+
+        100% {
+            left: -50px;
+        }
+    }
+
+    @keyframes playerJump {
+        0% {
+            top: 440px;
+        }
+
+        40% {
+            top: 270px;
+        }
+
+        70% {
+            top: 270px;
+        }
+
+
+        100% {
+            top: 440px;
+        }
+    }
+
+    @keyframes moveBackground {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -1500px 0;
+        }
+    }
+
+    /* Both player and coffee animation */
+    .jump {
+        animation: playerJump 600ms;
+    }
+
+    .coffeeAnim {
+        animation: coffee 3s linear infinite;
+    }
+
+
+    #pageGame .gameWindow .startBtn,
+    .gameContent #jumpBtn {
+        width: 4em;
+        height: 2em;
+        font-size: 25px;
+        margin-left: 40%;
+        border-radius: 25px;
+    }
+
+    /* FeedBack Board */
+    .feedBack {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        background-color: aliceblue;
+        border-radius: 25px;
+        box-shadow: 0 10px 30px black;
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+    input,
+    textarea {
+        border: none;
+        color: black;
+        margin-bottom: 25px;
+        font: 900 40px '';
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    #userName {
+        height: 90px;
+    }
+
+    #message {
+        height: 250px;
+    }
+
+    .feedBack h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 60px;
+
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+
+        letter-spacing: 10px;
+
+    }
+
+    #submitBtn {
+        right: 0;
+        bottom: 0;
+        font-weight: 900;
+
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+
+        width: 100px;
+        height: 40px;
+
+        border-radius: 45px;
+    }
+
+    #feedBackBoard {
+        width: 100%;
+        text-align: left;
+    }
+
+    @keyframes messageFadeIn {
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .feedbacks {
+        width: 500px;
+        opacity: 0;
+        padding: 10px;
+        animation: messageFadeIn 0.5s ease forwards;
+
+        background-image: linear-gradient(135deg, #02AABD 0%, #00CDAC 100%);
+        background-color: white;
+
+        margin: 80px auto;
+        border-radius: 10px;
+
+        box-shadow: 0 10px 20px black;
+        text-shadow: 0px 0px 20px white;
+    }
+
+    .feedBack-info {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 28px;
+    }
+
+    .info {
+        transform: translateY(-50px);
+    }
+
+    /* User image properties */
+    .info img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 10px solid white;
+        background-image: url("images/profile-default.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* User name properties */
+    strong {
+        width: 800px;
+        letter-spacing: 3px;
+        top: -25px;
+        left: 10px;
+    }
+
+    /* Publish time properties */
+    .feedBack-info span {
+        top: -30px;
+        right: 10px;
+    }
+
+    .feedback-comment {
+        font-size: 25px;
+        width: 95%;
+    }
+
+
+    /* ------------ Content <About>   -------------*/
+
+    .aboutContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+    .box {
+        height: 350px;
+        width: 100%;
+        background-color: #02AABD;
+        position: relative;
+    }
+
+    #top {
+        position: relative;
+    }
+
+    #top::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/bg_coffee.gif");
+        background-size: cover;
+        background-position: center;
+        filter: blur(0.9px) brightness(0.7);
+        opacity: 0.7;
+    }
+
+    #bottom {
+        position: relative;
+    }
+
+    #bottom::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/200w.gif");
+        background-size: cover;
+        background-position: center;
+        filter: blur(0) brightness(1.2);
+        opacity: 0.9;
+    }
+
+    /* Properties that need to be enlarge */
+    #top span,
+    #top p,
+    #mid h1 {
+        font-size: 120px;
+        margin: 0 auto;
+        filter: blur(0) brightness(2);
+        background-image: linear-gradient(135deg, rgb(25, 161, 161) 0%, rgb(248, 54, 86) 100%);
+        background-clip: text;
+        color: transparent;
+        margin: 15px;
+    }
+
+    #top p {
+        font-size: 23px;
+    }
+
+    #mid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+
+    #mid h1 {
+        font-size: 120px;
+        order: 2;
+    }
+
+    #mid ul {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 30px;
+    }
+
+    #mid ul hr {
+        border: 2px dotted;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ------------------Go UP / Down Button---------------- */
+
+    .back-to-top {
+        position: fixed;
+        bottom: 5rem;
+        left: 2rem;
+        background-color: rgb(246, 51, 51);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5rem;
+        z-index: 1000;
+    }
+
+    .back-to-bottom {
+        position: fixed;
+        bottom: 1rem;
+        left: 2rem;
+        background-color: rgb(246, 51, 51);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: smaller;
+        padding: 0.5rem;
+        z-index: 1000;
+    }
+
+    /* ---------------------Footer--------------------- */
+    .footer {
+        text-align: center;
+        border: 3px solid rgb(59, 82, 255);
+        background-color: aquamarine;
+        height: 3em;
+        margin-top: 1.5em;
+        order: 1;
+        color: white;
+        background: linear-gradient(135deg, #614385 0%, #516395 100%);
+    }
+
+}

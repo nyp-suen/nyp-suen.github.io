@@ -1,0 +1,362 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: rgb(246, 246, 246);
+    color:black;
+}
+/* Top menu section */
+nav{
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding:2px; 
+    margin-bottom: 20px;
+    display:flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    background-color: lightgray;
+    z-index:3
+}
+nav .title{ 
+    margin-top: 1.5%;
+    color: darkgrey;
+    font-size: 40px;
+    font-weight: bold;
+    padding:20px;
+    text-decoration: none;
+}
+nav .title:hover{
+    color:black
+}
+#anchors{
+    margin-top:3%;
+    margin-bottom:4%;
+    text-align: center;
+    margin-left: 5%;
+}
+#anchors a{
+    display:inline-block;
+    border:none;
+    background:none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 30px;
+    height: 5%;
+    text-decoration: none;
+    color: black;
+}
+#anchors a:hover{
+    background: fixed;
+    color:white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+#menu{
+    display: none;
+}
+/*beginning body section*/
+h1{text-align: center;}
+#intro1{
+    font-size: 45px;
+}
+/*main text*/
+#main1{
+    text-align: center;
+    background-color: rgba(63, 188, 255, 0.808);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+    border-radius: 10px;
+    padding:10px;
+}
+#intro2{
+    border: 5px solid black;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+#intro2 div{text-align: center;}
+button{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 2%;
+    border-radius: 10px;
+    flex: 0 1 100%;
+    border:none;
+    padding:15px
+}
+/* Buttons for each subcontent */
+#total{
+    background-color: black;
+    color: white;
+}
+#partial{
+    background-color:rgba(0, 0, 0, 0.448);
+    color: rgb(190, 190, 190);
+}
+#container{
+    position:relative;
+}
+#legal{
+    background-image: url("images/family1.png");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* Add a blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+#legaltext{
+    color:white;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.092);
+    width:95%;
+}
+#main2{
+    display: flex;
+    flex-direction: column;
+}
+#main2 > div{
+    display:flex;
+}
+/*The 3 pages of subcontent*/
+.totalBcontent{
+    flex-basis: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+.partialBcontent{
+    flex-basis: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+.legalBcontent{
+    flex-basis: 50%;
+    text-align: center;
+    margin-top: 5%;
+}
+p{
+    margin-top: 10%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* The simulation */
+#glaucoma{
+    position:fixed;
+    inset:0;
+    display: none;
+    z-index: 3;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 200px at 50% 50%, 
+        transparent 5%, rgba(0,0,0,0.99)
+    ); 
+}
+#macular{
+    position:fixed;
+    inset:0;
+    z-index: 3;
+    display: none;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 525px at 50% 50%,
+        black, rgba(0, 0, 0, 0.98), transparent
+    );
+}
+.centered{
+    text-align: center;
+}
+.simbuttons{
+    position: relative;
+    font-size: 30px;
+    border: 2px solid black;
+}
+.simbuttons:hover{
+    background-color: greenyellow;
+}
+.mobilecontrols{
+    font-size: 20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#upBtn{
+    position:fixed;
+    bottom: 14%;
+    left: 8%;
+    display:none;
+    z-index: 4;
+}
+#leftBtn{
+    position:fixed;
+    bottom: 7%;
+    left: 0;
+    display:none;
+    z-index: 4;
+}
+#downBtn{
+    position:fixed;
+    bottom: 0;
+    left: 6%;
+    display:none;
+    z-index: 4;
+}
+#rightBtn{
+    position:fixed;
+    bottom: 7%;
+    left: 14%;
+    display:none;
+    z-index: 4;
+}
+#resetBtn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 4;
+}
+.controls{
+    z-index: 4;
+    font-size: 20px;
+    color: white;
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: black;
+    display: none;
+}
+/* Minigame */
+#minigame{
+    font-size: 50px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#gamestart{
+    position:relative;
+    text-align: center;
+    font-size: 30px;
+    background: blue;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: bold;
+    color: white;
+    z-index:4;
+    margin-top: 7%;
+}
+#gamestart:hover{
+    background-color: greenyellow;
+    color: black;
+}
+#gamearea{
+    width:100%;
+    height:80vh;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    z-index: 4;
+}
+#gamemessage{
+    z-index: 4;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position:relative;
+    color: white;
+    background-color: black;
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+}
+#target{
+    width: 10%;
+    height: 10%;
+    position: relative;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 3%;
+    display:none;
+    left:0;
+    top:0;
+}
+@keyframes targetframes{
+    0% {width:10%;height:10%;}
+    10% {width:15%;height:15%;margin-right: 5%;margin-left: 0%;font-size: 18px;}
+    100%{width:0%;height:0%;display:none;margin-left:5%;margin-right: 0%;font-size:0px}
+}
+.targetAnim{
+    animation: targetframes 0.5s;
+}
+@media screen and (max-width:800px){
+    #menu{
+        display:block;
+        position: fixed;
+        right:4%;
+        top:4%;
+    }
+    #anchors{
+        display:none;
+        position: fixed;
+        right:0;
+        background-color: gray;
+        height: 100%;
+        width:17%;
+        top:0;
+        margin-top: 0;
+        padding-top: 12%;
+        border-radius: 5% 0% 0% 5%;
+        border: 2px solid black;
+    }
+    #anchors > a{
+        display:block;
+        width:100%;
+        font-size: 17px;
+        margin-top: 20%;
+    }
+    #anchors > a:hover{
+        font-size: 20px;
+    }
+    #intro2 {flex-direction: column;}
+    #intro2 div{margin-bottom: 10%;}
+    #main2 div{
+        flex-direction: column;
+    }
+    .totalBcontent{
+        display: none;
+        margin-top: 0%;
+    }
+    .partialBcontent{
+        display: none;
+        margin-top: 1%;
+    }
+    .legalBcontent{
+        display: none;
+        margin-top: 1%;
+    }
+    .content{
+        display: none;
+    }
+    #main2 .container{
+        display: flex;
+    }
+    #main2 img{
+        max-width: 75%;
+        height:auto;
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="home">
+        <h1 class="home">Roti Prata</h1>
+    </header>
+
+    <nav class="home"> <!--menu systtm-->
+        <button id="hamIcon">Menu</button>
+
+        <ul>
+            <li><button id="page1btn">Types of Curry</button></li>
+            <li><button id="page2btn">Recipes</button></li>
+            <li><button id="page3btn">Simulator</button></li>
+        </ul>
+
+    </nav>
+
+
+    <!---    Pages for Content -->
+
+    <div id="pagecontainer">
+        <div class="page" id="page1">
+            <div>
+                <h1 class="centertext">Types of Curry</h1>
+
+                <div class="grid-container" id="curry">
+                    <div>
+                        <img class="grid-item" src="image/dhal.jpeg" alt="Dalcha Curry">
+                        <h3 class="centertext">Dalcha Curry</h3>
+                    </div>
+
+                    <div>
+                        <img class="grid-item" src="image/chicken.jpeg" alt="chicken curry">
+                        <h3 class="centertext">Chicken Curry</h3>
+                    </div>
+
+                    <div>
+                        <img class="grid-item" src="image/mutton.jpeg" alt="mutton curry">
+                        <h3 class="centertext">Mutton Curry</h3>
+                    </div>
+
+                    <div>
+                        <img class="grid-item" src="image/fish.jpeg" alt="fish curry">
+                        <h3 class="centertext">Fish Curry</h3>
+                    </div>
+
+                    <div>
+                        <img class="grid-item" src="image/vegetable.jpeg" alt="vegetable curry">
+                        <h3 class="centertext">Vegetable Curry</h3>
+                    </div>
+
+
+                    <div>
+                        <img src="image/image.png" alt = "qr code  ">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!---    Page   2  -->
+        <div class="page" id="page2">
+            <h2 class="recipes">Prata Recipes</h2>
+            <div class="grid-container">
+                <div>
+                    <img class="grid-item" src="image/kosong.jpeg" alt="Roti Kosong">
+                    <h3 class="centertext">Roti Kosong</h3>
+                </div>
+                <div>
+                    <img class="grid-item" src="image/telurbawang.jpg" alt="Roti Telur">
+
+                    <h3 class="centertext">Roti Telur</h3>
+                </div>
+                <div>
+                    <img class="grid-item" src="image/telurbawang.jpg" alt="Roti Telur Bawang">
+                    <h3 class="centertext">Roti Telur Bawang</h3>
+                </div>
+                <div>
+
+                    <img class="grid-item" src="image/rotibom.jpeg" alt=" roti Bom">
+
+                    <h3 class="centertext">Roti Bom</h3>
+                </div>
+                <div>
+                    <img class="grid-item" src="image/roti-pisang.jpeg" alt="Roti Pisang">
+                    <h3 class="centertext">Roti Pisang</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/milo.jpeg" alt="Roti Milo">
+
+                    <h3 class="centertext">Roti Milo</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/cheese.jpeg" alt="Roti Cheese">
+
+                    <h3 class="centertext">Roti Cheese</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/tampal.jpeg" alt="Roti Tampal">
+
+                    <h3 class="centertext">Roti Tampal</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/sarangburung.jpeg" alt=" Roti Sarang Burung">
+
+                    <h3 class="centertext">Roti Sarang Burung</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/telurbawang.jpg" alt="Roti Bawang">
+
+                    <h3 class="centertext">Roti Bawang</h3>
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/rotimaggi.jpg" alt=" Roti Maggi">
+
+                    <h3 class="centertext">Roti Maggi</h3>
+
+                </div>
+
+                <div>
+                    <img class="grid-item" src="image/Roti-tisu.jpg" alt="Roti Tisu">
+                    <h3 class="centertext">Roti Tisu</h3>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!--    Page 3     -->
+        <div class="page" id="page3">
+            <h2>Prata Eating Simulator</h2>
+            <div id="game">
+            <canvas id="board">Prata Eating Simulator</canvas>
+                <button id = "button1">Up</button>
+                <button  id = "button2">Down</button>
+                <button  id = "button3">Left</button>
+                <button  id = "button4">Right</button>
+                <button id="resetButton">Reset</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

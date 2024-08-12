@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Broswer Tab Icon -->
+  <title> Home - Bodybuilding </title>
+  <link rel="icon" type="image/x-con" href="images/icon.jpg">
+
+  <!-- Metadata / Responsive Web Design Section -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Gui Cheng's Bodybuilding">
+  <meta name="description" content="Gui Cheng's Guide for Beginner Bodybuilders">
+  <meta name="author" content="220844R, Lab 01">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Gui Cheng's Bodybuilding">
+
+  <!--Android Web Application-->
+  <link rel="manifest" href="Icons/site.webmanifest">
+
+  <!-- External CSS Dependency -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- External JS Dependency -->
+  <script src="script.js" defer></script>
+</head>
+
+<!-- Body Section -->
+
+<body id="window-context">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="navigation-context" class="fix-nav">
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-nav">
+      <button id="hamIcon" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Mobile Vertical Navigation Links -->
+      <h4> Gui Cheng's Fitness </h4>
+      <div class="nav-wrapper" id="hamburger-menu">
+        <button id="page1btn1"> Home </button>
+        <button id="page2btn1"> Bodybuilding </button>
+        <button id="page3btn1"> Nutrition </button>
+        <button class="fullscreen-button"> Full Screen </button>
+      </div>
+    </nav>
+
+    <!-- Desktop Navigation Menu -->
+    <nav id="desktop-nav">
+      <p class="nav-header"><b>Gui cheng's Fitness</b></p>
+
+      <!-- Desktop Horizontal Navigation Links -->
+      <div class="nav-wrapper">
+        <button id="page1btn2" class="nav-button"> Home </button>
+        <button id="page2btn2" class="nav-button"> Bodybuilding </button>
+        <button id="page3btn2" class="nav-button"> Nutrition </button>
+        <button class="nav-button fullscreen-button"> Full Screen </button>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- View Content -->
+  <main id="view-context">
+
+    <!-- Page Banner -->
+    <div id="banner-context">
+      <h1 class="banner-text" id="banner-header"> Home </h1>
+    </div>
+
+    <div id="page-context">
+
+      <!-- Homepage Content -->
+      <div class="page" id="page1">
+
+        <!-- Quote -->
+        <div class="quote-wrapper bg">
+          <h1 class="quote"> "No Pain, No Gain." </h1>
+          <h1 class="quote"> Jane Fonda </h1>
+        </div>
+
+
+        <!-- About Website Summary -->
+        <div class="template-01 bg">
+          <img src="images/home/about-website.jpg" alt="multiple-people-exercising">
+
+          <div class="description-wrapper-01">
+            <h1> What is Gui Cheng's Fitness? </h1>
+            <p> Gui Cheng's fitness is a website aimed to guide beginners who are new to the bodybuilding. </p>
+            <p>
+              As beginners tend to make mistakes early on while training, this website would give effective advice
+              on what areas to focus on in their fitness journey.
+            </p>
+            <h2> Types of Advices: </h2>
+            <ol>
+              <li>
+                Exercises: A list of exercises would be provided for beginners to follow and do
+                while they first start out on their fitness journey.
+              </li>
+              <li>
+                Nutrition: A list of recommendations would be given to help beginners who are struggling
+                with their diet or unaware of what food is healthy for them.
+              </li>
+            </ol>
+          </div>
+
+        </div>
+
+        <!-- YouTube Video -->
+        <div class="video-template-01 bg">
+          <h1> Video of the Day </h1>
+          <iframe src="https://www.youtube.com/embed/P1W8RLEsUC4?si=dtTWbqYmT9gHLjQX" title="YouTube-video-player"
+            allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+
+          <!-- Video Description -->
+          <h2> Beginner's Guide to Bodybuilding </h2>
+          <p>
+            The ultimate guide for beginners who are new to the gym.
+            The guide encompasses everything from arms exercises, leg exercises and back exercises.
+          </p>
+        </div>
+
+        <!-- Additional Navigation -->
+        <div class="template-02 bg TW02-RWD">
+          <h1> Additional Resources </h1>
+
+          <!-- Navigation Cards -->
+          <div>
+            <div class="template-02-bg-image">
+              <h1> MOH BMI Calculator </h1>
+              <a href="https://www.healthhub.sg/programmes/nutrition-hub/bmi-calorie-calculator" target="_blank"
+                class="external-btn"> Learn More </a>
+            </div>
+
+            <div class="template-02-bg-image">
+              <h1> Bodybuilding Guides </h1>
+              <a href="https://barbend.com/bodybuilding-for-beginners/" target="_blank" class="external-btn"> Learn More
+              </a>
+            </div>
+
+            <div class="template-02-bg-image">
+              <h1> Dieting Tips & Tricks </h1>
+              <a href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide#bottom-line" target="_blank"
+                class="external-btn"> Learn More </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bodybuilding Page -->
+      <div class="page" id="page2">
+
+        <!-- Quote -->
+        <div class="quote-wrapper bg">
+          <h1 class="quote"> "Mind Over Matter." </h1>
+          <h1 class="quote"> Sir Charles Lyell </h1>
+        </div>
+
+        <!-- About Bodybuilding Article -->
+        <div class="template-01 bg">
+          <img src="images/bodybuilding/about-bodybuilding.jpg" alt="bodybuilder-lifting-weights">
+          <div class="description-wrapper-01">
+            <h1> What is Bodybuilding? </h1>
+            <p>
+              Bodybuilding is a form of physical training and competitive sport focused on developing and sculpting the
+              muscles of the body to achieve a highly aesthetic physique.
+            </p>
+            <h2> Areas of Bodybuilding We'll Cover: </h2>
+            <ol>
+              <li>
+                Benefits: The types of gains you will yield after practicing bodybuilding for a substantial
+                amount of time.
+              </li>
+              <li>
+                Anatomy: The different types of muscles in your body and what functions they are responsible
+                for individually.
+              </li>
+              <li>
+                Exercises: A list of physical activities you could do to target different muscle groups.
+                This covers arms, legs and back exercises.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Bodybuilding Benefits Article -->
+        <div class="template-01 bg">
+          <div class="description-wrapper-01">
+            <h1> Benefits of Bodybuilding </h1>
+            <ol>
+              <li> Muscle Strength and Endurance: Bodybuilding can help increase muscle strength, endurance, and reduces
+                the risk of injury.</li>
+              <li> Better Sleep: Bodybuilding can promote better sleep quality and help you fall asleep faster.</li>
+              <li>
+                Increased Discipline and Focus: Bodybuilding requires dedication, consistency, and goal-setting,
+                which can improve discipline and focus in all areas of life.
+              </li>
+              <li> Metabolic Health: Building and maintaining muscles helps to burns more calories at rest and improve
+                metabolism.</li>
+              <li> Mental Health Benefits: Bodybuilding can improve your mood, reduce depression and anxiety levels, and
+                enhance your mental well-being.</li>
+            </ol>
+          </div>
+          <img src="images/bodybuilding/benefits.jpg" alt="guy-doing-back-pose">
+        </div>
+
+        <!-- Anatomy Section -->
+        <div class="header-addon bg">
+          <h1> Anatomy </h1>
+          <div class="template-01">
+
+            <!-- Biceps Muscles Article -->
+            <div id="biceps-anatomy">
+              <img src="images/bodybuilding/arms.jpg" alt="human-arm-anatomy">
+              <button id="arm-01">Biceps</button>
+              <button id="arm-02">Triceps</button>
+              <button id="arm-03">Delts</button>
+              <button id="arm-04">Forearm</button>
+            </div>
+            <div class="description-wrapper-01">
+              <h1> Arms Anatomy </h1>
+              <p>
+                Arms are an essential part of our body. They help to maintain strength, mobility and
+                mobility to the point that our everyday life is made easier. When analysing the arm muscles,
+                there are many different muscles that work together perform one complex function.
+              </p>
+              <h2 class="click-tooltip"> (Click on the buttons in the picture to learn more.)</h2>
+              <h2 id="arms-header">[Anatomy part]</h2>
+              <p id="arms-description">[Anatomy description]</p>
+            </div>
+
+            <!-- Back Muscles Article -->
+            <div class="description-wrapper-01">
+              <h1> Back Anatomy </h1>
+              <p>
+                Arms are an essential part of our body. They help to maintain strength, mobility and
+                mobility to the point that our everyday life is made easier. When analysing the arm muscles,
+                there are many different muscles that work together perform one complex function.
+              </p>
+              <h2 class="click-tooltip"> (Click on the buttons in the picture to learn more.)</h2>
+              <h2 id="backs-header">[Anatomy part]</h2>
+              <p id="backs-description">[Anatomy description]</p>
+            </div>
+            <div id="back-anatomy">
+              <img src="images/bodybuilding/backs.jpg" alt="human-back-anatomy">
+              <button id="back-01">Traps</button>
+              <button id="back-02">Rotator Cuff</button>
+              <button id="back-03">Rhomboids</button>
+              <button id="back-04">Lats</button>
+              <button id="back-05">Spine</button>
+            </div>
+
+            <!-- Leg Muscles Article -->
+            <div id="legs-anatomy">
+              <img src="images/bodybuilding/legs.jpg" alt="human-leg-anatomy">
+              <button id="legs-01">Quads</button>
+              <button id="legs-02">Adductor</button>
+              <button id="legs-03">Hamstrings</button>
+              <button id="legs-04">Calf</button>
+            </div>
+            <div class="description-wrapper-01">
+              <h1> Legs Anatomy </h1>
+              <p>
+                The legs play a crucial role in allowing movement from one place to another through walking, running,
+                jumping, and other activities.
+                It also helps in bearing the body's weight and maintaining balance while standing and during physical
+                activities.
+              </p>
+              <h2 class="click-tooltip"> (Click on the buttons in the picture to learn more.)</h2>
+              <h2 id="legs-header">[Anatomy part]</h2>
+              <p id="legs-description">[Anatomy description]</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Exercises Section -->
+        <div class="header-addon bg">
+          <h1> Exercises </h1>
+
+          <!-- Biceps Curls Article -->
+          <div class="template-01">
+            <img src="images/bodybuilding/bicep-curls.jpg" alt="bicep-curls">
+            <div class="description-wrapper-01">
+              <h1> Biceps Curls </h1>
+              <p>
+                Bicep curls are a common strength-training exercise primarily targeting the biceps brachii muscle, which is located on the front part of the upper arm.
+              </p>
+              <h2> Movement </h2>
+              <ol>
+                <li>Slowly curl the weights upwards by bending your elbows. Keep your upper arms stationary; only your forearms should move.</li>
+                <li>Continue curling until the weights are close to your shoulders, and your biceps are fully contracted.</li>
+              </ol>
+            </div>
+
+            <!-- Squats Article -->
+            <div class="description-wrapper-01">
+              <h1> Squats </h1>
+              <p>
+                Squats are a fundamental strength-training exercise that targets multiple muscle groups in the lower body, 
+                including the quadriceps, hamstrings, glutes, and calves.
+              </p>
+              <h2> Movement </h2>
+              <ol>
+                <li>Stand with your feet shoulder-width apart or slightly wider, toes pointed slightly outward for stability.</li>
+                <li>Keep your chest up, shoulders back, and maintain a neutral spine (avoid arching or rounding your back excessively).</li>
+              </ol>
+            </div>
+            <img src="images/bodybuilding/squats.jpg" alt="squats">
+
+            <!-- Pull-Ups Article -->
+            <img src="images/bodybuilding/pull-ups.png" alt="pull-ups">
+            <div class="description-wrapper-01">
+              <h1> Pull-Ups </h1>
+              <p>
+                Pull-ups are a compound upper-body exercise that primarily targets the muscles of the back, 
+                specifically the latissimus dorsi (lats), along with other muscles including the biceps, forearms, and core. 
+              </p>
+              <h2> Pulling Movement </h2>
+              <ol>
+                <li>Initiate the movement by pulling yourself up towards the bar by bending your elbows and engaging your back muscles.</li>
+                <li>Aim to bring your chin above the bar or as high as you can comfortably go.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Bodybuidling HTML Form -->
+        <div class="template-03 bg">
+          <h1> Bodybuilding Form </h1>
+          <h2> Test your knowledge on Bodybuilding! </h2>
+          <form id="bodybuilding-form" class="formStyle" method="post"></form>
+          <div id="bodybuilding-results"></div>
+        </div>
+
+      </div>
+
+      <!-- Nutrition Page -->
+      <div class="page" id="page3">
+
+        <!-- Quote -->
+        <div class="quote-wrapper bg">
+          <h1 class="quote"> "You are, what you eat." </h1>
+          <h1 class="quote"> Victor Lindlahr </h1>
+        </div>
+
+        <!-- About Nutrition Summary -->
+        <div class="template-01 bg">
+          <img src="images/nutrition/about-nutrition.jpg" alt="child-holding-basket-of-fruits">
+          <div class="description-wrapper-01">
+            <h1> What is Nutrition? </h1>
+            <p> Nutrition is the focus on obtaining essential nutrients such as carbohydrates, proteins and fats that
+              are important for our body. </p>
+            <p> Good nutrition is crucial for maintaining our body, supporting our immune system, and promoting overall
+              health throughout our lifespan. </p>
+            <h2> Areas of Nutrition We'll Cover: </h2>
+            <ol>
+              <li>
+                Benefits: A list of positive effects you'll observe long term when eating healthily.
+              </li>
+              <li>
+                Macro and Micronutrients: Understanding the importance of the primary and secondary nutrients that are
+                crucial to our body's needs.
+              </li>
+              <li>
+                Recommendations: Guidelines on how to eat healthily, lose weight and improve
+                your overall health.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Nutrition Benefits Article -->
+        <div class="template-01 bg">
+          <div class="description-wrapper-01">
+            <h1> Benefits of Healthy Eating </h1>
+            <ol>
+              <li>
+                Weight Management: A healthy diet can help maintain a healthy weight by providing the right balance of
+                nutrients without excess calories.
+              </li>
+              <li>
+                Reduced Risk of Chronic Diseases: Eating a variety of nutrient-dense foods, such as fruits and
+                vegetables can help lower diseases such as diabetes.
+              </li>
+              <li>
+                Strong Immune System: Nutritious foods rich in vitamins, minerals and antioxidants helps the body in
+                defending against infections and illnesses.
+              </li>
+              <li>
+                Improved Digestive Health: A diet high in fiber, whole grains, and probiotics promotes healthy
+                digestion, prevents constipation, and supports a diverse gut microbiome.
+              </li>
+              <li>
+                Enhanced Skin and Hair Health: Nutrients like vitamins A, C, E, and zinc contribute to healthy skin and
+                hair growth, reducing signs of aging and promoting a youthful appearance.
+              </li>
+            </ol>
+          </div>
+          <img src="images/nutrition/benefits.jpg" alt="benefits-of-healthy-eating">
+        </div>
+
+        <!-- Maronutrients Section -->
+        <div class="header-addon bg">
+          <h1> Macronutrients </h1>
+
+          <div class="template-01">
+
+            <!-- Carbohydrate Food Section -->
+            <img src="images/nutrition/carbohydrate.jpeg" alt="carbohydrate-food">
+            <div class="description-wrapper-01">
+              <h1> Carbohydrates </h1>
+              <p>
+                Carbohydrates are one of the three main macronutrients, alongside proteins and fats, that provide energy
+                for the body.
+                This includes food such as rice, noodles, bread, pastry, desserts.
+              </p>
+              <h2> Types of Carbohydrates </h2>
+              <ol>
+                <li>
+                  Simple Carbohydrates: These are usually called sugar. Examples include glucose, fructose (found in
+                  fruits), sucrose (table sugar), and lactose (found in milk).
+                </li>
+                <li>
+                  Complex Carbohydrates: These are usually food that high in fiber or is starchy. Examples of Starch
+                  food include grains, wheat and rice.
+                  Examples of High Fibre food include fruits, vegetables and whole grains.
+                </li>
+              </ol>
+              <p>
+                Fiber: A micronutrient that the body cannot digest fully, for digestive health and helps regulate bowel
+                movements.
+              </p>
+            </div>
+
+            <!-- Protein Food Section -->
+            <div class="description-wrapper-01">
+              <h1> Protein </h1>
+              <p>
+                Proteins are essential macronutrients that helps in building and maintaining muscles.
+                This includes food such as chicken, pork, fish, eggs and brocolis.
+              </p>
+              <h2> Role of Protein </h2>
+              <ol>
+                <li>
+                  Building and Repair: Proteins are fundamental for building and repairing tissues, including muscles,
+                  bones, skin, and organs.
+                </li>
+                <li>
+                  Enzymatic Activity: Many proteins act as enzymes, speeding up chemical reactions that are essential
+                  for metabolism and various biochemical processes.
+                </li>
+                <li>
+                  Immune Function: Antibodies and certain proteins play key roles in the immune system, defending
+                  against infections and diseases.
+                </li>
+              </ol>
+              <p>
+                <b>Daily Requirement</b>: The recommended daily intake of protein varies from each person.
+                Generally, it's recommended to take <b>1.6g of protein per kg (body weight) per day</b> for maximum
+                muscle growth.
+              </p>
+            </div>
+            <img src="images/nutrition/protein.jpg" alt="protein-food">
+
+            <!-- Fats Food Section -->
+            <img src="images/nutrition/fats.jpeg" alt="fats-food">
+            <div class="description-wrapper-01">
+              <h1> Fats </h1>
+              <p>
+                Fats are another essential class of macronutrients alongside carbohydrates and proteins.
+                This includes food such as eggs, avocado, salmon, and almonds.
+              </p>
+              <h2> Types of Fats </h2>
+              <ol>
+                <li> Saturated Fats: These fats are typically found in animal products such as meat, butter, and
+                  full-fat dairy products. </li>
+                <li> Monounsaturated Fats: These fats are found in olive oil, avocados, nuts (like almonds, cashews, and
+                  peanuts), and edible seeds.</li>
+                <li> Polyunsaturated Fats: These fats includes omega-3 and 6 fatty acids, and are found in fatty fish
+                  (salmon) and vegetable oils (soybean, sunflower).</li>
+                <li> Trans Fats: These fats are artificially produced, and are found in some processed foods, margarine,
+                  and commercially baked goods. </li>
+              </ol>
+              <p><b>Saturated</b>: When consumed in excess, could increase the risk of heart disease.</p>
+              <p><b>Monounsaturated</b>: When consumed, can improve cholesterol levels.</p>
+              <p><b>Polyunsaturated</b>: When consumed, could improve cardiovascular system and reduce liver fat.</p>
+              <p><b>Trans</b>: When consumed in excess, could raise LDL (bad) cholesterol levels.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Health Guidelines Recommendation -->
+        <div class="template-01 bg">
+          <div class="description-wrapper-01">
+            <h1> Recommendations </h1>
+            <p> The Singapore's Ministry of Health (Health Promotion Board) has a list of dietary guidelines for
+              beginners to follow when eating. </p>
+            <ol>
+              <li>Eat a Balanced Diet: HPB recommends consuming a variety of foods from different food groups to ensure
+                a balanced intake of nutrients.</li>
+              <li>Fruits and Vegetables: Aim for at least 2 servings of fruits and 2 servings of vegetables daily.
+                Choose a variety of colors to ensure a range of vitamins, minerals, and antioxidants.</li>
+              <li>Whole Grains: Opt for whole grain options such as brown rice, wholemeal bread, and oats to provide
+                fiber, vitamins, and minerals.</li>
+              <li>Protein Sources: Include lean meats, fish, eggs, tofu, and legumes in your diet. These provide
+                essential amino acids for muscle repair and growth.</li>
+              <li>Healthy Fats: Choose sources of healthy fats such as avocados, nuts, seeds, and plant oils like olive
+                oil. Limit saturated fats and avoid trans fats as much as possible.</li>
+              <li>Limit Sugar and Salt Intake: Reduce consumption of sugary beverages, snacks, and desserts. Choose
+                foods that are lower in sugar content and opt for unsweetened beverages or water whenever possible.
+              </li>
+            </ol>
+            <h2> Calories Intake </h2>
+            <p>
+              Calories (kcal) are the units of measurement for energy stored in the food and in your body. For weight
+              loss to happen,
+              your energy intake has to be lower than the energy you exerted out in a day.
+            </p>
+            <p>Weight Loss: <b>Calories Intake &lt; Calorie Loss</b></p>
+            <p> Be mindful of portion sizes to avoid overeating. Eating smaller portions helps maintain a healthy weight
+              and prevents excessive calorie intake.</p>
+          </div>
+          <img src="images/nutrition/healthy-plate.png" alt="moh-healthy-plate">
+        </div>
+
+
+        <!-- Nutrition Form -->
+        <div class="template-03">
+          <h1> Nutrition Form </h1>
+          <h2> Test your knowledge on Nutrition! </h2>
+          <form id="nutrition-form" class="formStyle" method="post"></form>
+          <div id="nutrition-results"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- Footer to Link to Other Pages -->
+  <footer>
+
+    <!-- Mobile Footer Menu -->
+    <div id="mobile-footer">
+
+      <!-- Navigation Footer -->
+      <div class="mobile-footer-container">
+        <button id="footerLink1"> Quick-Navigation + </button>
+
+        <!-- Navigation Links -->
+        <div id="MFooterL1">
+          <button id="page1btn3" class="m-footer-btn"> Home </button>
+          <button id="page2btn3" class="m-footer-btn"> Bodybuilding </button>
+          <button id="page3btn3" class="m-footer-btn"> Nutrition </button>
+        </div>
+      </div>
+
+      <!-- Website Contact Information -->
+      <div class="mobile-footer-container">
+        <button id="footerLink2"> Contact + </button>
+        <div id="MFooterL2">
+          <h2 class="footer-contact-text"> +(65)123-092-121 </h2>
+          <h2 class="footer-contact-text"> FitnessGui@Wahoo.com </h2>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Desktop Footer Menu -->
+    <div id="desktop-footer">
+
+      <!-- Navigation Footer -->
+      <div class="footer-top">
+        <h1 class="footer-headers"> Quick-Navigation </h1>
+        <h1 class="footer-headers"> Contact </h1>
+
+        <!-- Navigation Links -->
+        <nav id="footer-links">
+          <button id="page1btn4" class="m-footer-btn"> Home </button>
+          <button id="page2btn4" class="m-footer-btn"> Bodybuilding </button>
+          <button id="page3btn4" class="m-footer-btn"> Nutrition </button>
+        </nav>
+
+        <!-- Website Contact Information -->
+        <div id="footer-socials">
+          <h2 class="footer-contact-text"> +(65)123-092-121 </h2>
+          <h2 class="footer-contact-text"> FitnessGui@Wahoo.com </h2>
+        </div>
+
+      </div>
+
+      <!-- Legal Information -->
+      <div class="footer-bottom">
+        <p> Copyright © 2024 Loong Gui Cheng, Fitness. All rights reserved. </p>
+        <p> Last Updated: July 1st, 2024</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

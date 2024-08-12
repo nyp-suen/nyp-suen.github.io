@@ -1,0 +1,621 @@
+.Logo
+{
+    text-align: center;
+    font-size: 70px;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    background-image: url(images/esport.jpg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.iframe
+{
+  width: 60%;
+  height: 150px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+img
+{
+  width: 50%;
+  height: 50%;
+}
+
+.menu2
+{
+  display: hidden;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* Hide the button */
+#nextButton {
+  display: none;
+}
+
+
+  body {
+    background-image: url(images/background.jpg);  
+    font-family: Helvetica, sans-serif;
+    background-size: cover; /* Ensures the background image covers the entire screen */
+
+  }
+
+.background {
+  background-color: rgb(12, 224, 244, 0.3);
+  width:100%;
+  height:10vh;
+}
+
+#page3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 98vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+#game {
+  position: relative;
+  width: 98vw;
+  height: 90vh;
+  border: 2px solid #000;
+  background-color: #38bdff;
+}
+
+#reactionTest{
+  position: relative;
+  width: 98vw;
+  height: 90vh;
+  border: 2px solid #000;
+  background-color: #38bdff;
+}
+
+
+#score {
+  font-size: 24px;
+}
+
+#startButton, .difficultyButton {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+#startButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#startButton:hover
+{
+  background-color: lightgreen;
+}
+
+
+.difficultyButton {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.difficultyContainer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+.target {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color:lightblue;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#reactionMessage {
+  margin: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#startReactionButton
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 10%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(images/mainbackground.jpg);
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 395px;
+  height: 400px;
+  margin: 75px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+nav li {
+  display: inline;
+}
+nav button {
+  background-color: lightseagreen; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+nav button:hover
+{
+  background-color: burlywood;
+  color: white;
+}
+
+nav button#page1btn {
+  background-color: lightseagreen; 
+  color: black; 
+}
+
+nav button#page1btn:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+nav button#page2btn {
+  background-color: lightseagreen; 
+  color: black; 
+}
+
+nav button#page2btn:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+nav button#page3btn {
+  background-color: lightseagreen; 
+  color: black; 
+}
+
+nav button#page3btn:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+nav button#page4btn {
+  background-color: lightseagreen; 
+  color: black; 
+}
+
+nav button#page4btn:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+.navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  background-image: url(images/navbar.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 99%; /* Full width */
+  z-index: 1000; /* Ensure it is above other content */
+  display: none;
+}
+
+/* Main content */
+.main {
+  margin-bottom: 60px; /* Add a bottom margin to avoid content overlay */
+}
+
+@media (min-width: 800px) {
+  .navbar ul {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .navbar li{
+    display: inline-block;
+  }
+
+  .navbar button {
+    margin: 4px 2px;
+}
+
+  .navbar button#menuBtn2 {
+    display: none;
+}
+
+  .navbar ul.hidden {
+    display: flex !important;
+}
+
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.navbar button#menuBtn2 {
+  background-color: violet;
+}
+
+
+.navbar button
+{
+    background-color: violet; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.navbar button:hover
+{
+  background-color: purple;
+}
+
+.navbar button#page1btn2 {
+    background-color: violet; 
+    color: black; 
+}
+
+.navbar button#page1btn2:hover {
+    background-color: purple;
+    color: white;
+}
+.navbar button#page2btn2 {
+  background-color: violet; 
+  color: black; 
+  }
+  
+  .navbar button#page2btn2:hover {
+    background-color: purple;
+    color: white;
+  }
+
+  .navbar button#page3btn2 {
+    background-color: violet; 
+    color: black; 
+  }
+  
+.navbar button#page3btn2:hover {
+    background-color: purple;
+    color: white;
+  }
+  
+  .navbar button#page4btn2 {
+    background-color: violet; 
+    color: black; 
+  }
+  
+  .navbar button#page4btn2:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right menu'
+    'main main main right right menu';
+  gap: 10px;
+  background-image: url(images/Backgroundabout.jpg);
+  background-size: cover;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.436);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container > div > p
+{
+  font-size: 15px;
+}
+
+#page2
+{
+  inline-size:98vw;
+  block-size:80vh;
+  height:  900px;
+}
+
+#page1{height: 1200px;}
+#page3{height: 00px;}
+#page4{height: 700px;}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the horizontal ruler) */
+.timeline {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 30px 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000%;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  height: 10px;
+  background-color: rgb(0, 242, 255);
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+  flex: 0 0 auto;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.top::after {
+  bottom: -15px;
+}
+
+.bottom::after {
+  top: -15px;
+}
+
+.top::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  bottom: -25px;
+  width: 0;
+  border: medium solid white;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent white transparent;
+}
+
+.bottom::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: -25px;
+  width: 0;
+  border: medium solid white;
+  border-width: 10px 10px 0 10px;
+  border-color: white transparent transparent transparent;
+}
+
+.content {
+  background-image:url(images/timeline.jpg);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+  color:orange;
+}
+
+
+
+/* Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 800px) {
+  .timeline {
+    flex-direction: column;
+  }
+
+  .timeline::after {
+    width: 6px;
+    height: auto;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::after {
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .top::before, .bottom::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .top::after, .bottom::after {
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+}
+
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 20px solid black;
+  border-radius: 50%;
+  background: white;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  background: black;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: steps(60);
+}
+
+.second-hand {
+  height: 2px;
+  background: red;
+  animation: rotate-second 60s linear infinite;
+}
+
+.minute-hand {
+  height: 4px;
+  background: black;
+  animation: rotate-minute 3600s linear infinite;
+}
+
+.hour-hand {
+  height: 6px;
+  background: black;
+  animation: rotate-hour 43200s linear infinite;
+}
+
+@keyframes rotate-second {
+  from {
+      transform: rotate(90deg);
+  }
+  to {
+      transform: rotate(450deg);
+  }
+}
+
+@keyframes rotate-minute {
+  from {
+      transform: rotate(90deg);
+  }
+  to {
+      transform: rotate(450deg);
+  }
+}
+
+@keyframes rotate-hour {
+  from {
+      transform: rotate(90deg);
+  }
+  to {
+      transform: rotate(450deg);
+  }
+}
+
+.center {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.number1 { top: 0%; left: 50%; transform: translateX(-50%); }
+.number2 { top: 20%; left: 80%; transform: translateX(-50%); }
+.number3 { top: 50%; left: 85%; transform: translateY(-50%); }
+.number4 { top: 70%; left: 80%; transform: translateX(-50%); }
+.number5 { top: 90%; left: 50%; transform: translateX(-50%); }
+.number6 { top: 70%; left: 20%; transform: translateX(-50%); }
+.number7 { top: 50%; left: 5%; transform: translateY(-50%); }
+.number8 { top: 20%; left: 15%; transform: translateX(-50%); }
+

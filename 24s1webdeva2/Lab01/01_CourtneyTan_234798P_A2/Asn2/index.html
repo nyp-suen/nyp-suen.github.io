@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>234798P_Assignment2 Topic: Cats </title>
+    <link rel = "stylesheet" href="style.css">
+    <script src ="script.js" defer></script>
+
+</head>
+<body>
+   
+    <header>
+        
+        </header>
+        <nav> <!--menu systtm-->
+        <button id = "hamIcon">Menu</button>
+            <div>
+                <button id="page1btn">Cat Facts</button>
+                <button id="page2btn">Cat Behaviors</button>
+                <button id="page3btn">Cat Breeds</button>
+                <button id="page4btn">Cat Recommendation</button>
+           
+            </div>
+       
+        </nav>
+        <!-- start screen -->
+        <div id ="mainpagediv" class="mainpage">
+            
+            <div id="title">
+                <h2>CATS</h2>
+                <p id="gamestartinfo">click to start</p>
+            </div>
+            <div id="game">
+                <!-- player character -->
+                <img id="cat" src = "image/catpixel.png" alt="CatPixelCharacter">  
+                <!-- enemy character -->
+                <img id="obstacle" src = "image/dogpixel.png" alt="DogPixelEnemy">
+            </div>
+            
+        </div>
+     
+    
+        <div id="pagecontainer">
+        <div class="page" id="page1">
+          <h1>CAT FACTS</h1>
+            <img id = "catbubbles" src = "image/cat3.png" alt="Cat Playing with Bubbles">
+            <!-- bubbles -->
+           <button class="ball" id = "bubble1"></button>
+           <button class="ball"  id = "bubble2"></button>
+           <button class="ball"  id = "bubble3"></button>
+           <button class="ball"  id = "bubble4"></button>
+           <button class="ball"  id = "bubble5"></button>
+        </div>
+        <div class="page" id="page2">
+            <div class="container">
+                <!-- Cards for the movable items that the player needs to interact with -->
+                <div class="card clickable moveable trashObj" id = "trash"><img src = "image/vomit.png" alt="Vomit Trash Img"></div>
+                <div class="card clickable moveable trashObj" id = "trash2"><img src = "image/vomit.png" alt="Vomit Trash Img"></div>
+                <div class="card clickable moveable sofaObj"  id = "reorder"><img src = "image/Cushion.png" alt="Cushion Reorder Img"></div>
+                <div class="card clickable moveable sofaObj"  id = "reorder1"><img src = "image/Cushion.png" alt="Cushion Reorder Img"></div>
+                <div class="card clickable moveable sofaObj"  id = "reorder2"><img src = "image/Cushion.png" alt="Cushion Reorder Img"></div>
+                <img id="trashcan" class="clickable contain" src = "image/bin.png" alt="Trash bin image">
+                <img id="sofa" class="clickable contain" src = "image/sofa.png" alt="Sofa Image">
+                
+                    <div id="catbehavior">
+                        <p id = "text">Cats have playful personalities...<br>  (Clean up the cat's mess)</p>
+                        <p>Cats exhibit a variety of behaviors such as grooming, purring, and kneading to show contentment. They may scratch objects to mark territory and play to exercise and hone their hunting skills. Cats are also known for their independence and curiosity.</p>
+                    </div>
+            
+                   
+               
+                <img id = "pusheen" src = "image/pusheen.gif" alt="Pusheen gif"> 
+                
+
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <!-- individual pages for each cat -->
+             <!-- pure breed cats -->
+            <div class = "slider">
+                <div class="list">
+                    <div class="item active">
+                
+                        <div class="content Persian Pure Lazy Fluffy">
+                            <p>Cat Breeds</p>
+                            <h2>Persian</h2>
+                            <p> Persian cats have long, luxurious coats and distinctive flat faces, exuding elegance. They are known for their calm, gentle demeanor and affectionate, laid-back personality. </p>
+                            <form id="PersianForm">
+                                <h3>Let's try mixing cat breeds</h3>
+                                <br>
+                                <label for="Catbreed1">First breed:</label>
+                                <select  id = "Catbreed1" class="Catbreed" name="CatBreedsChoices">
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                 
+                                
+                                </select>
+                                
+                                <br>
+                                <label for="Catbreed2">Second breed:</label>
+                                <select  id = "Catbreed2" class="CatBreed2" name="CatBreedsChoices2">
+                                   
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                </select>
+                                <br><br><br>
+                                <button type="button" class="catBreedCheck">Check</button>
+                              </form>
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/Persian.png" alt="Persian Image">
+                        </div>
+                    </div>
+                    <div class="item">
+                     
+                        <div class="content Mainecoon Pure Fluffy Intelligent Social">
+                            <p>Cat Breeds</p>
+                            <h2>Maine Coon</h2>
+                            <p> Maine Coon cats are large, fluffy, and have tufted ears with a friendly, playful, and sociable personality. They are intelligent, enjoy human companionship, and often get along well with other pets.</p>
+                            <form id="MainecoonForm">
+                                <h3>Let's try mixing cat breeds</h3>
+                                <br>
+                                <label for="Catbreed3">First breed:</label>
+                                <select  id = "Catbreed3" class="Catbreed" name="CatBreedsChoices">
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                 
+                                
+                                </select>
+                                
+                                <br>
+                                <label for="Catbreed4">Second breed:</label>
+                                <select  id = "Catbreed4" class="CatBreed2" name="CatBreedsChoices2">
+                                   
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                </select>
+                                <br><br><br>
+                                <button type="button" class="catBreedCheck">Check</button>
+                              </form>
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/Mainecoon.png" alt="Mainecoon Image">
+                        </div>
+                    </div>
+                    <div class="item">
+                       
+                        <div class="content Siamese Pure Affectionate Social">
+                            <p>Cat Breeds</p>
+                            <h2>Siamese</h2>
+                            <p> Siamese cats are sleek with striking blue almond-shaped eyes and a short coat featuring color points. They are vocal, affectionate, and social, often forming strong bonds with their human companions.</p>
+                            <form id="SiameseForm">
+                                <h3>Let's try mixing cat breeds</h3>
+                                <br>
+                                <label for="Catbreed5">First breed:</label>
+                                <select id = "Catbreed5" class="Catbreed" name="CatBreedsChoices">
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                 
+                                
+                                </select>
+                                  
+                                <br>
+                                <label for="Catbreed6">Second breed:</label>
+                                <select  id = "Catbreed6" class="CatBreed2" name="CatBreedsChoices2">
+                                   
+                                    <option value="Mainecoon">Maine Coon</option>
+                                    <option value="Persian">Persian</option>
+                                    <option value="Siamese">Siamese</option>
+                                </select>
+                                <br><br><br>
+                                <button type="button" class="catBreedCheck">Check</button>
+                              </form>
+                            
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/Siamese.png" alt="Siamese image">
+                        </div>
+                    </div>
+                    
+                    <!-- mixed breed cats -->
+                    <div class="item">
+                    
+                        <div class="content Siamese Mainecoon">
+                            <p>Mixed Cat Breeds</p>
+                            <h2>Siamese Mainecoon Mix</h2>
+                            <p> Siamese Maine Coon Mix cats combine the sleek, pointed features of the Siamese with the large, fluffy build of the Maine Coon. They typically have a friendly, social personality, being both intelligent and affectionate, making them excellent companions.</p>
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/SiameseMaine.png" alt="Siamese Mainecoon Mix image">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                     
+                        <div class="content Siamese Persian">
+                            <p>Mixed Cat Breeds</p>
+                            <h2>Siamese Persian Mix</h2>
+                            <p> Siamese Persian Mix cats blend the Siamese's sleek body and color points with the Persian's long, luxurious coat. They are typically affectionate, social, and enjoy human interaction, often combining the Siamese's vocal nature with the Persian's calm demeanor.</p>
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/SiamesePersian.png" alt="Siamese Persian Mix image">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                    
+                        <div class="content Mainecoon Persian">
+                            <p>Mixed Cat Breeds</p>
+                            <h2>Mainecoon Persian Mix</h2>
+                            <p> Maine Coon Persian Mix cats feature a blend of the Maine Coon's large, robust build and tufted ears with the Persian's long, silky coat. They tend to be gentle, affectionate, and sociable, enjoying both playtime and relaxation, making them excellent family pets.</p>
+                        </div>
+                        <div class="CatImg">
+                            <img src = "image/PersianMain.png" alt="Persian Mainecoon Mix image">
+                        </div>
+                    </div>
+            
+                    
+                </div>
+                <!-- arrows to change page -->
+                <div class="arrows">
+                    <button id = "prev">&lt;</button>
+                    <button id = "next">></button>
+                   
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="page" id="page4">
+            <!-- form for cat recommendation -->
+            <div id = "catreco"> 
+                <h1>Cat Recommendation Form</h1>
+                <p>check the ideal attributes for you and we will find you the right cat</p>
+            
+                
+            <form action="/submit" method="post" id="formreco">
+                <label>Lazy:</label>
+                <input class="boolbtn" type="radio" id="lazy-true" name="lazy" value="true">
+                <label for="lazy-true">True</label>
+                <input class="boolbtn" type="radio" id="lazy-false" name="lazy" value="false" checked>
+                <label for="lazy-false">False</label>
+                <br><br>
+                
+                <label>Affectionate:</label>
+                <input class="boolbtn" type="radio" id="affectionate-true" name="affectionate" value="true">
+                <label for="affectionate-true">True</label>
+                <input class="boolbtn" type="radio" id="affectionate-false" name="affectionate" value="false" checked>
+                <label for="affectionate-false">False</label>
+                <br><br>
+                
+                <label>Fluffy:</label>
+                <input class="boolbtn" type="radio" id="fluffy-true" name="fluffy" value="true">
+                <label for="fluffy-true">True</label>
+                <input class="boolbtn" type="radio" id="fluffy-false" name="fluffy" value="false" checked>
+                <label for="fluffy-false">False</label>
+                <br><br>
+                
+                <label>Social:</label>
+                <input class="boolbtn" type="radio" id="social-true" name="social" value="true">
+                <label for="social-true">True</label>
+                <input class="boolbtn" type="radio" id="social-false" name="social" value="false" checked>
+                <label for="social-false">False</label>
+                <br><br>
+                
+                <label>Intelligent:</label>
+                <input class="boolbtn" type="radio" id="intelligent-true" name="intelligent" value="true">
+                <label for="intelligent-true">True</label>
+                <input class="boolbtn" type="radio" id="intelligent-false" name="intelligent" value="false" checked>
+                <label for="intelligent-false">False</label>
+                <br><br>
+                
+                <button type="button" id="submitAttribute">Submit</button>
+            </form>
+            
+        </div>
+        <img src= "image/QRCode.png" alt="MobileVersQrCode">
+        </div>
+       
+    </div>
+        
+    <audio id="PopAudio">
+        <source src="audio/BubblePopSound.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="JumpAudio">
+        <source src="audio/Jump.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="MeowAudio">
+        <source src="audio/Meow.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="ClickAudio">
+        <source src="audio/Click.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
+
+    

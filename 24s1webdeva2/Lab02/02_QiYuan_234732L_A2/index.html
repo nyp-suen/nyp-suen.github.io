@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script><!-- link to javascript  -->
+        <link rel="stylesheet" href="style.css"><!-- link to css -->
+        <title>Paper</title>
+    </head>
+
+    <body>
+        <img src="images/tree.png" id="change_img" alt="Image of a tree" height="100">
+        <p>Introduction to paper</p>
+
+       <nav> <!--menu systtm-->
+            <img src="images/menu.png" id="menu" alt="menu" onclick="menuclick()">
+            <div id="menu_button" onclick="menuclick()">
+                    <button id="page1btn" style="display: none">History</button>
+                    <button id="page2btn" style="display: none">How its made</button>
+                    <button id="page3btn" style="display: none">Fun things</button>
+                </div>
+            </nav>
+            <div id="pagecontainer">
+                <!-- content 1 -->
+                <div class="page" id="page1"> 
+                    Paper is a thin nonwoven material traditionally made from a combination of 
+                    milled plant and textile fibres. The first paper-like plant-based writing sheet 
+                    was papyrus in Egypt, but the first true papermaking process was documented in China 
+                    during the Eastern Han period (25–220 AD), traditionally attributed to the court official Cai Lun.
+                    
+                    <p>For more information you can visit the</p>
+                    <a href="https://en.wikipedia.org/wiki/History_of_paper">Wikipedia</a>
+                    <p><img src="images/papyrus.jpg" id="papyrus" alt="papyrus"></p>
+                 </div>
+            </div>
+            <!-- content 2 -->
+            <div class="page" id="page2">
+                <iframe src="https://www.youtube.com/embed/OXQDsSctP1M?si=qi9xIMOP_308Wna7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+            <img src="images/paper_materials.jpg" id="paper_materials" alt="paper_materials">
+            <p>You will start by turning the raw material into pulp which then be refined by placing the pulp in a 
+            mechnical mechine which uses rotating discs or bars. By refining the pulp, it helps to give the paper better
+            characteristics such as fiber length, strength, and flexibility. Once refining is done, it will be put into a mesh to
+            let the water drain off so that the fibers can bind together into a wet slab of paper which will be presed and dired and produce the paper that we use.
+            </p>
+            </div>
+                <div class="page" id="page3">
+                <!-- content 3 -->
+                <p>Some ways we use paper is to make paper aeroplanes from them</p>
+                <img src="images/paper_plane.png" id="paper_plane" alt="Paper plane" style="position: absolute;" onclick="planeanim()">
+                <p>We also use some other things to write on like sand</p><br><br><br>
+                <img src="images/sand.jpg" id="sand" alt="sand">
+                <p>We even use other materials for paper such as stone</p>
+            </div>
+    </body>
+</html> 

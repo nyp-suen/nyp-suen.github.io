@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #bba53d;
+}
+
+h2 {
+    color: #bba53d;
+}
+
+a {
+    text-decoration: none;
+    color: #bba53d; 
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.box {
+    /*Styling of box*/
+    width: 80%;
+    height: 580px;
+    position: relative;
+    margin: 100px auto;
+    /*Hide the contents of the other tabs*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+/*Hamburger dropdown menu will not display in desktop view*/
+.hamburger-menu {
+    display: none;
+}
+
+.btn-box {
+    /*Styling of button box*/
+    display: flex;
+    border-bottom: 1px solid #bba53d;
+}
+
+.btn-box button{
+    /*Styling of the button itself*/
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    /*The amount of time it takes for the hover animation to happen*/
+    transition: 0.3s;
+}
+
+/*Makes colour of first tab gold by default*/
+#btn1 {
+    color: #bba53d;
+}
+
+/*Makes colour of second tab white by default*/
+#btn2 {
+    color: #fff;
+}
+
+/*Makes colour of third tab white by default*/
+#btn3 {
+    color: #fff;
+}
+
+/*Makes colour of fourth tab white by default*/
+#btn4 {
+    color: #fff;
+}
+
+/*Makes colour of fourth tab white by default*/
+#btn5 {
+    color: #fff;
+}
+
+.btn-box button:hover{
+    /*Allows text inside the button to turn gold when hovered over*/
+    color: #bba53d;
+}
+
+/*Styling of contents within tabs*/
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3s;
+    flex-direction: row;
+}
+
+/*Styling contents towards the left of the page*/
+.content-left{
+    flex-basis: 50%;
+}
+
+/*Styling for the whack a mole section */
+.content-center {
+    text-align: center;
+    justify-content: center;
+}
+
+/*Styling the p within content-left*/
+.content-left p{
+    font-size: 13px;
+    padding: 30px 0;
+}
+
+/*Styling the contents towards the right of the page*/
+.content-right {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+#board {
+    width: 300px; /* Adjust the width as necessary */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as necessary for layout */
+    align-items: center;
+    background-color: #333; /* Background color for the board */
+    margin-top: 20px;
+}
+
+/*Displays content of first tab by default*/
+#content1{
+    transform: translateX(0px);
+}
+
+/*Styling of second section of contents in the first tab*/
+#content1pt2 {
+    transform: translateY(300px);
+    text-align: left;
+}
+
+/*Styling of third section of contents in the first tab*/
+#content1pt3 {
+    transform: translateY(600px);
+    text-align: left;
+}
+
+#content5 {
+    transform: translateX(10000px);
+}
+
+/*Styling of game board for whack a mole*/
+#board {
+    width: 540px;
+    height: 540px;
+    background: black;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url("images/octagon.jpg");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#board div {
+    /*board is 540x540 but it is divided into 3x3 hence 180x180 per div*/
+    width: 180px;
+    height: 180px;
+    background-image: url("images/pipe.jpg");
+    background-size: cover;
+}
+
+#board div img {
+    width: 100px;
+    height: 100px;
+    /*Prevents images from being dragged or selected*/
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/*Styling the hamburger menu*/
+.off-screen-menu {
+    background-color: #bba53d;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+}
+
+/*Animation when hamburger dropdown menu is activated*/
+.off-screen-menu.active {
+    right: 0;
+}
+
+/*Position of hamburger dropdown menu*/
+nav {
+    padding: 0 10px;
+    padding-bottom: 100px;
+    display: flex;
+    background-color: #000;
+}
+
+/*Styling of hamburger symbol*/
+.hamburger-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.hamburger-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+/*Makes the hamburger symbol turn into an X when clicked*/
+.hamburger-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.hamburger-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*Media query for screens 800px wide or narrower*/
+@media (max-width: 800px) {
+    /*Optimising size of box for mobile view*/
+    .box {
+        width: 100%;
+        height: 800px;
+        margin: 50px auto;
+    }
+
+    /*Optimising content within tabs for mobile view*/
+    .content-left, .content-right {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .content-left {
+        text-align: center;
+        margin-left: 50px;
+        width: 300px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .content-right img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-right video {
+        width: 100%;
+    }
+
+    /*Optimising tab buttons for mobile view*/
+    .btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    button {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+
+    /*Optimising space between content within tabs to prevent overlapping*/
+    #content1pt2 {
+        padding: 400px 0;
+    }
+
+    #content1pt2 {
+        padding: 800px 0;
+    }
+
+    #content2pt2 {
+        padding: 200px 0;
+    }
+
+    #content2pt3 {
+        padding: 450px 0;
+    }
+
+    #content3pt2 {
+        padding: 150px 0;
+    }
+
+    #content3pt3 {
+        padding: 400px 0;
+    }
+
+    #content3pt4 {
+        padding: 600px 0;
+    }
+
+    #content3pt5 {
+        padding: 800px 0;
+    }
+
+    #content4pt2 {
+        padding: 200px 0;
+    }
+
+    #content5 .content-left {
+        text-align: center;
+    }
+
+    /*Styling of game board for mobile view*/
+    #board {
+        height: 300px;
+        width: 300px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #board div {
+        width: 30%;
+        height: auto;
+        margin: 5px;
+    }
+
+    #content5 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1em;
+        margin-left: 15%;
+        transform: translateX(1000px);
+    }
+
+    #content5 .content-center {
+        margin-left: 50px;
+    }
+
+    /*Makes the normal navigation bar not show up in mobile view*/
+    .btn-box {
+        display: none;
+    }
+
+    /*Changes the default colour of btn1 to white for visibility*/
+    #btn1 {
+        color: #fff;
+    }
+
+    /*Allows hamburger dropdown menu to be displayed in mobile view*/
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /*Styling of button inside dropdown menu*/
+    .off-screen-menu button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        margin-right: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        /*The amount of time it takes for the hover animation to happen*/
+        transition: 0.3s;
+    }
+
+    /*Removes bullets from hamburger menu list*/
+    .off-screen-menu ul {
+        list-style-type: none;
+    }
+}

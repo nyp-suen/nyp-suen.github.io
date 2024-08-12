@@ -1,0 +1,305 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*hamburger menu*/
+.hamburger {
+  display: none;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 7px 7px;
+  transition: 0.4s;
+}
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.hamburgerItems {
+  position: fixed;
+  top: 50px;
+  right: 100%;
+  width: 500px;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: blue;
+  padding-top: 120px;
+  transition: 0.4s;
+}
+.hamburgerItems a {
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  background-color: navy;
+  color: rgb(128, 128, 243);
+  text-decoration: none;
+  transition: 0.25s;
+}
+.hamburgerItems a:hover {
+  background-color: black;
+  color: blue;
+  font-weight: bold;
+}
+/*main menu*/
+.mainMenu {
+  color: white;
+  margin: 20px;
+
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  transition: 1s;
+}
+.mainMenu a:hover {
+  font-weight: bold;
+  color: rgb(128, 128, 243);
+}
+/*index*/
+body {
+  background: linear-gradient(0deg, rgb(128, 128, 243) 0%, navy 100%);
+}
+#indexContainer.show {
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#indexContainer {
+  display: none;
+}
+.indexImages {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.indexImage {
+  width: 200px;
+  margin: 20px;
+}
+.indexText {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+h1.indexText {
+  color: navy;
+}
+p.indexText {
+  margin: 20px;
+  padding: 20px;
+  background-color: navy;
+  color: rgb(128, 128, 243);
+  text-align: center;
+}
+.indexTweet {
+  margin: 20px;
+  background-color: navy;
+  color: rgb(128, 128, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.twitter-tweet {
+  margin: 20px;
+}
+.indexMenuItems {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+a.indexMenuItems img {
+  width: 400px;
+}
+.qrCode {
+  display: flex;
+  justify-content: center;
+}
+
+/*leagues*/
+#leagueContainer.show {
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#leagueContainer {
+  display: none;
+}
+.leagueText {
+  text-align: center;
+}
+h1.leagueText {
+  padding: 20px;
+  color: navy;
+}
+p.leagueText {
+  margin: 20px;
+  padding: 20px;
+  background-color: navy;
+  color: rgb(128, 128, 243);
+  text-align: center;
+  font-size: large;
+  width: 700px;
+}
+.leagueCont img {
+  width: 400px;
+  margin: 20px;
+}
+.leagueCont.is-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.leagueCont {
+  display: none;
+}
+.leagueButtons {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+button {
+  width: 100px;
+  height: 55px;
+  background-color: aqua;
+}
+/*game*/
+#gameContainer.show {
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#gameContainer {
+  display: none;
+}
+.gameImages {
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gameImages img {
+  width: 250px;
+  margin: 10px;
+}
+.gameText {
+  text-align: center;
+  color: navy;
+  font-size: x-large;
+  background-color: rgb(128, 128, 243);
+  padding: 20px;
+  margin: 10px;
+}
+.gameCont{
+  display:flex;
+  justify-content: center;
+}
+#game {
+  background: green;
+  margin:20px;
+}
+@media (max-width: 800px) {
+  .hamburger {
+    margin: 10px;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .hamburgerItems.is-active {
+    right: -20px;
+  }
+  .mainMenu {
+    display: none;
+  }
+  /**/
+  .indexImage {
+    width: 100px;
+    margin: 20px;
+  }
+  .indexText {
+    font-size: smaller;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  p.indexText {
+    font-size: small;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  /**/
+  .leagueCont img {
+    width: 300px;
+  }
+  p.leagueText {
+    width: 360px;
+  }
+  /**/
+  .gameImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .gameImages img {
+    width: 200px;
+  }
+  h1.gametext{
+    width: 400px;
+  }
+}

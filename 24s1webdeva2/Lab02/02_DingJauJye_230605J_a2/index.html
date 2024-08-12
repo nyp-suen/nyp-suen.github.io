@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Safety Foundation and Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Logo that navigates to the home page -->
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Electricity Safety Foundation Logo" class="logo" onclick="showSection('home')">
+            </div>
+            <!-- Navigation toggle button for mobile view -->
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul>
+                    <!-- Link to Trivia Quiz tab with a tooltip description -->
+                    <li>
+                        <a href="#" id="show-quiz" onclick="showQuiz()">Trivia Quiz</a>
+                        <div class="tooltip">
+                            A quiz to test your knowledge about electrical safety.
+                        </div>
+                    </li>
+                    <!-- Link to Wire Game tab with a tooltip description -->
+                    <li>
+                        <a href="#" id="show-wire-game" onclick="showWireGame()">Wire Game</a>
+                        <div class="tooltip">
+                            Connect the wires correctly to fix the wiring.
+                        </div>
+                    </li>
+                    <!-- Link to QR Code tab with a tooltip showing the QR code -->
+                    <li>
+                        <a href="#" id="show-qr-code" onclick="showQRCode()">QR Code</a>
+                        <div class="tooltip">
+                            <img src="images/QRcode.png" alt="QR Code" class="qr-code">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home page section with banner and content -->
+    <section id="home" class="banner">
+        <div class="slideshow-container">
+            <!-- Slideshow images and text -->
+            <div class="mySlides fade">
+                <img src="images/Safety.jpg" style="width:100%">
+                <div class="text">Identifying ways to safely promote consumers for new and emerging electrical technologies</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/BBC.jpg" style="width:100%">
+                <div class="text">Electrical Safety Tips and Resources</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- About Us section -->
+            <section id="about" class="content-section">
+                <h2>About Us</h2>
+                <p>The Electricity Safety Foundation is dedicated to promoting electrical safety in homes, schools, and workplaces.</p>
+                <p>We provide resources, education, and advocacy to prevent electrical injuries and deaths.</p>
+            </section>
+
+            <!-- Common Hazards section -->
+            <section id="hazards" class="content-section">
+                <h2>Common Hazards</h2>
+                <div class="content">
+                    <img src="images/hazard.png" alt="Electrical Hazard" class="content-img">
+                    <p>Understanding common electrical hazards is the first step towards preventing accidents. Some common hazards include:</p>
+                    <ul id="hazards-list" class="collapsed">
+                        <li>Exposed wires: Exposed wires pose a serious risk of electric shock and should be immediately addressed.</li>
+                        <li>Overloaded circuits: Overloading circuits can cause overheating and lead to electrical fires.</li>
+                        <li>Wet conditions near electrical sources: Water is a conductor of electricity and can cause electric shock if it comes into contact with electrical sources.</li>
+                        <li>Damaged insulation: Insulation protects wires from exposure; damaged insulation can lead to short circuits and fires.</li>
+                        <li>Uncovered electrical outlets: Especially dangerous for children, uncovered outlets can lead to electric shock.</li>
+                        <li>Improper use of extension cords: Using extension cords as a permanent solution can lead to overheating and fires.</li>
+                        <li>Faulty appliances: Appliances that are not functioning properly can pose electrical hazards and should be repaired or replaced.</li>
+                        <li>Electrical arcing: Arcing can occur when electrical connections are loose or corroded, leading to sparks and potential fires.</li>
+                    </ul>
+                    <!-- Button to toggle more/less content -->
+                    <button id="hazards-toggle" onclick="toggleContent('hazards-list', 'hazards-toggle')">+ (read more)</button>
+                </div>
+            </section>
+
+            <!-- Preventive Measures section -->
+            <section id="prevention" class="content-section">
+                <h2>Preventive Measures</h2>
+                <div class="content">
+                    <img src="images/prevention.png" alt="Electrical Prevention" class="content-img">
+                    <p>Here are some measures you can take to ensure electrical safety:</p>
+                    <ul id="prevention-list" class="collapsed">
+                        <li>Always use insulated tools: Insulated tools prevent electric shock when working with electrical components.</li>
+                        <li>Regularly check and replace damaged wires: Damaged wires should be promptly repaired or replaced to prevent hazards.</li>
+                        <li>Keep electrical devices away from water: To prevent electric shock, ensure that electrical devices are kept dry.</li>
+                        <li>Use Ground Fault Circuit Interrupters (GFCIs): GFCIs can prevent electric shock by shutting off power when a fault is detected.</li>
+                        <li>Install Arc Fault Circuit Interrupters (AFCIs): AFCIs help prevent fires by detecting and interrupting arc faults.</li>
+                        <li>Don't overload outlets: Avoid plugging too many devices into a single outlet to prevent overheating.</li>
+                        <li>Use appropriate wattage: Ensure that light bulbs and appliances match the recommended wattage for sockets and outlets.</li>
+                        <li>Unplug unused devices: Unplugging devices when not in use can prevent electrical fires and save energy.</li>
+                        <li>Schedule regular electrical inspections: Have a licensed electrician inspect your home's electrical system periodically.</li>
+                        <li>Educate children about electrical safety: Teach children not to touch electrical outlets, cords, or appliances.</li>
+                        <li>Use childproof outlet covers: Install covers to prevent children from inserting objects into electrical outlets.</li>
+                        <li>Avoid DIY electrical work: Hire a licensed electrician for repairs and installations to ensure safety and compliance with codes.</li>
+                    </ul>
+                    <!-- Button to toggle more/less content -->
+                    <button id="prevention-toggle" onclick="toggleContent('prevention-list', 'prevention-toggle')">+ (read more)</button>
+                </div>
+            </section>
+
+            <!-- Credits section -->
+            <section id="credits" class="content-section">
+                <h2>Credits</h2>
+                <p>Special thanks to the following sources for their valuable information and resources:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - for tutorials on HTML, CSS, and JavaScript.</li>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> - for comprehensive documentation on web technologies.</li>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - for coding solutions and community support.</li>
+                    <li><a href="https://www.esfi.org" target="_blank">Electrical Safety Foundation International (ESFI)</a> - for electrical safety resources.</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <!-- Trivia Quiz section -->
+    <section id="game-container" class="hidden">
+        <div class="container">
+            <h2>Trivia Quiz</h2>
+            <div id="game-container-inner">
+                <h1 id="level-info">Level 1</h1>
+                <p id="question">What should you do if an electrical appliance catches fire?</p>
+                <div id="answers"></div>
+                <button id="next-button" onclick="nextLevel()" disabled>Next</button>
+            </div>
+            <div id="results" class="hidden">
+                <h1>Quiz Results</h1>
+                <p id="score"></p>
+                <div id="explanations"></div>
+                <button onclick="retry()">Retry</button>
+                <a href="https://www.esfi.org" target="_blank"><button>Go to ESFI</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wire Game section -->
+    <section id="wire-game-container" class="hidden">
+        <div class="container">
+            <h2>Wire Game</h2>
+            <div id="wire-game-inner">
+                <div id="panel-left" class="panel">
+                    <div class="wire" data-color="red"></div>
+                    <div class="wire" data-color="blue"></div>
+                    <div class="wire" data-color="yellow"></div>
+                    <div class="wire" data-color="green"></div>
+                </div>
+                <div id="panel-right" class="panel">
+                    <div class="socket" data-color="red"></div>
+                    <div class="socket" data-color="blue"></div>
+                    <div class="socket" data-color="yellow"></div>
+                    <div class="socket" data-color="green"></div>
+                </div>
+                <canvas id="wire-canvas"></canvas>
+            </div>
+            <div id="congratulations" class="hidden">
+                <h1>Congratulations!</h1>
+                <p>Do remember to keep your wires neat and tidy.</p>
+                <button onclick="resetWireGame()">Retry</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code section -->
+    <section id="qr-code-container" class="hidden">
+        <div class="qr-code-display">
+            <img src="images/QRcode.png" alt="QR Code" class="qr-code-center">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Electricity Safety Foundation. All rights reserved.</p>
+            <p>
+                Follow us on
+                <a href="#">Facebook</a>,
+                <a href="#">Twitter</a>, and
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

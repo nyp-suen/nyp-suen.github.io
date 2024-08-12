@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football 101</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+    <!-- get icons from https://favicon.io/ -->
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <!--for android-->
+    <link rel="manifest" href="Icons/site.webmanifest" />
+
+</head>
+<body>
+
+    <!-- Home -->
+    <header class="home-header">
+        <a href="#home" class="logo">
+            Football
+            <span>Info</span>
+        </a>
+
+        <div class="hamburger" id="menu-icon">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="NavActive">Home</a>
+            <a href="#info">Info</a>
+            <a href="#transfers">Transfers</a>
+            <a href="#trade">Trading</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home">
+
+            <div class="home-img">
+                <img src="Images/logo.jpg" alt="Football">
+            </div>
+
+            <div class="home-content">
+                <h1>Welcome to <span>Football</span></h1>
+                <h3 class="home-text-animation">
+                    Welcome to <span></span>
+                </h3>
+
+                <p>
+                    Football, or soccer as it's known in some parts of the world, transcends the roar of the crowd and the thrill of victory. It's a sport steeped in history, tradition, and fascinating trivia. Here's a delve into the lesser-known aspects of the beautiful game, expanding your football knowledge beyond the pitch:
+                </p>
+
+                <div class="QR-code">
+                    <img src="Images/QR.png" alt="QR code">
+                </div>
+                
+                <a href="https://www.bbc.co.uk/sport/football" target="_blank" class="home-btn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section id="info">
+        <div class="info">
+            <!-- Section for top nations with the most World Cups -->
+            <div class="clubs-container">
+                <header>
+                    <h1 class="clubs-section-heading">Football Info</h1>
+                </header>
+            </div>
+
+            <!-- Main container for informational content -->
+            <div class="info-container">
+                <!-- First informational card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="Images/football.png" alt="Football Icon">
+                    </div>
+                    <div class="info-content">
+                        <h3>Origins and Evolution:</h3>
+                        <p>
+                            Believe it or not, football has roots stretching back centuries. Similar games involving kicking a ball were documented in ancient China (Cuju) and Greece (Epikyros). The codified rules of football we know today emerged in 19th century England. The Football Association, formed in 1863, is the oldest national football association in the world.
+                        </p>
+                    </div>
+                    <a class="info-more"></a>
+                </div>
+
+                <!-- Second informational card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="Images/soccer-player.png" alt="Soccer Player Icon">
+                    </div>
+                    <div class="info-content">
+                        <h3>Scoring Beyond the Goal:</h3>
+                        <p>
+                            Scoring an own goal is a player's worst nightmare, but it happens! The first own goal in a World Cup final occurred in 1938, with Ernie Ernie Blenkinsop of England accidentally heading the ball into his own net. While individual goal tallies are impressive, the all-time record for most goals scored in professional football belongs to Brazilian legend Romario, with an astonishing 1,000+ goals to his name (though the exact number is debated).
+                        </p>
+                    </div>
+                    <a class="info-more"></a>
+                </div>
+
+
+
+                <!-- Third informational card -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="Images/football-field.png" alt="Football Field Icon">
+                    </div>
+                    <div class="info-content">
+                        <h3>Global Phenomenon:</h3>
+                        <p>
+                            The FIFA World Cup final consistently ranks as the most watched sporting event on the planet, drawing in billions of viewers worldwide. Football isn't just a sport; it's a cultural touchstone. It fosters national pride, unites communities, and inspires social movements across the globe.
+                        </p>
+                    </div>
+                    <a class="info-more"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs -->
+    <section id="clubs">
+        <div class="clubs">
+            <!-- Section for top nations with the most World Cups -->
+            <div class="clubs-container">
+                <header>
+                    <h1 class="clubs-section-heading">Top Nations With The Most World Cups</h1>
+                </header>
+            </div>
+
+            <!-- Tabs for displaying different nations -->
+            <div class="clubs-container">
+                <div class="clubs-tab-container">
+                    <!-- Filter buttons for each nation -->
+                    <div class="clubs-tab-filter-container">
+                        <ul>
+                            <li class="clubs-filter-btn active" data-tab="brazil">
+                                Brazil
+                            </li>
+                            <li class="clubs-filter-btn" data-tab="italy">
+                                Italy
+                            </li>
+                            <li class="clubs-filter-btn" data-tab="germany">
+                                Germany
+                            </li>
+                            <li class="clubs-filter-btn" data-tab="argentina">
+                                Argentina
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Content for each nation's tab -->
+                    <div class="clubs-tab-filter-item-container">
+                        <!-- Brazil Tab -->
+                        <div class="clubs-tab-item brazil select_tab">
+                            <div class="clubs-tab-content-left">
+                                <img src="Images/R9.png"
+                                     alt="Ronaldo Nazario"
+                                     class="clubs-tab-img">
+                            </div>
+                            <div class="clubs-tab-content-right">
+                                <h1 class="clubs-tab-heading">Brazil</h1>
+                                <p class="clubs-paragraph">
+                                    The Selecao ("The Selection" in Portuguese) are the undisputed kings of World Cup football.  Feared for their dazzling attacking flair, Samba magic, and a constant flow of incredible talent like Pele, Garrincha, and Ronaldo, they've danced their way to a record five World Cup titles.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Brazil_national_football_team" target="_blank" class="clubs-btn-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Italy Tab -->
+                        <div class="clubs-tab-item italy">
+                            <div class="clubs-tab-content-left">
+                                <h1 class="clubs-tab-heading">Italy</h1>
+                                <p class="clubs-paragraph">
+                                    The Azzurri ("The Blues") are famous for their defensive solidity and tactical cunning. Nicknamed "Catenaccio" (meaning "door-bolt" in Italian), their defensive style has been highly effective, propelling them to four World Cup victories.  They've also produced iconic attackers like Paolo Rossi and Roberto Baggio.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Italy_national_football_team" target="_blank" class="clubs-btn-primary">Read More</a>
+                            </div>
+                            <div class="clubs-tab-content-right">
+                                <img src="Images/Cannavaro.png"
+                                     alt="Fabio Cannavaro"
+                                     class="clubs-tab-img">
+                            </div>
+                        </div>
+
+                        <!-- Germany Tab -->
+                        <div class="clubs-tab-item germany">
+                            <div class="clubs-tab-content-left">
+                                <img src="Images/Neuer.png"
+                                     alt="Manuel Neuer"
+                                     class="clubs-tab-img">
+                            </div>
+                            <div class="tab-content-right">
+                                <h1 class="clubs-tab-heading">Germany</h1>
+                                <p class="clubs-paragraph">
+                                    The Mannschaft ("The Team" in German) is a powerhouse known for their efficiency, tactical discipline, and strong mentality.  They've produced some of the game's greatest players like Franz Beckenbauer and Gerd Muller, and have lifted the World Cup four times.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Germany_national_football_team" target="_blank" class="clubs-btn-primary">Read More</a>
+                            </div>
+                        </div>
+
+                        <!-- Argentina Tab -->
+                        <div class="clubs-tab-item argentina">
+                            <div class="clubs-tab-content-left">
+                                <h1 class="clubs-tab-heading">Argentina</h1>
+                                <p class="clubs-paragraph">
+                                    La Albiceleste ("The White and Sky Blue") are a passionate and unpredictable team, known for their individual brilliance and attacking prowess.  Boasting legends like Diego Maradona and Lionel Messi, they've brought home the World Cup trophy three times, often with a touch of drama and fighting spirit.
+                                </p>
+                                <a href="https://en.wikipedia.org/wiki/Argentina_national_football_team" target="_blank" class="clubs-btn-primary">Read More</a>
+                            </div>
+                            <div class="clubs-tab-content-right">
+                                <img src="Images/Messi.png"
+                                     alt="Lionel Messi"
+                                     class="clubs-tab-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transfer minigame -->
+    <section id="transfers">
+        <div class="transfers">
+            <div class="transfer-container">
+                <div class="top__area content__center">
+
+                    <!-- Rules section -->
+                    <div class="rules content__center">
+                        <h1>Build your ideal football national team</h1>
+                        <h4>Rules</h4>
+                        <p>Select eleven players from the list. You cannot spend more than 90 million euros in salaries. You can deselect a player you previously selected if you change your mind.</p>
+                    </div>
+
+                    <!-- Section for displaying messages -->
+                    <div class="messages">
+                        <div class="message">
+                            <p>Players Selected</p>
+                            <span id="selected">0</span>
+                        </div>
+                        <div class="message">
+                            <p>Total Cost</p>
+                            <span id="cost">0</span>
+                        </div>
+                        <div class="message">
+                            <p>Players Left</p>
+                            <span id="left">0</span>
+                        </div>
+                        <div class="message">
+                            <p>Money Left</p>
+                            <span id="money">0</span>
+                        </div>
+                    </div>
+
+                    <!-- Error messages for various conditions -->
+                    <div id="money__error">
+                        <p>You've exceeded the money you can spend. You can't add more players unless you go under 90 millions.</p>
+                    </div>
+                    <div id="players__error">
+                        <p>You've exceeded the number of players you can select. Please select only eleven players.</p>
+                    </div>
+                    <div id="selection__error">
+                        <p>You must select exactly 1 Goalkeeper, 4 Defenders, 3 Midfielders, and 3 Forwards.</p>
+                    </div>
+                </div>
+
+                <!-- Container for displaying players -->
+                <div class="players__container">
+                    <!-- Individual player card with background image and player info -->
+                    <div class="player" style="background-image: url(Images/jan-oblak.jpeg);">
+                        <div class="player__info">
+                            <h5>Jan Oblak</h5>
+                            <small>Goalkeeper</small>
+                            <!-- Player's salary -->
+                            <span class="salary" data-salary="6500020">6,500,020 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/manuel-neuer.jpeg); ">
+                        <div class="player__info">
+                            <h5>Manuel Neuer</h5>
+                            <small>Goalkeeper</small>
+                            <span class="salary" data-salary="5790000">5,790,000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/alisson-becker.jpeg);">
+                        <div class="player__info">
+                            <h5>Alisson Becker</h5>
+                            <small>Goalkeeper</small>
+                            <span class="salary" data-salary="6140900">6,140,900 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/sergio-ramos.jpeg);">
+                        <div class="player__info">
+                            <h5>Sergio Ramos</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="9450450">9,450,450 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/virgil-vandijk.jpeg);">
+                        <div class="player__info">
+                            <h5>Virgil van Dijk</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="8050950">8,050,950 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/gerard-pique.jpeg); ">
+                        <div class="player__info">
+                            <h5>Gerad Pique</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="6000999">6,000,999 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/alphonso-davies.jpeg);">
+                        <div class="player__info">
+                            <h5>Alphonso Davies</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="3200033">3,200,033 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/kieran-trippier.jpeg);">
+                        <div class="player__info">
+                            <h5>Kieran Trippier</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="2700890">2,700,890 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/marquinhos.jpeg);">
+                        <div class="player__info">
+                            <h5>Marquinhos</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="4560008">4,560,008 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/matthijs-delight.jpeg);">
+                        <div class="player__info">
+                            <h5>Mattijs de Ligt</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="5008950">5,008,950 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/joao-cancelo.jpeg);">
+                        <div class="player__info">
+                            <h5>Joao Cancelo</h5>
+                            <small>Defender</small>
+                            <span class="salary" data-salary="5808050">5,808,050 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/paul-pogba.jpeg);">
+                        <div class="player__info">
+                            <h5>Paul Pogba</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="8999999">8,999,999 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/fabinho.jpeg);">
+                        <div class="player__info">
+                            <h5>Fabinho</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="4000833">4,000,833 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/toni-kroos.jpeg);">
+                        <div class="player__info">
+                            <h5>Toni Kroos</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="7222200">7,222,200 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/pedri.jpeg);">
+                        <div class="player__info">
+                            <h5>Pedri</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="2347002">2,347,002 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/martin-odegaard.jpeg);">
+                        <div class="player__info">
+                            <h5>Martin Odegaard</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="4300001">4,300,001 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/joshua-kimmich.jpeg);">
+                        <div class="player__info">
+                            <h5>Joshua Kimmich</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="7909000">7,909,000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/christian-eriksen.jpeg);">
+                        <div class="player__info">
+                            <h5>Christian Eriksen</h5>
+                            <small>Midfielder</small>
+                            <span class="salary" data-salary="5509500">5,509,500 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/kylian-mbappe.jpeg);">
+                        <div class="player__info">
+                            <h5>Kylian Mbappe</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="10000000">10,000,000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/mo-salah.jpeg);">
+                        <div class="player__info">
+                            <h5>Mohamed Salah</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="8500000">8,500,000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/leo-messi.jpeg);">
+                        <div class="player__info">
+                            <h5>Lionel Messi</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="9999999">9,999,999 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/cristiano-ronaldo.jpeg);">
+                        <div class="player__info">
+                            <h5>Cristiano Ronaldo</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="9999999">9,999,999 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/harry-kane.jpeg);">
+                        <div class="player__info">
+                            <h5>Harry Kane</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="7592500">7,592,500 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/sadio-mane.jpg);">
+                        <div class="player__info">
+                            <h5>Sadio Mane</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="7120300">7,120,300 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/raheem-sterling.jpeg);">
+                        <div class="player__info">
+                            <h5>Raheem Sterling</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="6502000">6,502,000 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/karim-benzema.jpg);">
+                        <div class="player__info">
+                            <h5>Karim Benzema</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="8303050">8,303,050 €</span>
+                        </div>
+                    </div>
+
+                    <div class="player" style="background-image: url(Images/erling-haaland.png);">
+                        <div class="player__info">
+                            <h5>Erling Haaland</h5>
+                            <small>Forward</small>
+                            <span class="salary" data-salary="9809000">9,809,000 €</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading minigame -->
+    <section id="trade">
+        <div class="trade">
+            <div class="trade-container">
+                <div class="trade-rules">
+                    <p>Select the players for each team you want to trade. In order to perform the trade, the difference between the total salaries of each team can't be more than 10 million.</p>
+                </div>
+                <div class="trade__info">
+                    <div class="total">
+                        <h3>Total Selected</h3>
+                        <span id="total__lakers">00</span>
+                    </div>
+                    <div class="total">
+                        <h3>Salaries Difference</h3>
+                        <span id="difference">00</span>
+                    </div>
+                    <div class="total">
+                        <h3>Total Selected</h3>
+                        <span id="total__nets">00</span>
+                    </div>
+                </div>
+                <div class="teams">
+                    <!-- Container for your team's players -->
+                    <div id="left__cont" class="team__cont">
+                        <!-- Your team's players -->
+                        <div class="trade-player" draggable="true" id="player1" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Alisson</h3>
+                                <span data-value="28000000" class="salary">$ 28,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player2" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Van Dijk</h3>
+                                <span data-value="30000000" class="salary">$ 30,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player3" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Ibrahima Konate</h3>
+                                <span data-value="45000000" class="salary">$ 45,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player4" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Andrew Robertson</h3>
+                                <span data-value="30000000" class="salary">$ 30,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player5" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Trent Alexander-Arnold</h3>
+                                <span data-value="70000000" class="salary">$ 70,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player6" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Wataru Endo</h3>
+                                <span data-value="13000000" class="salary">$ 13,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player13" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Dominik Szoboszlai</h3>
+                                <span data-value="75000000" class="salary">$ 75,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player14" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Alexis Mac Allister</h3>
+                                <span data-value="75000000" class="salary">$ 75,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player15" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Luis Diaz</h3>
+                                <span data-value="75000000" class="salary">$ 75,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player16" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Darwin Nunez</h3>
+                                <span data-value="70000000" class="salary">$ 70,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player17" data-team="your">
+                            <div class="trade-player__info">
+                                <h3>Mohamed Salah</h3>
+                                <span data-value="55000000" class="salary">$ 55,000,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trade__area">
+                        <!-- Trade area and button -->
+                        <div id="left__trade" class="trade__box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <h4>Your Team's Player</h4>
+                        </div>
+                        <div class="trade__btn__wrapper">
+                            <button class="trade__btn" onclick="performTrade()">Trade</button>
+                        </div>
+                        <div id="right__trade" class="trade__box" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <h4>Opponent's Player</h4>
+                        </div>
+                    </div>
+                    <!-- Container for opponent's team players -->
+                    <div id="right__cont" class="team__cont">
+
+                        <!-- Opponent's team players -->
+
+                        <div class="trade-player" draggable="true" id="player8" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Thibaut Courtois</h3>
+                                <!-- Player's salary -->
+                                <span data-value="28000000" class="salary">$ 28,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player9" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Eder Militao</h3>
+                                <span data-value="60000000" class="salary">$ 60,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player10" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Antonio Rudiger</h3>
+                                <span data-value="25000000" class="salary">$ 25,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player11" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Ferland Mendy</h3>
+                                <span data-value="22000000" class="salary">$ 22,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player12" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Daniel Carvajal</h3>
+                                <span data-value="12000000" class="salary">$ 12,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player18" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Aurelien Tchouameni</h3>
+                                <span data-value="100000000" class="salary">$ 100,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player19" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Luka Modric</h3>
+                                <span data-value="6000000" class="salary">$ 6,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player20" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Jude Bellingham</h3>
+                                <span data-value="180000000" class="salary">$ 180,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player7" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Vinicius Junior</h3>
+                                <span data-value="180000000" class="salary">$ 180,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player21" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Kylian Mbappe</h3>
+                                <span data-value="180000000" class="salary">$ 180,000,000</span>
+                            </div>
+                        </div>
+
+                        <div class="trade-player" draggable="true" id="player22" data-team="opponent">
+                            <div class="trade-player__info">
+                                <h3>Rodrygo</h3>
+                                <span data-value="110000000" class="salary">$ 110,000,000</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Message boxes for success and error -->
+                <!-- Message box displayed when the trade is successful -->
+                <div class="trade-message" id="success">
+                    <div class="message__content">
+                        <p>Congratulations! The trade was successfully completed!</p>
+                        <button id="success__btn">Make another trade</button>
+                    </div>
+                </div>
+
+                <!-- Message box displayed when the trade is unsuccessful -->
+                <div class="trade-message" id="error">
+                    <div class="message__content">
+                        <p>This trade cannot be completed. Please make sure the difference between the salaries is less than 10 million.</p>
+                        <button id="error__btn">Fix the trade</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

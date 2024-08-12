@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Gameboy';
+    src: url(./assets/fonts/GameBoy.ttf);
+}
+
+
+body{
+
+    max-height: 100vh;
+    overflow: hidden;
+
+    --gbGreen1:#9bbc0f;
+    --gbGreen2:#8bac0f;
+    --gbGreen3:#306230;
+    --gbGreen4:#0f380f;
+    --gbGreen5:#0f380f;
+
+    font-family: 'Gameboy';
+    --barInterpolate: ease-in-out;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+    background-color: var(--gbGreen1);
+    
+}
+
+div.CenterAlign{
+    text-align: center;
+}
+
+div.Absolute{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+div.Fixed{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: var(--gbGreen1);
+}
+
+div.Content{
+    display: block;
+    position: absolute;
+
+    overflow-y: scroll;
+
+    left: 0vw;
+    right: 0vw;
+    top: 25vh;
+    bottom: 0vh;
+}
+
+a{
+    color: var(--gbGreen5);
+}
+
+a:visited{
+    color: var(--gbGreen4);
+}
+
+div.CheeseGallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.CheeseGalleryCheese{
+    width: 20vh;
+    height: 30vh;
+    display: block;
+    background-color: var(--gbGreen3);
+}
+
+img.FullWidth{
+    width: 100%;
+    height: auto;
+}
+
+#PopupName{
+    font-size: 5vh;
+}
+
+/*Mobile*/
+@media (max-width: 800px) {
+
+    #MenuButton{    
+        display: block; 
+        background-color: var(--gbGreen3);
+        text-align: center;
+        width: 10vw;
+        height: 2.5vh;
+    }
+
+    div.Navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+        background-color: var(--gbGreen2);
+        width: 50%;
+
+        /*visibility: visible;*/
+    }
+
+    div.Popup{
+        position: fixed;
+        left: 0vw;
+        right: 0vw;
+        top: 0vh;
+        bottom: 0vh;
+    
+        background-color: var(--gbGreen5);
+        opacity: 0.99;
+    
+        text-align: center;
+    
+    }
+
+    #PopupImage{
+        width: 100%;
+        height: auto;
+    }
+
+    div.ImageAndDescriptionRight{
+        display: inline-block;
+        background-color: var(--gbGreen3);
+        width: 100%;
+    }
+    
+    div.ImageAndDescriptionLeft{
+        display: inline-block;
+        background-color: var(--gbGreen3);
+        width: 100%;
+    }
+
+    .FloatLeftMobile{
+        float: left;
+    }
+
+    img.ImageAndDescription{
+        float: left;
+        width: 50vw;
+    }
+
+    .MobileHide{
+        visibility: hidden;
+    }
+
+}
+
+
+/*Desktop*/
+@media (min-width: 800px){
+
+    #MenuButton{
+        visibility: hidden;   
+    }
+
+    div.Navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        background-color: var(--gbGreen2);
+
+        /*visibility: visible;*/
+    }
+
+    div.Popup{
+        position: fixed;
+        left: 0vw;
+        right: 0vw;
+        top: 0vh;
+        bottom: 0vh;
+    
+        background-color: var(--gbGreen5);
+        opacity: 0.99;
+    
+    }
+
+    #PopupImage{
+        height: 50%;
+        width: auto;
+        float: left;
+    }
+
+    div.ImageAndDescriptionRight{
+        float: right;
+        background-color: var(--gbGreen3);
+        width: 20vh;
+    }
+    
+    div.ImageAndDescriptionLeft{
+        float: left;
+        background-color: var(--gbGreen3);
+        width: 20vh;
+    }
+
+    img.ImageAndDescription{
+        width: 100%;
+        height: auto;
+    }
+
+    .MobileHide{
+        visibility: visible;
+    }
+
+}

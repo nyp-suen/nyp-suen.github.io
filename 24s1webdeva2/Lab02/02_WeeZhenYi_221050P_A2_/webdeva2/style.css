@@ -1,0 +1,1043 @@
+/*Imported Custom Font*/
+@font-face {
+    font-family: "BebasNeue";
+    src: url(Font/bebasneue-regular.ttf);
+}
+
+/*Universal Changes For All Tags*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "BebasNeue";
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+input, option, textarea{
+    color: black;
+}
+fieldset{
+    border: 0.2em solid white;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 1em;
+}
+
+/*Specific Universal Changss For All Webpage*/
+body{
+    background-color: black;
+}
+a, .prev, .next, abbr, span{
+    cursor: pointer;
+}
+abbr{
+    text-decoration: underline;
+}
+hr{
+    width: 50%;
+    border-bottom: 5px solid white;
+    position: relative;
+    left: 25%;
+    margin-bottom: 2.5em;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2.5em;
+}
+
+.page, .slide{
+    display: none;
+}
+
+/*CSS For The Arrow Button In The Slideshow In The Home Page*/
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    border-radius: 1em;
+    transition: all 1s ease-in-out;
+    border: 0.1em solid rgba(255, 255, 255, 1);
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0.1em solid rgba(255, 255, 255, 0);
+}
+
+/*CSS For The Home Page*/
+#home header:first-of-type .slide:first-of-type{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(Image/home_slide1.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+}
+#home header:first-of-type .slide:nth-of-type(2){
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(Image/home_slide2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+}
+#home header:first-of-type .slide:last-of-type{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(Image/home_slide3.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+}
+#history header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(Image/history_title_image.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-size: cover;
+}
+#info header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25)), url(Image/info_title_image.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+}
+#game-title{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1)), url(Image/mini-game-image.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position-x: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CSS For All The Introduction Tiles & Description In Each Page Starting Area*/
+.home-message{
+    text-align: center;
+}
+.home-message{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Sets The CSS For The Dots In The Slideshow In The Home Page*/
+#dots{
+    position: absolute;
+    bottom: 5em;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.dot{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+.active-dot, .dot:hover{
+    background-color: rgb(46, 46, 46);
+}
+.fade-efx{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+/*Causes The whole Thing To Slowly Fade Into Scene*/
+@keyframes fade {
+    0% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+
+/*CSS Changes For The Top Navigation Bar In Every Page*/
+nav{
+    display: flex;
+}
+nav > h1{
+    animation-name: color-switch;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*CSS For The Card In The Info Section*/  
+#components{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2.5em;
+}
+
+.flip-card {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    text-align: center;
+
+    transition: all 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 0.5em 1em 0 rgba(255, 255, 255, 1.0);
+    border-radius: 25%;
+}
+
+.flip-card.is-flipped{
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 25%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front > div, .flip-card-back > div {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flip-card-front > div{
+    top: 50%;
+}
+
+.flip-card-back > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.flip-card-back {
+    background-color: darkgray;
+    transform: rotateY(180deg);
+    font-size: 1.5em;
+}
+.flip-card-front{
+    background-color: grey;
+    font-size: 2em;
+}
+
+#illustration > h2{ 
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+#illustration-process-bar-outer{
+    background-color: white;
+
+    height: 100%;
+    padding: 1vh;
+}
+#illustration-process-bar-inner{
+    background-color: green;
+
+    width: 0%; 
+    height: 4vh;
+}
+#illustration-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+#illustration-content > div{
+    display: flex;
+}
+#illustration-content > div:first-of-type{
+    flex-direction: row;
+    gap: 2.5em; 
+    justify-content: space-around;
+}
+#illustration-content > div:last-of-type{
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+#illustration-content > div:first-of-type > div{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+#illustration-content > div:first-of-type > div > h3{
+    font-size: 1.5em;
+}
+#illustration a{
+    border: 1px solid white;
+    font-size: 1.25em;
+    transition: all 0.5s ease-in-out;
+}
+#illustration a:hover{
+    background-color: white;
+    color: black;
+}
+
+#shooting-game-inner{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 30em;
+    height: 30em;
+
+    background-color: grey;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.ball {
+    background: grey;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    position: relative;
+}
+#shoot-game-outer{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+}
+#shooting-game-outer > h2{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+#shooting-game-outer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+#mini-game{
+    margin-bottom: 1em;
+}
+#mini-game p{
+    font-size: 1.5em;
+}
+#mini-game a{
+    font-size: 1.5em;
+    border: 2.5px solid white;
+    padding: 0.25em;
+    border-radius: 50%;
+}
+
+#building-game{
+    margin-top: 2.5em;
+}
+#left{
+    display: flex;
+    justify-content: space-around;
+}
+#right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+fieldset > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+fieldset > div > div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Creates An Infinite Animation Where The Colour Of The Title Which Colour & Text Shadow Between Black & White*/
+@keyframes color-switch{
+    0% {color: white; text-shadow: 0.1em 0.1em black}
+    100% {color: black; text-shadow: 0.1em 0.1em white}
+}
+.nav-links > ul{
+    display: flex;
+    text-decoration-color: rgb(255, 255, 255);
+}
+.nav-links > ul > li > a{
+    transition: all 0.5s ease;
+}
+.nav-links > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+#intro > h2:first-of-type, #information > h2:first-of-type{
+    text-align: center;
+    text-decoration: underline;
+}
+#intro > div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/*Use For Javascript To Display Which Section To Display For The Website*/
+.active-webpage{
+    text-decoration: underline;
+}
+#game-title{
+    font-size: 3.25em;
+    text-decoration: overline;
+    clear: both;
+}
+
+/*Footer Navigation CSS Changes*/
+footer, footer > div, footer ul{
+    display: flex;
+}
+footer{
+    justify-content: space-around;
+}
+footer > div{
+    justify-content: space-between;
+}
+footer ul{
+    flex-direction: column;
+}
+
+/*CSS Changes For The History Page*/
+#year-list{
+    display: flex;
+}
+.info-list{
+    display: flex;
+}
+.info-list > li{
+    position: relative;
+
+    --border-color: linear-gradient(to bottom right, grey, black);
+    border-style: solid;
+
+    transition: all 0.5s ease;
+    clip-path: polygon(20% 0%, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 20%);
+}
+.info-list > li::after, .info-list > li::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+.info-list > li::before{
+    background: var(--border-color);
+}
+.info-list > li > img{
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1.5s ease-in-out; 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.info-list > li > .overlay:first-of-type{
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    transition: all 1.5s ease;
+    text-align: center;
+}
+.info-list > li:hover > .overlay:first-of-type{
+    text-align: right;
+}
+.info-list > li > .overlay:last-of-type{
+    display: grid;
+    align-items: center;
+    transition: all 2.5s ease;
+}
+.info-list > li > .overlay:last-of-type > div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    transition: all 2.5s ease;
+}
+#c20 > h2:first-of-type, #c21 > h2:first-of-type{
+    text-align: center;
+}
+.main-container{
+    position: relative;
+    width: 100%;
+}
+.main-container img{
+    width: 100%;
+    height: auto;
+}
+.container-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease;
+    border-radius: 2.5em;
+    text-align: center;
+}
+.main-container:hover .container-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    height: 100%;
+}
+
+/*CSS Changes For The Info Page*/
+/*CSS Changes For The Introduction Of The Info Page*/
+#facts > div:first-of-type, #facts > div:last-of-type{
+    float: left;
+    width: 50%;
+    text-align: justify;
+}
+#facts > div:nth-of-type(2){
+    float: right;
+    width: 50%;
+}
+#facts + div{
+    clear: both;    
+}
+/*CSS Changes For The Model Section In The Info Page*/
+.model > ul{
+    display: flex;
+    flex-direction: row;
+}
+#models > h2{
+    text-align: center;
+}
+#models > div{
+    display: flex;
+    flex-direction: column;
+}
+.model > p{
+    text-align: justify;
+}
+#models > ul:last-of-type{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.slide-swipe{
+    animation-name: slide-swipe;
+    animation-duration: 1s;
+}
+/*Resizes The Width Section To Create A Text Swiping Effect From Left To Right*/
+@keyframes slide-swipe {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+/*Audio Button Global CSS Changes In Info Page*/
+.audio-active{
+    background-color: red;
+}
+.audio-unactive{
+    background-color: green;
+
+    animation-name: change-size;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*Changes The Size Of The Button In The X-Axis Direction Only*/
+@keyframes change-size {
+    0% {padding: 2em 1em;}
+    100% {padding: 2em 2em;}
+}
+
+body > div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#qr{
+    width: 25%;
+}
+
+/*Global Changes For Screen Size Of More Than 800px*/
+@media screen and (min-width: 800px) {
+    /*Top Navigation Bar*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+    .nav-links > ul{
+        flex-direction: column;
+        gap: 1em;
+        font-size: 2em;
+    }
+    nav > h1{
+        font-size: 7em;
+        text-shadow: 0.1em 0.1em black;
+    }
+    .nav-links{
+        display: inline;
+    }
+    .menu-button{
+        display: none;
+    }
+
+    /*Arrow Buttons*/
+    .prev, .next{
+        font-size: 2em;
+        padding: 2.5em 1em;
+    }
+    .prev{
+        left: 0.75em;
+    }
+    .next{
+        right: 0.75em;
+    }
+
+    /*For All The Starting Section Of Each Page*/
+    .home-message > h2{
+        font-size: 5.25em;
+    }
+    .home-message > p{
+        font-size: 1.5em;
+    }
+
+    /*Introduction In The Home Page*/
+    #intro-descriptions{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    #intro > h2:first-of-type, #information > h2:first-of-type, #statistic > h2{
+        font-size: 3.25em;
+    }
+    #intro > div:first-of-type{
+        padding-left: 10em;
+        padding-right: 10em;
+        padding-top: 2.5em;
+    }
+    #intro-descriptions h3{
+        font-size: 2.5em;
+    }
+    #intro-descriptions > div > div:first-of-type p{
+        font-size: 1.25em;
+        padding-bottom: 1em;
+    }
+    #intro-descriptions > div:first-of-type > div:first-of-type, #intro-descriptions > div:first-of-type > div:nth-of-type(3), #intro-descriptions > div:last-of-type > div:nth-of-type(2){
+        float: left;
+        width: 45%;
+    }
+    #intro-descriptions > div:first-of-type > div:nth-of-type(2), #intro-descriptions > div:last-of-type > div:nth-of-type(1), #intro-descriptions > div:last-of-type > div:nth-of-type(3){
+        float: right;
+        width: 45%;
+    }
+
+    /*Footer Navigation*/
+    footer{
+        padding-bottom: 2.5em;
+    }
+    footer > div{
+        gap: 5.5em;
+    }
+    footer ul{
+        gap: 2.5em;
+    }
+    footer h3{
+        font-size: 2.5em;
+    }
+    footer a{
+        font-size: 1.25em;
+    }
+
+    /*Dots In The Slideshow In Home Page*/
+    .dot{
+        height: 1.75em;
+        width: 1.75em;
+        margin: 0 1em;
+    }
+
+    /*History Timeline Section In The History Page*/
+    #year-list{
+        flex-direction: row;
+        gap: 10em;
+        margin-right: 5em;
+        margin-left: 5em;
+        margin-bottom: 5em;
+    }
+    .info-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5em;
+    }
+    .info-list > li{
+        width: 100%;
+        padding: 1em 0;
+        border-width: 0.5em;
+        border-radius: 0.5em;
+    }
+    .info-list > li:hover{
+        padding: 15em 0;
+    }
+    .info-list > li > img{
+        width: 20em;
+        height: 20em;
+    }
+    .info-list > li:hover > img{
+        width: 15em;
+        height: 15em;
+        border-radius: 25%;
+    }
+    .info-list > li > .overlay:first-of-type{
+        font-size: 2.5em;
+    }
+    .info-list > li:hover > .overlay:first-of-type{
+        top: -35%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .info-list > li > .overlay:last-of-type > div{
+        gap: 1em;
+        width: 80%;
+        left: 50%;
+        font-size: 2.5em;
+    }
+    .info-list > li:hover > .overlay:last-of-type > div{
+        opacity: 1;
+        top: 30%;
+        font-size: 1em;
+    }
+    #c20 > h2:first-of-type, #c21 > h2:first-of-type{
+        font-size: 5em;
+        margin-top: 0.5em;
+    }
+    #info > div{
+        margin-left: 7.5em;
+        margin-right: 7.5em;
+        margin-bottom: 5em;
+    }   
+
+    /*Introduction Section Of The Information Page*/
+    #facts > div:first-of-type, #facts > div:last-of-type{
+        padding-right: 5em;
+    }
+    #facts h2{
+        font-size: 3.5em;
+    }
+    #facts > div:first-of-type > p{
+        font-size: 1.25em;
+        margin-bottom: 1.25em;
+    }
+    #facts > div:last-of-type > p{
+        font-size: 1.6em;
+    }
+
+    /*Airplane Model Display Section In The Info Page*/
+    .model > ul{
+        gap: 2.5em;
+    }
+    #models > h2{
+        padding-top: 0.75em;
+        font-size: 3.5em;
+    }
+    .model > p{
+        margin-top: 2em;
+    }
+    .model > h2{
+        margin-bottom: 1em;
+        display: inline-block;
+    }
+    #models > div{
+        gap: 5em;
+    }
+    #models > ul:last-of-type{
+        gap: 0.5em;
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+    #models > h3:last-of-type{
+        margin-top: 1em;
+        font-size: 3.25em;
+    }
+
+    /*Audio Button In The Info Page*/
+    .audio-normal{
+        border-radius: 50%;
+        padding: 2em 2em;
+        display: inline-block;
+        margin-bottom: 1em;
+        font-size: 1.25em;
+        margin-left: 1em;
+    }
+}
+
+/*Global Changes For Screen Size Of Less Than 800px*/
+@media screen and (max-width: 800px){
+    .flip-card {
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    .flip-card-back {
+        font-size: 1em;
+    }
+    .flip-card-front{
+        font-size: 1.5em;
+    }
+
+    #shooting-game-inner{
+        width: 15em;
+        height: 15em;
+    }
+    #shooting-game-outer > h2{
+        font-size: 2em;
+    }
+    #mini-game p{
+        font-size: 1em;
+    }
+    #mini-game a{
+        font-size: 1em;
+    }
+
+    /*Top Navigation Bar*/
+    nav{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav > h1{
+        text-align: center;
+        font-size: 5em;
+        text-shadow: 0.1em 0.1em black;
+    }
+    .nav-links > ul{
+        justify-content: space-evenly;
+        font-size: 1.25em;
+    }
+    .nav-links{
+        display: inline;
+    }
+    .menu-button{
+        display: block;
+        text-align: center;
+    }
+    .nav-hide{
+        display: none;
+    }
+
+    /*Arrow Button In The Slideshow In The Home Page*/
+    .prev, .next{
+        font-size: 1.5em;
+        padding: 0.75em;
+    }
+    .prev{
+        left: 0.25em;
+    }
+    .next{
+        right: 0.25em;
+    }
+
+    /*Introduction Starting Section In Every Page*/
+    .home-message > h2{
+        font-size: 3.25em;
+    }
+    .home-message > p{
+        font-size: 1em;
+    }
+
+    /*Website & Topic Introduction Section In The Home Page*/
+    #intro > h2:first-of-type, #information > h2:first-of-type, #statistic > h2{
+        font-size: 2.25em;
+    }
+    #intro > div:first-of-type{
+        padding: 2.5em;
+        gap: 3.5em;
+    }
+    #intro-descriptions h3{
+        font-size: 1.5em;
+    }
+    #intro-descriptions p:first-of-type{
+        font-size: 0.75em;
+    }
+    #intro-descriptions > div > div:nth-of-type(2){
+        height: 5em;
+        margin: 1em 0;
+        transition: all 1s ease-in-out;
+    }
+    #intro-descriptions > div > div:nth-of-type(2):hover{
+        height: 25em;
+    }
+
+    /*Footer Navigation Section*/
+    footer{
+        padding-bottom: 1em;
+    }
+    footer > div{
+        gap: 2.5em;
+    }
+    footer ul{
+        gap: 1em;
+    }
+    footer h3{
+        font-size: 1.5em;
+    }
+
+    /*The Dots In The Slideshow In The Home Page*/
+    .dot{
+        height: 1.5em;
+        width: 1.5em;
+        margin: 0 0.5em;
+    }
+
+    /*History Timeline Section In The History Page*/
+    #year-list{
+        flex-direction: column;
+        gap: 5em;
+        margin-right: 2em;
+        margin-left: 2em;
+    }
+    .info-list{
+        flex-direction: column;
+        gap: 5em;
+        margin-bottom: 2.5em;
+    }
+    .info-list > li{
+        padding: 1em 0em;
+        border-width: 0.5em;
+        border-radius: 0.5em;
+    }
+    .info-list > li:hover{
+        padding: 10em 0;
+    }
+    .info-list > li > img{
+        width: 20em;
+        height: 20em;
+    }
+    .info-list > li:hover > img{
+        width: 15em;
+        height: 15em;
+        border-radius: 25%;
+    }
+    .info-list > li > .overlay:first-of-type{
+        font-size: 2.5em;
+    }
+    .info-list > li:hover > .overlay:first-of-type{
+        left: -35%;
+        font-size: 1.5em;
+    }
+    .info-list > li > .overlay:last-of-type > div{
+        gap: 1em;
+        width: 25%;
+        left: 50%;
+        font-size: 2.5em;
+    }
+    .info-list > li:hover > .overlay:last-of-type > div{
+        left: 85%;
+        opacity: 1;
+        font-size: 1em;
+    }
+    #c20 > h2:first-of-type, #c21 > h2:first-of-type{
+        font-size: 5em;
+        margin-top: 0.5em;
+    }
+    #info > div{
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-bottom: 2.5em;
+    }   
+
+    /*Info Page Introduction Section*/
+    #facts > div:first-of-type, #facts > div:last-of-type{
+        padding-right: 2em;
+    }
+    #facts h2{
+        font-size: 1.5em;
+    }
+    #facts > div:first-of-type > p{
+        font-size: 0.75em;
+        margin-bottom: 1em;
+    }
+    #facts > div:last-of-type > p{
+        font-size: 1em;
+    }
+
+    /*Model Display Section In The Info Page*/
+    .model > ul{
+        gap: 1em;
+    } 
+    .model > p{
+        margin-top: 1em;
+    }
+    #models > h2:first-of-type{
+        margin-top: 5.5em;
+        font-size: 2.5em;
+    }
+    .model > h2{
+        margin-bottom: 0.5em;
+        display: inline-block;
+    }
+    #models > div{
+        gap: 2.5em;
+    }
+    #models > ul:last-of-type{
+        gap: 0.25em;
+        margin-top: 0.5em;
+    }
+    #models > h3:last-of-type{
+        margin-top: 1em;
+        font-size: 2.5em;
+    }
+
+    /*Audio Button In The Info Page*/
+    .audio-normal{
+        border-radius: 50%;
+        padding: 2em 2em;
+        display: inline-block;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+/*Global Changes For Screen Size Of Less Than 701px*/
+@media screen and (max-width: 701px){
+    .info-list > li:hover > .overlay:first-of-type{
+        left: 1em;
+        font-size: 1.25em;
+        width: 25%;
+    }
+
+    .info-list > li:hover > img{
+        width: 5em;
+        height: 5em;
+        border-radius: 25%;
+        left: 40%;
+    }
+
+    .info-list > li:hover > .overlay:last-of-type > div{
+        left: 75%;
+        opacity: 1;
+        font-size: 1em;
+        width: 45%
+    }
+
+    #shooting-game-inner{
+        width: 7.5em;
+        height: 7.5em;
+    }
+}

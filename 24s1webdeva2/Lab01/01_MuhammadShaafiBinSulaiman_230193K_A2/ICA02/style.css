@@ -1,0 +1,296 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: Impact, "sans-serif";}
+
+#qrcode{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+#qrcode>img{
+    width: 100%;
+    margin-top: 10%;
+}
+
+body>div:last-child{
+    background-image: url("images/Background.jpg");
+    content: "";
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    filter: grayscale(60%);
+    position: fixed;
+}
+
+body>button:first-of-type{
+    font-size: 2vw;
+    position: absolute;
+    background-color: #ffd659;
+    top: 0;
+    right: 0;
+}
+
+body>button:first-of-type>img{
+    width: 4vw;
+}
+
+body>div:first-of-type>h1{ /* 'Motorsports' Header at the top center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 5vw;
+
+}
+
+  button{ /* Get all buttons */
+      background: none;
+      color: #007ac2;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 3.5vw;
+      -webkit-text-stroke-width: 0.05em;
+      -webkit-text-stroke-color: black;
+  }
+
+button:hover{ /* All buttons change colour when hover */
+    color: #e4002b;
+}
+
+body>div:first-of-type{ /* grid container */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vw;
+    min-height: 150px;
+    max-height: 200px;
+    border-bottom: 10px solid #e4002b;
+}
+
+body>div:first-of-type *{ /* get all child of div:first-of-type aka grid container */
+    box-sizing: border-box;
+}
+
+/* Begin at 3rd child; end at 1st child */
+body>div:first-of-type *:nth-of-type(-n + 2){ /* set the first 3 child of grid container to spread across 3*/
+    flex-basis: calc(100vw / 4);
+    margin-top: 4vh;
+}
+
+/* Begin at 4th item, apply to last child */
+body>div:first-of-type *:nth-of-type(n+3){ /* set the last 2 child of grid container to spread across 2*/
+    flex-basis: calc(70vw / 2);
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+
+.page{width:100vw;height: 80vh;}
+#UniquenessOfRacing{
+    display: block;
+}
+#DifferentMotorsports{background-color: transparent; width: 100vw}
+#Calculate{background-color: transparent; height: 100vh;}
+#Game{
+    background-color: transparent;
+    display: block;
+    width: 98vw;
+
+}
+
+#Game>div:first-child{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: gray;
+    height: 0;
+    padding-bottom: 50vw;
+    top: 20%;
+    margin-bottom: 10vh !important;
+}
+
+#Game>div:first-child>img:last-of-type {
+    height: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0vw, 25vw);
+}
+
+#Game>div:first-child>img:first-of-type{
+    height: 10vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0vw, 0vw);
+}
+
+#UniquenessOfRacing>h2 {
+    border: 2vh solid transparent;
+    text-align: center;
+    font-size: 6vw;
+}
+
+#UniquenessOfRacing>img{
+    border: 2vh solid transparent;
+    width: 100vw;
+}
+
+#UniquenessOfRacing>p{
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 4vw;
+    border: 2vh solid transparent;
+}
+
+
+#DifferentMotorsports>div{
+    width: 75%;
+    background-color: yellow;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+
+#DifferentMotorsports>div>ul{
+    list-style-type: none;
+}
+
+#DifferentMotorsports>div>ul>li>button{
+    display: inline-block;
+    color: black;
+    font-size: 5vw;
+}
+
+#DifferentMotorsports>div>ul>li>h1{
+    display: inline-block;
+    font-size: 5vw;
+    padding-left: 3vw;
+}
+
+#DifferentMotorsports>div>ul>li>div{
+    display: none;
+    background-color: #ffd659;
+}
+
+#DifferentMotorsports>div>ul>li>div>p{
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+form{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vw;
+}
+
+form *{
+    text-align: center;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+#Calculate>div{
+    border-top: 10px solid #e4002b;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Calculate>div *{
+    font-size: 3vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+
+    body>div:first-of-type{
+        margin-top: 1vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        height: 12vw;
+        max-height: 160px;
+        min-height: 0;
+        width: 94vw;
+    }
+
+    body>div:first-of-type *:nth-of-type(n + 1){
+        flex-basis: calc(1vw / 6);
+        height: 10vh;
+        margin-top: 0;
+    }
+
+    body>div:first-of-type>button{
+        font-size: min(3vw, 40px);
+        border-top: 1vw solid transparent;
+    }
+
+    body>div:first-of-type>h1{
+        order: -1;
+        border-top: 2vw solid transparent;
+        font-size: min(6vw, 100px);
+    }
+
+    .page{height: 86vh;}
+
+    #UniquenessOfRacing>h2{
+        font-size: 3vw;
+        height: 10vh;
+        width: 10vw;
+        flex-basis: calc(100vw);
+    }
+
+    #UniquenessOfRacing{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 40vw;
+        align-items: flex-end;
+    }
+
+    #UniquenessOfRacing>img{
+        box-sizing: border-box;
+        flex-basis: calc(99vw / 2);
+        width: 100px;
+        height: 400px;
+    }
+
+    #UniquenessOfRacing>p{
+        box-sizing: border-box;
+        flex-basis: calc(99vw / 2);
+        width: 10vw;
+        font-size: 2vw;
+    }
+
+    #DifferentMotorsports>div{
+        margin-top: 5vw;
+    }
+
+    #DifferentMotorsports>div>ul>li>h1{
+        font-size: 3vw;
+        padding-left: 5vw;
+    }
+
+    #DifferentMotorsports>div>ul>li>button{
+        font-size: 3vw;
+    }
+
+    #DifferentMotorsports>div>ul>li>div>p{
+        font-size: 2vw;
+    }
+}

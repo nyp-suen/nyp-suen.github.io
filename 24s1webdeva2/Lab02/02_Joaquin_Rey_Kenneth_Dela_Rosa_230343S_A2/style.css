@@ -1,0 +1,421 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: black;
+	color: white;
+}
+#MainNavContainer {
+    width: 100%;
+    background: black;
+    z-index: 1;
+    top: 0;
+    height: 3em;
+    position: sticky;
+    color: white;
+    overflow: hidden;
+	justify-content: center;
+	box-sizing: border-box;
+	border-bottom: groove white;
+	transition: 0.5s;
+}
+#nav-expand-button{
+	display: none;
+	background: #4D4D4D;
+	position: sticky;
+	z-index: 1;
+    top: 0;
+	cursor: pointer;
+}
+.page{
+	display: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	border:groove white;
+}
+/* Learned from w3 schools*/ 
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.centered{
+	text-align:center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.nav-item, .nav-item2 {
+    text-align: center; 
+    padding: 1em;
+	border-top: 0 solid white;
+}
+.nav-item1 {
+	float: left;
+}
+.nav-item2 {
+	float: right;
+}
+p.nav-item1  {
+    text-align: center; 
+    padding: 0.1em; 
+	
+}
+a.nav-item1 , a.nav-item2{
+	transition: border-top-width 0.1s ease;
+}
+a.nav-item1:hover, a.nav-item2:hover {
+	border-top-width: 5px;
+}
+
+#main{
+	transition: margin-left .5s;
+}
+#MainNavContainer a {
+    color: white; 
+    text-decoration: none; 
+	cursor:pointer;
+}
+
+#MainNavContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#index-explanation{
+	order: 1;
+}
+#index-image{
+	order: 2;
+}
+.index-wrapper{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 20em;
+	box-sizing: border-box;
+	gap: 0em 2em;
+}
+.index-grid-image, .emergence-image{
+ 
+	width: auto;
+	min-height: 1em;
+}
+.index-grid-image{
+	height: 20em;
+	width: 20em;
+}
+.index-grid-item1{
+	grid-row: auto;
+	grid-column: auto;
+	background: #181717;
+	border-radius: 20px;
+}
+.index-grid-item1 p{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.technique{
+	display:none;
+}
+.technique-button{
+	padding: 2em;
+	border-radius: 5em;
+	color: white;
+	font-size: 1em;
+	font-weight:900;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+button{
+	background: #4D4D4D;
+	border: groove;
+	border-color: grey;
+}
+.flex{
+	display: flex;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.emergence-wrapper{
+	background: #181717;
+	box-sizing: border-box;
+	min-height: 15em;
+	border-radius: 16px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.emergence-wrapper *{
+	margin: 1em;
+    overflow-wrap: break-word; /* ensure long words break */
+	
+}
+.emergence-wrapper img{
+	flex-shrink: 0; /* prevent the image from shrinking */
+}
+.emergence-image{
+	max-height: 10em;
+	min-height: 0.5em;
+	
+}
+#emergence-score, #emergence-question-count, #emergence-score-percentage{
+	flex: 1;
+}
+#emergence-submit{
+	display:inline-block;
+	margin: 1em;
+}
+.TranslateButton{
+	background-color:#06CD04;
+	border-radius: 16px;
+	padding: 1em;
+	margin: 0.5em;
+	cursor:pointer;
+	display:block;
+	box-shadow: 0 9px #999;
+}
+.TranslateButton:hover{
+	background-color:green;
+}
+.TranslateButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.emergence-answer{
+	width: calc(50% - 3em);
+	margin: 1.5em;
+	padding: 1em 0em;
+	background: #463738;
+	border-radius: 16px;
+	cursor:pointer;
+	transition: 0.4s;
+	transition-property: all;
+}
+#simulation-wrapper{
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: 90vh;
+}
+
+.simulation-grid-item{
+	grid-row: auto;
+	grid-column: auto;
+}
+
+#ParticleLifeSimulation{
+	height: 100%;
+	width: 100%;
+	border: white groove;
+	
+}
+#SimulationInteraction{
+	overflow-y: scroll; /*So that the canvas can be in full view no matter what, and scrolling wont ruin it for desktop*/
+}
+.TypeInteractionContainer *{
+	display:inline-block;
+}
+
+.ColorBlock{
+	display: inline-block;
+	vertical-align: middle; /* Align vertically */
+	width: 1.5em;
+	height: 1.5em;
+}
+.TypeInteractionContainer div{
+	display:block;
+}
+.TypeInteractionContainer .ColorBlock{
+	display:inline-block;
+}
+.TypeInteractionContainer input{
+	box-sizing: border-box;
+	width: auto;
+	margin: 0.1em 0.0em
+}
+.SingleForceContainer *{
+	margin: 0.5em;
+}
+.ForceAttraction{
+	vertical-align: middle; /* Align vertically */
+}
+.QRcode{
+	display: inline-block;
+	max-height: 20em;
+}
+.Source{
+	width: calc(50% - 3em);
+	margin: 1.5em;
+	background: #181717;
+	border-radius: 20px;
+}
+@media screen and (max-width:800px) {
+	#full-screen-button{
+		display: none;
+	}
+	.QRcode{
+		display: none;
+	}
+	.Source{
+		flex: 100%;
+		
+	}
+	#MainNavContainer {
+		background: black;
+		z-index: 1;
+		top: 0;
+		color: white;
+		overflow: hidden; /* Ensure container clears floated elements */
+		justify-content: center;
+		box-sizing: border-box;
+		border-right: groove white;
+		
+		height: 100%;
+		width: 0;
+		position: fixed;
+		left: 0;
+		padding-top: 60px;
+	}
+	#nav-expand-button{
+		display: inline;
+	}
+	.nav-item1 {
+		float:none;
+		text-align:center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	.nav-item2 {
+		float:none;
+		text-align:center;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	.index-wrapper{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 20em;
+		box-sizing: border-box;
+		gap: 0em 2em;
+	}
+	#index-explanation{
+		order: 2;
+	}
+	#index-image{
+		order: 1;
+	}
+	
+	
+	.emergence-wrapper{
+		
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		
+		margin: 0em;
+	}
+	.emergence-wrapper img{
+		margin: 0em;
+	}
+	
+	.emergence-answer{
+		width: calc(100% - 3em);
+	}
+	
+	#emergence-score, #emergence-question-count, #emergence-score-percentage{
+		flex: 100%;
+	}
+	
+
+	#simulation-wrapper{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 20em 1fr;
+	}
+
+	.simulation-grid-item{
+		grid-row: auto;
+		grid-column: auto;
+	}
+
+	#ParticleLifeSimulation{
+		height: 100%;
+		width: 100%;
+		border: white groove;
+		order: 1;
+	}
+	#SimulationInteraction{
+		overflow-y: auto;
+		order: 2;
+	}
+	.TypeInteractionContainer *{
+		display:inline-block;
+	}
+
+	.ColorBlock{
+		display: inline-block;
+		vertical-align: middle; /* Align vertically */
+		width: 1.5em;
+		height: 1.5em;
+	}
+	.TypeInteractionContainer div{
+		display:block;
+	}
+	.TypeInteractionContainer .ColorBlock{
+		display:inline-block;
+	}
+	.TypeInteractionContainer input{
+		box-sizing: border-box;
+		width: auto;
+		margin: 0.1em 0.0em
+	}
+}
+
+@keyframes fade {
+  from {opacity: .05}
+  to {opacity: 1}
+}

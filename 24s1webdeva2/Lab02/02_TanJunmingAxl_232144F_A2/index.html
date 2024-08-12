@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>MMA Crash Course</Title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+    <!-- get icons from https://favicon.io/ -->
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <!--for android-->
+    <link rel="manifest" href="Icons/site.webmanifest" />
+</head>
+<body>
+    <!--Header-->
+    <h1>MMA Crash Course</h1>
+
+    <!--Buttons for tab switching-->
+    <div class="box">
+        <div class="btn-box">
+            <!--Text within each button-->
+            <button id="btn1" onclick="history()">Introduction</button>
+            <button id="btn2" onclick="styles()">Common MMA Styles</button>
+            <button id="btn3" onclick="superstars()">Notable MMA Superstars</button>
+            <button id="btn4" onclick="events()">Upcoming MMA events</button>
+            <button id="btn5" onclick="game()">Bonus Game</button>
+        </div>
+
+        <!--Contents within first tab-->
+        <!--Brief History-->
+        <div id="content1" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Brief History</h2>
+                <p>MMA is a full contact combat sport that combines rulesets from many different martial arts. Originally, gimmick fights pitting fighters of different styles against each other (such as Rick Roufus representing Kickboxing against Changpuek Kietsongrit representing Muay Thai) were held and promoted. Many of such fights were held in the 1900s, until an organisation called the Ultimate Fighting Championship was formed and popularised this sport by introducing it to the West. The first ever UFC event was a barbaric tournament style competition that consisted of no rules, a low quality cage, no protective gear and no weight classes. This resulted in some hilarious matchups. After several decades, MMA has evolved to become the sport that we know it as today.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <!--<img src="images/roufusvskiatsongrit.jpg" alt="Rick Roufus VS Changpuek Kietsongrit" width="500">-->
+                <video controls src="videos/muaythaivskickboxing.mp4" width="500"></video>
+            </div>
+        </div>
+
+        <!--Where is it practiced?-->
+        <div id="content1pt2" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Where is it practiced?</h2>
+                <p>MMA is practiced internationally. There are many MMA promotions ranging from major ones such as UFC and ONE Championship, to lesser known local competitions.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/kbx.jpg" alt="KBX" width="500">
+            </div>
+        </div>
+
+        <!--Mobile View QR Code-->
+        <div id="content1pt3" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Mobile View</h2>
+                <p>Please scan this QR Code on the right to access this website on a mobile device.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/webdevqrcode.jpg" alt="QR Code" width="300">
+            </div>
+        </div>
+
+        <!--Contents within second tab-->
+        <!--Kikcboxing-->
+        <div id="content2" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Kickboxing</h2>
+                <p>A striking style that combines boxing with various kicking techniques. This is an extremely effective style that has taken fighters to championship titles, as it is well-rounded and teaches many ways to defend against most striking styles. Kickboxers are feared for their speed and power. Notable fighters that use Kickboxing include Israel Adesanya and Alex Pereira.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/kickboxing.jpg" alt="Kickboxing" width="400">
+            </div>
+        </div>
+
+        <!--Muay Thai-->
+        <div id="content2pt2" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Muay Thai</h2>
+                <p>The Art of Eight Limbs is one of the most dangerous martial arts in the world, as it nearly maximises every single way the human body can be used as a striking weapon and pushes a fighter's conditioning and pain tolerance to the highest of levels. Similar to kickboxing but with a more fluid stance, Muay Thai adds elbows, knees, and takedowns to their arsenal. Elbows easily slice open skin while knees act as sledgehammers that pound through your opponents. Notable Nak Muay include Suphachai "Saenchai" Saepong, Buakaw Banchamek, and Rodtang Jitmuangnon.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/muaythai.jpg" alt="Muay Thai" width="400">
+            </div>
+        </div>
+
+        <!--BJJ-->
+        <div id="content2pt3" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Brazilian Jiu-Jitsu</h2>
+                <p>A style that might seem odd to bystanders at first, BJJ is a style that demands respect from anyone who has grappled with an experienced BJJ practitioner. Focusing on takedowns, grappling, submissions, chokeholds, etc., BJJ is a style that allows a lighter opponent to still deal damage to a much heavier opponent. Its practitioners are like human pythons that coil themselves around their opponents and find a windpipe or any joint that can be exploited to inflict excruciating pain. Notable BJJ practitioners include the Gracie Family and Mikey Musumeci.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/bjj.jpg" alt="Brazilian Jiu-Jitsu" width="400">
+            </div>
+        </div>
+
+        <!--Contents within third tab-->
+        <!--Fedor Emelianenko-->
+        <div id="content3" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.sherdog.com/fighter/Fedor-Emelianenko-1500" target="_blank">Fedor Emelianenko</a></h2>
+                <p>Even though he has never fought in the UFC, Emelianenko is widely regarded as one of the best MMA fighters of all time. He had a 27 fight win-streak that spanned over 10 years, and was the PRIDE Heavyweight Champion from 2003 to 2007.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/fedor.jpg" alt="Fedor Emelianenko" width="400">
+            </div>
+        </div>
+
+        <!--Jon Jones-->
+        <div id="content3pt2" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.ufc.com/athlete/jon-jones" target="_blank">Jon Jones</a></h2>
+                <p>An infamous fighter that has been caught using steroids, using cocaine, and abusing his wife, his MMA record is as illustrious as his criminal record. Fighting in the UFC since 2008, his only loss ever was by unintentionally throwing an illegal elbow at his opponent. Regarded as the most dangerous man on planet Earth right now, he is the former UFC Light Heavyweight World Champion and the current Heavyweight World Champion.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/jonjones.jpg" alt="Jon Jones" width="400">
+            </div>
+        </div>
+
+        <!--Israel Adesanya-->
+        <div id="content3pt3" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.ufc.com/athlete/israel-adesanya" target="_blank">Israel Adesanya</a></h2>
+                <p>Dominating the UFC Middleweight division from 2019-2022, Israel Adesanya defeated every ranked contender in his weight class, which included former champions. However, his recent actions have caused much controversy.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/adesanya.jpg" alt="Israel Adesanya" width="400">
+            </div>
+        </div>
+
+        <!--Alex Pereira-->
+        <div id="content3pt4" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.ufc.com/athlete/alex-pereira" target="_blank">Alex Pereira</a></h2>
+                <p>Fueled by Adesanya's disrespectful comments towards him, Alex Pereira moved from GLORY Kickboxing to the UFC, just to prove to Adesanya that he was still a formidable foe. In just two years, Pereira knocked out ranked contenders and took the Middleweight Title from Adesanya, and then moved up a weight class and won the Light Heavyweight Title. He is one of only three fighters to be inducted into the GLORY Hall of Fame.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/pereira.jpg" alt="Alex Pereira" width="400">
+            </div>
+        </div>
+
+        <!--Conor Mcgregor-->
+        <div id="content3pt5" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.ufc.com/athlete/conor-mcgregor" target="_blank">Conor Mcgregor</a></h2>
+                <p>Taking the featherweight division by storm and knocking out the defending champion in thirteen seconds, Conor Mcgregor is undoubtedly the most influential MMA fighter ever, helping to revolutionise this sport and make it an international sensation. He is the first ever fighter to hold Championship titles in two different weight classes simultaneously. His lightweight title fight against Khabib Nurmagomedov is the most bought Pay-Per-View MMA event of all time.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/mcgregor.jpg" alt="Conor Mcgregor" width="400">
+            </div>
+        </div>
+
+        <!--Contents within fourth tab-->
+        <!--UFC 305-->
+        <div id="content4" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.ufc.com/event/ufc-305" target="_blank">UFC 305</a></h2>
+                <p>The former Middleweight King of the UFC, Israel Adesanya, looks to reclaim his throne from newly crowned champion Dricus Du Plessis, after two rocky years seeing four different Middleweight champions.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/ufc305.jpg" alt="UFC 305" width="400">
+            </div>
+        </div>
+
+        <!--ONE 168-->
+        <div id="content4pt2" class="content">
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2><a href="https://www.onefc.com/events/one168/" target="_blank">ONE 168: Denver</a></h2>
+                <p>Headlining this event is former Kickboxing and Muay Thai World Champion, current Atomweight MMA World Champion Stamp Fairtex, as she seeks to claim Xiong Jin Nan's Strawweight MMA World Title.<br>A highly anticipated co-main event featuring a star-studded Bantamweight Muay Thai World Title fight between the defending champion Jonathan Haggerty and veteran Superlek Kiatmoo9.<br>A BJJ matchup is also on the card, where undefeated Mikey Musumeci looks to become a two-weight Submission Grappling champion by taking defending champion Kade Ruotolo's Lightweight Submission Grappling Title.</p>
+            </div>
+            <!--Contents that are towards the right of the tab-->
+            <div class="content-right">
+                <img src="images/one168.jpg" alt="ONE 168" width="400">
+            </div>
+        </div>
+
+        <!--Contents within fifth tab-->
+        <!--Whack A Mole Game-->
+        <div id="content5" class="content">
+
+            <!--Contents that are towards the left of the tab-->
+            <div class="content-left">
+                <h2>Game</h2>
+                <p>Play this Whack A Mole game and try to collect as many Championship Titles as you can before running into an opponent who knocks you out! Simply click on the Championship Titles to increase your score, and you can keep doing so until you click on an opponent.</p>
+            </div>
+
+            <div class="content-center">
+                <h2>Whack A Mole</h2>
+                <h3 id="score">0</h3>
+                <!--3x3 game board-->
+                <div id="board"></div>
+            </div>
+
+        </div>
+
+        <!--Dropdown hamburger menu-->
+        <div class="off-screen-menu">
+            <!--List of buttons in dropdown menu-->
+            <ul>
+                <li><button id="btn1" onclick="history()">History</button></li>
+                <li><button id="btn2" onclick="styles()">Common MMA Styles</button></li>
+                <li><button id="btn4" onclick="superstars()">Notable MMA Superstars</button></li>
+                <li><button id="btn3" onclick="events()">Upcoming Events</button></li>
+                <li><button id="btn5" onclick="game()">Bonus Game</button></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

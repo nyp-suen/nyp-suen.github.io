@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Informative Piano Website</title>
+
+    <link rel = "stylesheet" href = "style.css">
+    <script rel = "script" src = "script.js" defer></script>
+</head>
+<body>
+    <!-- Audio Preloading -->
+    <audio preload = "auto">
+        <source src = "Sound/note_a.wav" type = "audio/wav">
+        <source src = "Sound/note_as.wav" type = "audio/wav">
+        <source src = "Sound/note_b.wav" type = "audio/wav">
+        <source src = "Sound/note_c.wav" type = "audio/wav">
+        <source src = "Sound/note_cs.wav" type = "audio/wav">
+        <source src = "Sound/note_d.wav" type = "audio/wav">
+        <source src = "Sound/note_ds.wav" type = "audio/wav">
+        <source src = "Sound/note_e.wav" type = "audio/wav">
+        <source src = "Sound/note_f.wav" type = "audio/wav">
+        <source src = "Sound/note_fs.wav" type = "audio/wav">
+        <source src = "Sound/note_g.wav" type = "audio/wav">
+        <source src = "Sound/note_gs.wav" type = "audio/wav">
+    </audio>
+
+    <!-- The large title screen -->
+    <div class = "large_title_screen">
+        <!-- Nav links -->
+        <nav class = "nav_links">
+            <ul>
+                <li><a>Introduction</a></li>
+                <li><a>History</a></li>
+                <li><a>Functionalities</a></li>
+            </ul>
+        </nav>
+
+        <!-- Slide buttons -->
+        <a class = "prev_slide_button">&lt;</a>
+        <a class = "next_slide_button">&gt;</a>
+
+        <!-- Slides -->
+        <!-- Introduction slide -->
+        <div class = "title_slide" id = "title_slide_1">
+            <div class = "title">
+                <h1>The <span>Way</span> of the <span>Rhythm</span>,</h1>
+                <h1>the <span>Sound</span> of your <span>Hands</span></h1>
+                <p>Dive into our detailed guides and expert insights covering every aspect of this magnificent instrument, from its rich history and intricate mechanics to playing techniques and maintenance tips. Whether you're just starting your musical journey or looking to deepen your expertise, our website offers a wealth of information to enhance your understanding and enjoyment of the piano.</p>
+                <a class = "btn slide_button" href = "#introduction">Get Started !</a>
+            </div>
+        </div>
+
+        <!-- History slide -->
+        <div class = "title_slide" id = "title_slide_2">
+            <div class = "title">
+                <h1><span>Echoes</span> through <span>Time</span>,</h1>
+                <h1>the <span>Legacy</span> of <span>Melodies</span></h1>
+                <p>Discover the fascinating origins of this iconic instrument, from its early predecessors to the grand pianos of today. Join us as we explore the milestones and innovations that have shaped the piano's rich legacy and enduring appeal.</p>
+                <a class = "btn slide_button" href = "#history">Revisit History !</a>
+            </div>
+        </div>
+
+        <!-- Functionality slide -->
+        <div class = "title_slide" id = "title_slide_3">
+            <div class = "title">
+                <h1>Crafting <span>Harmony</span>,</h1>
+                <h1>unveiling the <span>Mechanics</span> of <span>Music</span></h1>
+                <p>Explore the intricate mechanisms that produce its rich and resonant sounds, from the delicate action of the keys to the dynamic range of the pedals. Whether you're a beginner or a seasoned musician, our insights will deepen your appreciation and understanding of this timeless instrument.</p>
+                <a class = "btn slide_button" href = "#functionalities">Start Learning !</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction section -->
+    <section class = "introduction_section content_section" id = "introduction">
+        <!-- Title -->
+        <div class = "section_title">
+            <h1><span>&gt; &gt;</span> Introduction <span>&lt; &lt;</span></h1>
+            <p>A <a class = "external_link" href = "https://en.wikipedia.org/wiki/Piano" target = "_blank">piano</a> is a versatile and expressive <a class = "external_link" href = "https://en.wikipedia.org/wiki/Musical_instrument" target = "_blank">musical instrument</a> that produces sound through the striking of strings by hammers, which are activated by pressing keys on a keyboard. It features 88 keys, spanning over seven octaves, allowing for a wide range of notes and complex musical compositions. The piano's structure includes a soundboard that amplifies the vibrations of the strings, giving the instrument its rich and resonant tone. With its dynamic range, the piano can produce everything from soft, delicate melodies to powerful, thunderous chords. This combination of technical precision and emotional depth has made the piano a cornerstone of both classical and contemporary music.</p>
+        </div>
+        <!-- Cards -->
+        <div class = "main_content">
+            <!-- Grand piano card -->
+            <div class = "container">
+                <div class = "card card1">
+                    <div class = front>
+                        <h2>?</h2>
+                    </div>
+                    <div class = "back">
+                        <img src = "Images/intro1.jpg" alt = "image of a grand piano">
+                        <h2>Grand Piano</h2>
+                        <p>A grand piano is a large, elegant instrument known for its powerful sound, responsive touch, and horizontal frame with strings and hammers that produce a rich, resonant tone.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Upright piano card -->
+            <div class = "container">
+                <div class = "card card2">
+                    <div class = "front">
+                        <h2>?</h2>
+                    </div>
+                    <div class = "back">
+                        <img src = "Images/intro2.jpg" alt = "image of an upright piano">
+                        <h2>Upright Piano</h2>
+                        <p>An upright piano is a vertical, space-saving instrument with strings and soundboard positioned vertically, offering a rich and resonant sound in a compact form ideal for homes and studios.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Digital piano card -->
+            <div class = "container">
+                <div class = "card card3">
+                    <div class = "front">
+                        <h2>?</h2>
+                    </div>
+                    <div class = "back">
+                        <img src = "Images/intro3.jpg" alt = "image of a digital piano">
+                        <h2>Digital Piano</h2>
+                        <p>A digital piano is an electronic instrument that replicates the sound and feel of an acoustic piano while offering additional features like various instrument voices and recording capabilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- History section -->
+    <div class = "history_section content_section" id = "history">
+        <!-- Title -->
+        <div class = "section_title">
+            <h1><span>&gt; &gt;</span> History <span>&lt; &lt;</span></h1>
+            <p>The history of the piano dates back to the early 18th century when <a class = "external_link" href = "https://en.wikipedia.org/wiki/Bartolomeo_Cristofori" target = "_blank">Bartolomeo Cristofori</a>, an Italian instrument maker, invented the first piano around 1700. Originally called the <em>"gravicembalo col piano e forte,"</em> meaning "harpsichord with soft and loud," the piano evolved from earlier keyboard instruments like the <a class = "external_link" href = "https://en.wikipedia.org/wiki/Clavichord" target = "_blank">clavichord</a> and <a class = "external_link" href = "https://en.wikipedia.org/wiki/Harpsichord" target = "_blank">harpsichord</a>. Over the centuries, the piano underwent significant innovations, including the development of the modern grand and upright pianos, improvements in string and hammer mechanisms, and the expansion of its tonal range. Today, the piano remains a cornerstone of Western music, celebrated for its versatility and expressive capabilities.</p>
+        </div>
+
+        <div class = "main_content">
+            <div class = "sub_content">
+                <h2>Era Timeline</h2>
+            </div>
+
+            <div class = "time_periods">
+                <div class = "time_period_display" id = "time_period_1" data-text = "Invented in the early 14th century, the clavichord is a stringed keyboard instrument where pressing a key causes a small brass blade (tangent) to strike the strings, producing sound. It allowed players to control volume and expression through variations in touch, making it popular for its intimate sound and portability.">
+                    <h2><span>~</span> 1400 <span>~</span></h2>
+                    <p>Clavichord</p>
+                </div>
+
+                <div class = "time_period_display" id = "time_period_2" data-text = "Developed in the late 14th century, the harpsichord produces sound by plucking strings with quills or plectra when keys are pressed. It became a staple in Renaissance and Baroque music due to its bright, distinctive tone and ability to play multiple notes simultaneously.">
+                    <h2><span>~</span> 1400 <span>~</span></h2>
+                    <p>Harpsichord</p>
+                </div>
+
+                <div class = "time_period_display" id = "time_period_3" data-text = "Created around 1700, the fortepiano (meaning loud-soft in Italian) marked a significant leap in keyboard instrument technology. Unlike its predecessors, it used hammers to strike the strings, allowing for varying dynamics and expression through key pressure. This invention laid the foundation for the modern piano.">
+                    <h2><span>~</span> 1700 <span>~</span></h2>
+                    <p>Forte Piano</p>
+                </div>
+
+                <div class = "time_period_display" id = "time_period_4" data-text = "Invented in the early 18th century, the upright piano revolutionized keyboard instrument design by featuring a vertical string arrangement and hammers that strike the strings horizontally. This innovative design, which gained popularity in the early 19th century, allowed the piano to fit into smaller spaces while maintaining the sound and performance capabilities of larger instruments. Its compact size and affordable price made it a popular choice for homes, schools, and smaller performance venues, democratizing access to music education and enjoyment.">
+                    <h2><span>~</span> 1800 <span>~</span></h2>
+                    <p>Upright Piano</p>
+                </div>
+                
+                <div class = "time_period_display" id = "time_period_5" data-text = "Evolving throughout the late 19th century, the grand piano became the pinnacle of piano design for concert settings. With its horizontal string arrangement, large soundboard, and extended range of dynamic expression, the grand piano offers unparalleled sound quality and projection, making it the preferred choice for professional musicians and performances.">
+                    <h2><span>~</span> 1800 <span>~</span></h2>
+                    <p>Grand Piano</p>
+                </div>
+            </div>
+
+            <!-- Time period buttons -->
+            <a class = "prev_display_button">&lt;</a>
+            <a class = "next_display_button">&gt;</a>
+            
+            <div class = "sub_content" id = "period_desc">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia modi maiores officiis, explicabo a atque, ullam molestias quasi iste porro inventore sunt facere eius nemo architecto distinctio! Doloribus vero fugit, magnam sed laboriosam quae nihil amet ad excepturi corporis in adipisci libero laborum odit debitis illo repudiandae, quos voluptatem iste!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Functionalities and interaction -->
+    <div class = "functionality_section content_section" id = "functionalities">
+        <!-- Title -->
+        <div class = "section_title">
+            <h1><span>&gt; &gt;</span> Functionalities <span>&lt; &lt;</span></h1>
+            <p>The piano's functionalities are defined by its intricate mechanism, which allows for a wide range of musical expression. When a key is pressed, a felt-covered hammer strikes strings inside the piano, producing sound. The force with which the key is struck affects the volume and tone, enabling dynamic play from soft, gentle notes to powerful, resonant chords. The three pedals—soft (una corda), sostenuto, and damper—further enhance the instrument's versatility by modifying the sound and sustaining notes. Together, these elements allow pianists to create complex and nuanced musical performances.</p>
+        </div>
+
+        <div class = "main_content">
+            <div class = "sub_content">
+                <h2>Keys</h2>
+                <p>Typically, a standard piano features 88 keys, divided into 52 white keys and 36 black keys. The white keys represent the natural notes (A to G), while the black keys represent the <a class = "external_link" href = "https://en.wikipedia.org/wiki/Sharp_(music)" target = "_blank">sharps(#)</a> and <a class = "external_link" href = "https://en.wikipedia.org/wiki/Flat_(music)" target = "_blank">flats(♭)</a>.</p>
+            </div>
+
+            <div class = "interactive_piano">
+                <!-- Volume control and options -->
+                <div class = "options">
+                    <div class = "volume_slider">
+                        <span>Volume</span><input type = "range" min = "0" max = "1" value = "1" step = "any">
+                    </div>
+                    <div class = "show_keys">
+                        <span>Show Keybinds</span><input type = "checkbox" checked>
+                    </div>
+                </div>
+
+                <!-- 1 octave 12 keys -->
+                <ul class = "keys">
+                    <li class = "white key"><span><strong>a</strong></span></li>
+                    <li class = "black key"><span><strong>w</strong></span></li>
+                    <li class = "white key"><span><strong>s</strong></span></li>
+                    <li class = "black key"><span><strong>e</strong></span></li>
+                    <li class = "white key"><span><strong>d</strong></span></li>
+                    <li id = "hidden_key"></li> <!-- Hidden grid element to seperate the large black key gap precisely -->
+                    <li class = "white key"><span><strong>f</strong></span></li>
+                    <li class = "black key"><span><strong>t</strong></span></li>
+                    <li class = "white key"><span><strong>g</strong></span></li>
+                    <li class = "black key"><span><strong>y</strong></span></li>
+                    <li class = "white key"><span><strong>h</strong></span></li>
+                    <li class = "black key"><span><strong>u</strong></span></li>
+                    <li class = "white key"><span><strong>j</strong></span></li>
+                </ul>
+            </div>
+
+            <!-- Shows the user what key is played -->
+            <div class = "piano_tooltips">
+                <h2>You just played the musical note: <br><span>-</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- QR Code -->
+    <div class = "qr_code_section content_section" id = "qr_code">
+        <!-- Title -->
+        <div class = "section_title">
+            <h1><span>&gt; &gt;</span> Go Mobile <span>&lt; &lt;</span></h1>
+            <p>This website works on your mobile phones too! Try it out!</p>
+            <img src = "Images/website_qr.png" alt = "qr_code">
+        </div>
+    </div>
+</body>
+</html>

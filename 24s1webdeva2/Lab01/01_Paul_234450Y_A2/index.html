@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The taste of Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!--Title header, main topic of webpage-->
+        <div class="block-style">
+            <h1> Power of Pizza </h1>
+            <div class="center-container">
+                <img src="images/bg-qrcode.png" alt="qr code">
+            </div>
+        </div>
+        <!--Transition of background images-->
+        <div class="picture-holder">
+
+            <img class="picture1" src="images/bg-firstbackground.jpg" alt="Picture 1">
+            <img class="picture2" src="images/bg-pizzaslice.jpg" alt="Picture 2">
+            <img class="picture3" src="images/bg-pizzas.jpg" alt="Picture 3">
+        </div>
+    </header>
+    <nav> <!--menu system-->
+        <button id="hamIcon">Menu</button>
+        <button id="settingIcon">Settings</button>
+        <ul id="settings" class="settingHide">
+            <li><a id="screenbtnfullIcon">Full Screen</a></li>
+            <li><a id="screenbtnexitIcon">Exit Full Screen</a></li>
+        </ul>
+        <!--setting system for full screen-->
+        <ul id="menu" class="menuHide">
+            <li><a id="page1btn">What is Pizza?</a></li>
+            <li><a id="page2btn">Places that sell Pizza</a></li>
+            <li><a id="page3btn">Pizza Layers</a></li>
+        </ul>
+    </nav>
+
+    <div id="pagecontainer">
+        <!--page 1 content-->
+        <div class="page" id="page1">
+            <!--Description of what the page is about-->
+            <p class="initial-text">
+                Pizza is a traditional Italian dish typically consisting of a flat base of leavened wheat-based
+                dough topped with tomato, cheese, and other ingredients, baked at a high temperature, traditionally
+                in a wood-fired oven. A classic favourite in Singapore is the Pepperoni Pizza. The pizza dough is
+                layered with
+                mozarella cheese, tomato paste and topped with delectable pepperoni slices.
+            </p>
+            <div class="flex-style">
+                <p>
+                    To learn more about pizza and its history, click here =>
+
+                    <a href="https://www.britannica.com/topic/pizza" target="_blank" rel="noopener noreferrer">Learn
+                        more</a>
+                </p>
+            </div>
+            <!--border containing a video of how to make pizza and a list of ingredients to make it-->
+            <div class="image-border">
+                <div class="responsiveflex-style">
+                    <div class="center-container">
+                        <!--Video link and iframe-->
+                        <div class="video-link">
+
+                            <a href="https://www.youtube.com/watch?v=MDX8fylSisU">Click here to
+                                learn how to make a simple pepperoni pizza </a>
+                            <br><iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/MDX8fylSisU?si=M8TK5guYzRSCa6j"
+                                title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <!--Ingredients list for pepperoni pizza-->
+                    <div class="text">
+                        <h2>Ingredients needed for classic Pepperoni Pizza</h2>
+                        <div class="flex-style">
+                            <div class="text-box">
+                                <p>
+                                    Pizza Dough Ingredients:
+                                    <br>
+                                    1 cup all-purpose flour (160 g)
+                                    <br>
+                                    1 tsp yeast
+                                    <br>
+                                    1 tsp sugar
+                                    <br>
+                                    1/4 tsp salt
+                                    <br>
+                                    1 tbsp olive oil
+                                    <br>
+                                    3 fl oz warm water (90 ml)
+                                </p>
+                            </div>
+
+                            <div class="text-box">
+                                <p>
+                                    Ingredients for Tomato Pizza Sauce:
+                                    <br>
+                                    14 oz tomatoes (400 g)
+                                    <br>
+                                    1 garlic clove
+                                    <br>
+                                    4-5 basil leaves
+                                    <br>
+                                    1 tbsp oregano
+                                    <br>
+                                    2 tbsp olive oil
+                                    <br>
+                                    Black pepper to taste
+                                    <br>
+                                    1/4 tsp salt
+                                    <br>
+                                    1 tsp sugar
+                                    <br>
+                                    1 tbsp tomato paste
+                                </p>
+                            </div>
+
+                            <div class="text-box">
+                                <p>
+                                    Pizza topping ingredients:
+                                    <br>
+                                    Pepperoni sausage slices
+                                    <br>
+                                    7 oz mozzarella cheese (200 g)
+                                    <br>
+                                    Slice some onion
+                                    <br>
+                                    Some sweet corn
+                                    <br>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="text-box">
+                            <p>
+                                These are the ingredients mentioned in the video, so please refer to the video for a
+                                step by step guide on how to make a simple pepperoni pizza.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--page 2 content-->
+        <div class="page" id="page2">
+
+            <!--Description of what page 2 is about-->
+            <p class="initial-text">
+                There are many outlets in Singapore that sells Pizza, the most popular ones are Pizza Hut and
+                Domino's Pizza.
+                <br>
+                Below are the brandmarks of Domino's Pizza (Left) and Pizza Hut (Right).
+            </p>
+
+            <!--Border containing information about Domino's Pizza and Pizza Hut-->
+            <div class="top-border">
+
+                <!--Class containing the images-->
+                <div class="image-size">
+                    <!--Aligning image content into the center-->
+                    <div class="center-container">
+                        <div class="horizontalcontent">
+                            <button id="dominobutton">Domino's Pizza information</button>
+                            <button id="pizzahutbutton">Pizza Hut information</button>
+                        </div>
+                        <!--Domino and Pizza Hut logo-->
+                        <img src="images/bg-dominoslogo.jpg" alt="Picture of Pizza">
+                        <img src="images/bg-pizzahutlogo.jpg" alt="Picture of Pizza">
+                    </div>
+                </div>
+                <!--Domino's page information-->
+                <div class="text" id="dominospage">
+                    <h2> Dominos Pizza Information </h2>
+                    <div class="bluetext-box">
+                        <p>
+                            Domino's pizza is a pizza chain outlet that has been established in Singapore since
+                            2009. Since then, it has now over 40 pizza chain outlets all over Singapore. Ihis pizza
+                            chain outlet mainly sells pizza and is specialized in fast pizza delivery. They also try
+                            to create new types of pizza flavours that are usually available on a limited time
+                            period.
+                            <br>
+                            <!--Reference link for Domino's-->
+                            <a href="https://www.thebestsingapore.com/best-place/dominos-pizza/#google_vignette"
+                                target="_blank" rel="noopener noreferrer">More about Domino's</a>
+                        </p>
+
+
+                    </div>
+
+                    <div class="bluetext-box">
+                        <div class="horizontalcontent">
+                            <div class="image-size2">
+                                <img src="images/bg-roni.jpg" alt="Picture of Pizza">
+                            </div>
+                            <div class="center-container">
+
+
+                                <p>
+                                    The limited pizza flavour they are currently selling now is the Pepperoni Roni,
+                                    where
+                                    the pepperoni slices can be chosen to be beef or chicken flavour. The Pepperoni
+                                    Roni
+                                    is a brother of the classic pepperoni pizza that features 150% more pepperoni
+                                    slices
+                                    on the pizza, with a new type of cheese used in the pizza that creates a unique
+                                    flavour. Only available for a limited-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bluetext-box">
+
+                        <p>
+                            Domino's Pizza has a website for their menu as well as self-delivery, pick-up and dining
+                            options=>
+                            <!--link of Domino's menu, restaurant and delivery service-->
+                            <a href="https://www.dominos.com.sg/" target="_blank" rel="noopener noreferrer">Domino's
+                                Pizza Website</a>
+                        </p>
+
+                    </div>
+                </div>
+                <!--Pizza Hut page information-->
+                <div class="text" id="pizzahutpage">
+                    <h2> Pizza Hut Information </h2>
+                    <div class="redtext-box">
+                        <p>
+                            Pizza Hut is a famous American pizza restaurant chain founded in 1958 by brothers Dan
+                            and Frank Carney in Wichita, Kansas. Pizza Hut was founded in Singapore in 1981. It
+                            quickly expanded and became part of Yum! Brands.
+                            Pizza Hut is known for its wide variety of pizzas, including popular options like
+                            Pepperoni and Supreme, with different crust types such as Original Pan, Hand-Tossed, and
+                            Stuffed Crust. Besides pizza, they offer pasta, wings, breadsticks, and desserts. The
+                            chain operates in various formats, including dine-in restaurants, carryout locations,
+                            and delivery services.
+                            <br>
+                            <!--Reference link about Pizza Hut history and relevant info-->
+                            <a href="https://blog.pizzahut.com/our-story/" target="_blank"
+                                rel="noopener noreferrer">Pizza Hut's founding</a>
+                            <br>
+                            <a href="https://www.foodbeverage-outlook.com/restaurants-outlets/pizza-hut-singapore-pizza-passion"
+                                target="_blank" rel="noopener noreferrer">Pizza Hut's Singapore story</a>
+                        </p>
+
+
+                    </div>
+
+                    <div class="redtext-box">
+                        <div class="horizontalcontent">
+                            <div class="image-size2">
+                                <img src="images/bg-cheesy7.jpg" alt="Picture of Pizza">
+                            </div>
+                            <div class="center-container">
+
+
+                                <p>
+                                    Currently, Pizza Hut Singapore is offering a limited-time pizza flavor called
+                                    "Cheesy 7 Beyond™ Supreme." This special edition is part of their Cheesy 7
+                                    range, which includes various options like the Cheesy 7 Original and Cheesy 7
+                                    Hawaiian.Additionally, they have a promotion for a free regular Rose Chicken Ham
+                                    'N' Corn Pizza available until July 21, 2024, when using the promotional code
+                                    "FREEROSE" with a minimum spend of $20
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="redtext-box">
+
+                        <p>
+                            Pizza has a website for their wide range of food choices as well as self-delivery,
+                            pick-up and dining
+                            options=>
+                            <!--link of Pizza Hut menu, restaurant and delivery service-->
+                            <a href="https://www.pizzahut.com.sg/home" target="_blank" rel="noopener noreferrer">Pizza
+                                Hut Website</a>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--page 3 content-->
+        <div class="page" id="page3">
+            <!--Description of what page 3 is about-->
+            <p class="initial-text"> The are many layers to a pizza before it is send into the oven. This page will
+                teach you about the layers of a pizza and how it is added from the base to the top.
+                <br>
+                To learn more about pizza layering, click here => <a href="https://bakinghow.com/layer-pizza-toppings/"
+                    target="_blank" rel="noopener noreferrer"> Pizza topping Order: Learn how to layer a pizza </a>
+            </p>
+            <!--Page 3 content border-->
+            <div class="center-container">
+                <h3> Pizza layer and topping order game </h3>
+            </div>
+            <div class="image-border" id="game">
+
+                <!--Pizza Dough Roller-->
+                <div id="roller">
+                    <div id="handle"></div>
+                </div>
+                <!--Sauce Scooper-->
+                <div id="scooper">
+                    <img src="images/bg-soupladle.png" alt="soup ladle">
+                </div>
+
+                <!--Cheese grater-->
+                <div id="cheese-grater">
+                    <img src="images/bg-grater.png" alt="cheese">
+                </div>
+
+                <!--Topping Booard-->
+                <div id="board">
+                    <img src="images/bg-board.png" alt="board">
+                    <div class="pepperoni">
+                        <img src="images/bg-pepperoni.png" alt="pepperoni">
+                        <img src="images/bg-pepperoni.png" alt="pepperoni">
+                        <img src="images/bg-pepperoni.png" alt="pepperoni">
+                    </div>
+                </div>
+
+                <!--Plate for pizza-->
+                <div id="doughplate">
+                    <img src="images/bg-plate.png" alt="plate">
+                </div>
+
+                <!--Game buttons-->
+                <button id="doughBtn">Place Dough</button>
+                <button id="sauceBtn">Add Sauce</button>
+                <button id="cheeseBtn">Add Cheese</button>
+                <button id="toppingBtn">Add Toppings</button>
+                <button id="bakeBtn">Bake</button>
+                <button id="restartBtn">Incorrect Order! Restart?</button>
+                <button id="optionalrestartBtn">You got the correct order! Wanna try again?</button>
+
+                <!--Pizza ingredients-->
+                <div id="pizza-dough"></div>
+                <div id="tomato-sauce"></div>
+                <div id="cheese-strip">
+                    <img src="images/bg-cheese.png" alt="shredded cheese">
+                </div>
+
+                <div id="pepperoni-spread">
+                    <img src="images/bg-pepperoni.png" alt="pepperoni spread">
+                </div>
+
+                <div id="pepperoni-spread2">
+                    <img src="images/bg-pepperoni.png" alt="pepperoni spread">
+                </div>
+
+                <div id="pepperoni-spread3">
+                    <img src="images/bg-pepperoni.png" alt="pepperoni spread">
+                </div>
+
+                <div id="pepperoni-spread4">
+                    <img src="images/bg-pepperoni.png" alt="pepperoni spread">
+                </div>
+
+                <div id="pepperoni-spread5">
+                    <img src="images/bg-pepperoni.png" alt="pepperoni spread">
+                </div>
+
+                <div id="baked-pizza">
+                    <img src="images/bg-baked.png" alt="pepperoni pizza">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

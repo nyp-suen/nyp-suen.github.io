@@ -1,0 +1,163 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Arial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    margin: 0px 5vw;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    margin: 1.5vh 10%;
+    width: 80%;
+    height: auto;
+}
+
+.qbutton {
+    margin: 2.5vh 2.5vw;
+    border: none;
+    border-radius: 10px;
+    width: 80vw;
+    height: max-content;
+    min-height: calc(20px + 5vh);
+    font-size: calc(12px + 1.5vh);
+    color: #FFFFFF;
+    background-color: #222222;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 2.5vh 0px;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    background-color: #808080;
+}
+
+.question {
+    width: 100vw;
+    font-size: calc(16px + 1.5vh);
+}
+
+.subcontent {
+    margin: 1.5vh 10%;
+    padding: 1.5vh;
+    width: 80%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+button {
+    vertical-align: top;
+    border: none;
+    width: 60vw;
+    min-height: 50px;
+    font-size: calc(12px + 1.5vh);
+    color: #FFFFFF;
+}
+
+.top {
+    margin: 1.5vh 0px;
+    padding: 1.5vh;
+    border: none;
+    border-radius: 10px;
+    width: 80vw;
+    min-width: 325px;
+    font-size: calc(16px + 1.5vh);
+    color: #FFFFFF;
+    background-color: #222222;
+}
+
+.bottom {
+    margin: 1.5vh 0px;
+    padding: 1.5vh;
+    border: none;
+    border-radius: 10px;
+    width: 80vw;
+    min-width: 325px;
+    font-size: calc(12px + 1.5vh);
+    color: #FFFFFF;
+    background-color: #444444;
+}
+
+.minibutton {
+    vertical-align: top;
+    border: none;
+    width: 20vw;
+    min-height: 50px;
+    font-size: calc(12px + 1.5vh);
+    color: #FFFFFF;
+    background-color: #909090;
+}
+
+.qrcode {
+    max-width: 500px;
+}
+
+.banner {
+    text-align: center;
+    width: 100vw;
+    font-size: calc(24px + 1.5vh);
+    color: #FFFFFF;
+    background-color: #222222;
+}
+
+@media (min-width: 801px) {
+    button {
+        vertical-align: top;
+        border: none;
+        width: 32vw;
+        min-height: 50px;
+        font-size: calc(12px + 1.5vh);
+        color: #FFFFFF;
+    }
+
+    .top {
+        margin: 1.5vh 0px;
+        padding: 1.5vh;
+        border: none;
+        border-radius: 10px;
+        width: 35vw;
+        min-width: 500px;
+        font-size: calc(16px + 1.5vh);
+        color: #FFFFFF;
+        background-color: #222222;
+    }
+
+    .bottom {
+        margin: 1.5vh 0px;
+        padding: 1.5vh;
+        margin: 1.5vh 0px;
+        border: none;
+        border-radius: 10px;
+        width: 35vw;
+        min-width: 500px;
+        font-size: calc(12px + 1.5vh);
+        color: #FFFFFF;
+        background-color: #444444;
+    }
+
+    .qbutton {
+        margin: 2.5vh 2.5vw;
+        border: none;
+        border-radius: 10px;
+        width: 35vw;
+        height: max-content;
+        min-height: calc(20px + 5vh);
+        font-size: calc(12px + 1.5vh);
+        color: #FFFFFF;
+        background-color: #222222;
+    }
+}

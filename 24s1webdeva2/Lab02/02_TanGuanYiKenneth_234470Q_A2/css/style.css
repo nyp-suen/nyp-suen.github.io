@@ -1,0 +1,164 @@
+body{
+    background-color: bisque;
+}
+
+header
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: chocolate;
+}
+
+nav
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: burlywood;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/*hamburger button styling*/
+#page1btn
+{
+    cursor: pointer;
+    float: left;
+    background-color: cadetblue;
+    font-size: 24px;
+    transition: background 0.5s;
+}
+
+#page2btn
+{
+    cursor: pointer;
+    float:left;
+    background-color: cadetblue;
+    font-size: 24px;
+    transition: background 0.5s;
+}
+
+#page3btn
+{
+    cursor: pointer;
+    float:left;
+    background-color: cadetblue;
+    font-size: 24px;
+    transition: background 0.5s;
+}
+
+#page4btn
+{
+    float:left;
+    background-color: cadetblue;
+    font-size: 24px;
+    transition: background 0.5s;
+}
+
+#page1btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(69, 116, 118);
+}
+
+#page2btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(69, 116, 118);
+}
+
+#page3btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(69, 116, 118);
+}
+
+#page4btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(69, 116, 118);
+}
+
+/*music button styling*/
+#audioButton
+{
+    position: absolute;
+    cursor: pointer;
+    float:right;
+    background-color: grey;
+    margin: 1%;
+    right:0;
+}
+
+#page1 {
+    background-color: beige;
+}
+
+#page2 {
+    background-color: beige;
+}
+
+#page3 {
+    background-color: beige;
+}
+
+#page4 {
+    background-color: beige;
+}
+
+#transition{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+/*CSS for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+#gamescreen{
+    background: grey;
+    margin:auto;
+    width: 30%;
+    padding: 20%;
+}
+
+#answerscreen{
+    background: grey;
+    margin:auto;
+    width: 30%;
+    padding: 20%;
+    display: none;
+}
+
+.deerimage{
+    width:25%;
+}
+
+.deerimage2{
+    width:75%;
+}
+
+@media screen and (max-width:800px) {
+    nav ul li {
+        display: block;
+    }
+
+    /*make a menu items vertical*/
+    #hamIcon {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    nav ul {
+        display: none;
+    }
+
+    /*hide the menu item list*/
+}
+.menuHide
+{
+    display:block;
+}

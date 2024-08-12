@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Base</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div id="background"></div>
+
+    <header>
+        <h1>Instant Ramen</h1>
+        <div class = "qrCode">
+        <img src="images/QRCode.png" alt="QRCode">  
+    </div>
+    </header>
+
+    <nav> <!--menu systtm-->
+        <div id="hamIcon"></div>
+        <ul>
+            <li><button id="page1btn">What is Instant Ramen</button></li>
+            <li><button id="page2btn">History of Instant Ramen</button></li>
+            <li><button id="page3btn">Cup Noodle Flavors</button></li>
+        </ul>
+    </nav>
+
+    <div id="pagecontainer">
+        <div class="page" id="page1">
+            <h1>About Cup Noodles</h1>
+            <img src="images/nissinLogo.png" alt="Nissin Cup Noodles logo">
+            <infocaption>
+                Cup Noodles Logo
+            </infocaption>
+            <p>
+                Cup Noodles (カップヌードル, Kappu Nūdoru) is a brand of cup instant ramen developed in 1971 and manufactured
+                by Japanese food company
+                <a href="https://en.wikipedia.org/wiki/Nissin_Foods" title="Nissin Foods" target="_blank">Nissin
+                    Foods</a>.
+                Single servings of the product are packaged in foam,
+                plastic, or paper cups and are prepared by adding boiling water.
+            </p>
+            <img src="images/cupnoodle.jpg" alt="Chicken Cup Noodles" width="200px" height="200px">
+            <infocaption>
+                Chicken Cup Noodle
+            </infocaption>
+            <p>
+                The brand name Cup Noodle is also a registered trademark of
+                <a href="https://en.wikipedia.org/wiki/Nissin_Foods" title="Nissin Foods" target="_blank">Nissin
+                    Foods</a>.
+                In some countries, such as
+                Japan, this singular form Cup Noodle is used. The product has inspired various competing products, such
+                as <a href="https://en.wikipedia.org/wiki/Maruchan" title="Maruchan" target="_blank">Maruchan</a>'s
+                Instant Lunch.
+            </p>
+
+            <h1>Other popular instant ramens around the world</h1>
+            <p>
+                Click flags to reveal
+            </p>
+            <div class="flag-container">
+                <img src="images/nongshim.jpg" alt="nongshim" width="200px" height="200px">
+                <div class="hidden-text">
+                    <p>
+                        <b>Shin Ramyun</b> (Korean: 신라면, styled as 辛라면 with Hanja) is a brand of instant noodle
+                        (including cup
+                        ramyeon) that has been produced by the South Korean food company Nongshim since 1 October 1986.
+                        It
+                        is now exported to over 100 countries, and is the best-selling instant noodle brand in South
+                        Korea.
+                    </p>
+                </div>
+                <img src="images/southKoreanFlag.jpg" alt="Flag of South Korea" class="korean-flag-img">
+            </div>
+
+            <div class="flag-container">
+                <img src="images/indomie.jpg" alt="indomie" width="200px" height="200px">
+                <div class="hidden-text">
+                    <p>
+                        <b>Indomie</b> is a brand of instant noodle produced by the Indonesian company Indofood.
+                        Indofood
+                        itself is the largest instant noodle producer in the world with 16 factories. Over 28 billion
+                        packets of Indomie are produced annually, and the brand is also exported to
+                        more than 90 countries around the world.
+                    </p>
+                </div>
+                <img src="images/indonesiaFlag.png" alt="Flag of Indonesia" class="indo-flag-img">
+            </div>
+        </div>
+
+        <div class="page" id="page2">
+            <div class="hidden-page2">
+                <h1>How Instant Ramen came to be</h1>
+                <img src="images/momofukuAndo.jpg" alt="Momofuku Ando" width="200px" height="200px">
+                <br> Momofuku Ando <br>
+                安藤 百福 <br>
+                <b>Born:</b> March 5, 1910<br>
+                Bokushi-shi, Kagi-chō,
+                Japanese Taiwan<br>
+                <b>Died:</b> January 5, 2007 (aged 96)<br>
+                <a href="https://www.google.com/maps/place/Ikeda,+Osaka,+Japan/" title="Ikeda"
+                    target="_blank">Ikeda</a>,
+                Osaka Prefecture, Japan
+                <p>
+                    Instant noodles were invented in 1958 by
+                    <a href="https://en.wikipedia.org/wiki/Momofuku_Ando" title="Momofuku Ando" target="_blank">Momofuku
+                        Ando</a>,
+                    the Taiwanese-born founder of the Japanese foodcompany Nissin.
+                    He used Chicken Ramen as the first instant ramen noodles.
+                </p>
+            </div>
+
+            <div class="hidden-page2">
+                <h1>Founding of <a href="https://en.wikipedia.org/wiki/Nissin_Foods" title="Nissin Foods"
+                        target="_blank">Nissin</a></h1>
+                <img src="images/nissinOffice.jpg" alt="Nissin HQ" width="200px" height="200px">
+                <infocaption>Head office in Osaka, Japan</infocaption>
+                <p>
+                    Ando was convicted of tax evasion in 1948 and served two years in jail. In his biography, Ando said
+                    he had provided scholarships for students, which at the time was a form of tax evasion. After he
+                    lost his company due to a chain-reaction bankruptcy, Ando founded what was to become Nissin in
+                    Ikeda, Osaka, Japan, starting off as a small family-run company producing salt.
+                </p>
+            </div>
+
+            <div class="hidden-page2">
+                <h1>Invention of Nissin Chikin Ramen</h1>
+                <img src="images/postwar.jpg" alt="Post War Supplies by US Forces" width="250px" height="250px">
+                <infocaption>US Soldiers providing supplies for <br> handout to the Japanese army</infocaption>
+                <p>
+                    With Japan still suffering from a shortage of food in the post-war era, the Ministry of Health tried
+                    to
+                    encourage people to eat bread made from wheat flour that was supplied by the United States. Ando
+                    wondered why bread was recommended instead of noodles, which were more familiar to the Japanese. The
+                    Ministry's response was that noodle companies were too small and unstable to satisfy supply needs,
+                    so
+                    Ando decided to develop the production of noodles by himself. The experience convinced him that
+                    "Peace
+                    will come to the world when the people have enough to eat."
+                </p>
+                <img src="images/lab.jpg" alt="Ando's Laboratory" width="250px" height="250px">
+                <infocaption>A recreation of Ando's Workshop <br> at the momofuku Andō Instant Ramen Museum
+                </infocaption>
+                <p>On August 25, 1958, at the age of 48, and after months of trial and error experimentation to perfect
+                    his flash-frying method, Ando marketed the first package of precooked instant noodles. The original
+                    chicken flavor is called Chikin Ramen. It was originally considered a luxury item with its price of
+                    ¥35 (US$0.10) in 1958 under the then exchange rate of 360 yen to the dollar but equivalent to
+                    ¥608 by 2021 or US$5.69 under the current exchange rate of US$1 =¥106.775 in around six times
+                    that of traditional udon and soba noodles at the time. As of 2016, Chicken Ramen is still sold in
+                    Japan and now retails for around ¥120 (US$1.12), or approximately one-third the price of the
+                    cheapest bowl of noodles in a Japanese restaurant.</p>
+            </div>
+
+            <div class="hidden-page2">
+                <h1>Cup Noodles invention</h1>
+                <img src="images/manyNoodles.jpg" alt="A stack of Cup Noodles" width="250px" height="250px">
+                <infocaption>
+                    <a href="https://en.wikipedia.org/wiki/Cup_Noodles" title="Nissin Cup Noodles"
+                        target="_blank">Nissin Cup Noodles</a>
+                    (1971~)
+                </infocaption>
+                <p>
+                    According to The Financial Times, Ando's invention of Cup Noodles in 1971, at the age of 61, helped
+                    spark the popularity of instant noodles overseas. He had observed that Americans ate noodles by
+                    breaking the noodles in half, putting them into a paper cup, and pouring hot water over the noodles.
+                    They also ate them with a fork instead of chopsticks. Ando was inspired, and felt that a Styrofoam
+                    cup—with a narrower bottom than the top—would be the ideal vessel for holding noodles and keeping
+                    them warm. Eating the noodles would then be as easy as opening the lid, adding hot water and
+                    waiting. This simplicity, efficiency and low price of Cup Noodles went on to transform Nissin's
+                    fortunes.
+                </p>
+                <p> Ando began the sales of his most famous product, Cup Noodle (カップヌードル, Kappu Nūdoru), on September
+                    18, 1971, with the idea of providing a waterproof polystyrene container. As prices dropped, instant
+                    ramen soon became a booming business. Worldwide demand reached 98 billion servings in 2009.
+                </p>
+            </div>
+        </div>
+
+        <div class="page" id="page3">
+            <h1>Nissin Beef Curry Meshi Cup Noodle Commercial</h1>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3QJD9iekpDQ?si=Nr-Y2qHzHZRCSkVh"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+            <p>
+                An example of an advertisment for one of the many flavors of instant ramen, this ad more specfically
+                advertises Curry Beef Ramen.<br>This is one of the many examples of Nissin's creative marketing
+                strategies
+                to appeal to a wider consumer base.
+            </p>
+
+            <h1>Cup Noodle Memory Game</h1>
+            <div id="game-container"></div>
+            <button id="restartbtn">Restart Game</button>
+            <div id="result"></div>
+        </div>
+</body>
+
+</html>

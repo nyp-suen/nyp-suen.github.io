@@ -1,0 +1,797 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* font size for links */
+div.page a {
+    font-size: 1.5vw;
+}
+
+/* buttons, headers 2 and 3 share same font */
+nav,
+h2,
+h3,
+#typeList {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body has black background */
+body {
+    background-color: black;
+}
+
+
+/* setting Header's height,display and background color*/
+header {
+    position: relative;
+    height: 60vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*setting font and its size of header 1*/
+header h1 {
+    font-size: 8vw;
+    font-family: myFirstFont, Georgia, serif;
+}
+
+/* header for ingredients*/
+h2 {
+    border: 6px double;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* header for ingredients*/
+h3 {
+    border: 6px double;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 2vw;
+    display: inline-block;
+}
+
+
+
+/* setting front background transition */
+.picture-holder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    z-index: -5;
+    object-fit: cover;
+    justify-content: center;
+    outline: 1vw dotted;
+    outline-offset: -2vw;
+    transition: opacity 1s ease-in-out;
+}
+
+/* set padding in nav */
+nav {
+    padding-top: 1vh;
+}
+
+/* set the page buttons display and flex direction */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* make items more organised and spaced out*/
+    list-style-type: none;
+    /* Remove bullets */
+    font-size: 1.5vw;
+}
+
+/* setting the alignment of text in the buttons */
+nav ul li {
+    display: flex;
+    text-align: center;
+}
+
+/* setting the color and display of the page buttons */
+nav ul li a {
+    display: block;
+    border: 3.5px solid;
+    border-color: gold;
+    padding: 0.5em 6.3em;
+    color: white;
+    background: orange;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* page buttons change color when hovered over by mouse */
+#page1btn:hover,
+#page2btn:hover,
+#page3btn:hover {
+    background-color: orangered;
+    color: black;
+}
+
+
+
+/*for responsive menu*/
+#hamIcon {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.15em 4.525em;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0%, 0%, 70%, 0.3);
+}
+
+/*for responsive setting*/
+#settingIcon {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.15em 4.525em;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(30%, 30%, 30%, 0.3);
+}
+
+/*Pages and Content*/
+.page {
+    /*Get A Space Around Content*/
+    border: 1vw solid black;
+    padding: 3vh 2vw;
+    background-color: white;
+}
+
+/*A container for to put content into*/
+.image-border {
+    background-color: rgba(100%, 100%, 100%, 0.5);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* setting display of top-border in page 2*/
+.top-border {
+    background-color: rgba(100%, 100%, 100%, 0.5);
+    flex-direction: column;
+}
+
+/* for responsive content */
+.responsiveflex-style {
+    display: flex;
+}
+
+/* for simple flex display */
+.flex-style {
+    display: flex;
+}
+
+.horizontalcontent {
+    display: flex;
+}
+
+/* for simple block display */
+.block-style {
+    display: block;
+}
+
+/* image size in block style */
+.block-style img {
+   height:30%;
+   width:30%;
+}
+
+/* for centering content */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* page 1 background color */
+#page1 {
+    background: green;
+}
+
+/* page 2 background color */
+#page2 {
+    background: grey;
+}
+
+/* page 3 background color */
+#page3 {
+    background: grey;
+}
+
+/* acts as a powerpoint slide section for you put to text-boxes in*/
+.text {
+    display: block;
+    margin: 10px;
+}
+
+/* to access the text class with id = dominospage*/
+.text#dominospage {
+    display: none;
+    transition: opacity 2s ease-in-out;
+}
+
+/* to access the text class with id = pizzahutpage*/
+.text#pizzahutpage {
+    display: none;
+    transition: opacity 2s ease-in-out;
+}
+
+/* text-box display for you to write text in*/
+.text-box {
+    display: block;
+    background-color: greenyellow;
+    border: 8px solid white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.bluetext-box {
+    display: block;
+    background-color: cornflowerblue;
+    border: 8px solid white;
+    font-family: cursive;
+    text-align: center;
+}
+
+.redtext-box {
+    display: block;
+    background-color: crimson;
+    border: 8px solid white;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* video link display */
+.video-link {
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+/* class for images */
+.image-size {
+    height: auto;
+    width: 98%;
+    display: block;
+    position: relative;
+    border: 1vw solid;
+    border-radius: 1vw;
+}
+
+/* % Size of each image within the class */
+.image-size img {
+    height: 50%;
+    width: 50%;
+}
+
+.image-size2 img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* font size of paragraphs */
+p {
+    font-size: 1.2vw;
+}
+
+/* bottom margin to ample spacing for the first sentence of the page*/
+p.initial-text {
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* domino button info page*/
+#dominobutton {
+    position: absolute;
+    top: 93%;
+    left: 18%;
+    font-size: 1vw;
+    color: cornflowerblue;
+    font-weight: bold;
+    border: 5px double;
+    border-color: cornflowerblue;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+/* pizza hut button info page */
+#pizzahutbutton {
+    top: 93%;
+    position: absolute;
+    left: 68%;
+    font-size: 1vw;
+    color: red;
+    font-weight: bold;
+    border: 5px double;
+    border-color: crimson;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+/* taking font from font folder */
+@font-face {
+    font-family: myFirstFont;
+    src: url("fonts/Supercharge-JRgPo.otf");
+}
+
+/* Game Border of Page 3*/
+.image-border#game {
+    position: relative;
+    background-color: burlywood;
+    width: 92vw;
+    height: 50vw;
+    margin: 0;
+}
+
+/* Dough Plate*/
+#doughplate {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    background-color: grey;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* percentage size of image in doughplate */
+#doughplate img {
+    height:100%;
+    width:100%;
+}
+
+/* Pizza Dough*/
+#pizza-dough {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    background-color: peachpuff;
+    height: 0vw;
+    width: 0vw;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Tomato Sauce ingredient */
+#tomato-sauce {
+    position: absolute;
+    top: 15%;
+    left: 31.5%;
+    height: 35vw;
+    width: 35vw;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 3.5s ease-in-out;
+}
+
+
+/* shredded mozarella cheese ingredient */
+#cheese-strip {
+    opacity: 0;
+}
+
+/* shredded cheese image */
+#cheese-strip img {
+    position: absolute;
+    top: 14%;
+    left: 31.5%;
+    height: 36.5vw;
+    width: 36.5vw;
+    z-index: 2;
+    opacity: 1;
+}
+
+#baked-pizza {
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    height: 40vw;
+    width: 40vw;
+    z-index: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform 0.5s ease;
+
+}
+
+#baked-pizza img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Place Dough Button */
+#doughBtn {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: black;
+    height: 10%;
+    width: 12%;
+    font-size: 1.6vw;
+    background-color: peachpuff;
+    border-radius: 50%;
+}
+
+/* Add Sauce Button */
+#sauceBtn {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: black;
+    height: 10%;
+    width: 12%;
+    font-size: 1.8vw;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* Add Cheese Button */
+#cheeseBtn {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: black;
+    height: 10%;
+    width: 12%;
+    font-size: 1.7vw;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+/* Add topping Button */
+#toppingBtn {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    color: black;
+    height: 10%;
+    width: 12%;
+    font-size: 1.5vw;
+    background-color: firebrick;
+    border-radius: 50%;
+}
+
+/* Bake Button */
+#bakeBtn {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: black;
+    height: 10%;
+    width: 12%;
+    font-size: 1.8vw;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+
+/* Restart the page 3 Game Button */
+#restartBtn {
+    position: absolute;
+    color: white;
+    height: 10%;
+    width: 30%;
+    background-color: black;
+    top: 90%;
+    left: 36%;
+    font-size: 2vw;
+    font-weight: bold;
+    border: 0.5vw solid;
+    border-color: white;
+    display: none;
+}
+
+/* Restart the page 3 won Game Button */
+#optionalrestartBtn {
+    position: absolute;
+    color: white;
+    height: 10%;
+    width: 50%;
+    background-color: greenyellow;
+    top: 90%;
+    left: 26%;
+    font-size: 2vw;
+    font-weight: bold;
+    border: 0.5vw solid;
+    border-color: white;
+    display: none;
+}
+
+/* Dough Roller*/
+#roller {
+    position: absolute;
+    height: 5vw;
+    width: 8vw;
+    background-color: peru;
+    left: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+/* Handle of Dough Roller*/
+#handle {
+    position: absolute;
+    height: 3vw;
+    width: 14vw;
+    background-color: peru;
+    z-index: 3;
+    border-radius: 1vw;
+}
+
+/* sauce scooper */
+#scooper {
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    top: 35%;
+    left: 80%;
+    display: flex;
+
+    justify-content: right;
+    align-content: center;
+    z-index: 3;
+}
+
+/* cheese grater */
+#cheese-grater {
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    top: 70%;
+    left: 82%;
+    display: flex;
+
+    justify-content: right;
+    align-content: center;
+    z-index: 3;
+}
+
+/*topping board*/
+#board {
+    position: absolute;
+    height: 9vw;
+    width: 9vw;
+    top: 11%;
+    left: 81%;
+    display: flex;
+    z-index: 3;
+}
+
+/* pepperoni for display on board */
+.pepperoni {
+    top: 1.75vw;
+    left: 3.5vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 2vw;
+    width: 2vw;
+}
+
+
+/* pepperoni slices for animation*/
+#pepperoni-spread {
+    top: 46%;
+    left: 49%;
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#pepperoni-spread2 {
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#pepperoni-spread3 {
+    top: 30%;
+    left: 58%;
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#pepperoni-spread4 {
+    top: 62%;
+    left: 58%;
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+#pepperoni-spread5 {
+    top: 62%;
+    left: 40%;
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    z-index: 6;
+    opacity: 0;
+}
+
+
+
+/* BELOW IS RESPONSIVE MEDIA TO PREVENT HORIZONTAL SCROLL */
+/* responsive media 1 */
+@media screen and (max-width:600px) {
+    .video-link iframe {
+        height: 60%;
+        width: 60%;
+    }
+
+}
+
+/* responsive media 2 */
+@media screen and (max-width:800px) {
+
+    .video-link iframe {
+        height: 80%;
+        width: 80%;
+    }
+
+
+    /*make a menu items vertical*/
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    /* unhide menu icon */
+    #hamIcon {
+        display: block;
+    }
+
+    #settingIcon {
+        display: block;
+    }
+
+    /*hide the menu item list*/
+    nav ul {
+        display: block;
+    }
+
+    .responsiveflex-style {
+        display: block;
+    }
+
+    .responsiveflex-style {
+        display: block;
+    }
+
+    .menuHide {
+        display: none;
+    }
+
+    .settingHide {
+        display: none;
+    }
+
+    #screenbtnfullIcon {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0.15em 4.525em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        background-color: rgba(50%, 50%, 50%, 0.5);
+    }
+
+    #screenbtnexitIcon {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 0.15em 4em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        background-color: rgba(50%, 50%, 50%, 0.5);
+    }
+
+}
+
+/* responsive media 3 */
+@media screen and (min-width:801px) {
+
+    /*make a menu items vertical*/
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    /* unhide menu icon */
+    #hamIcon {
+        display: none;
+    }
+
+    /*hide the menu item list*/
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* make items more organised and spaced out*/
+        list-style-type: none;
+        /* Remove bullets */
+        font-size: 1.5vw;
+    }
+
+    .responsiveflex-style {
+        display: flex;
+    }
+
+    #screenbtnfullIcon {
+        display: flex;
+        justify-content: center;
+        padding: 0.15em 10.2em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        background-color: rgba(50%, 50%, 50%, 0.5);
+    }
+
+    #screenbtnexitIcon {
+        display: flex;
+        justify-content: center;
+        padding: 0.15em 10.2em;
+        font-size: 1.5vw;
+        font-weight: bold;
+        background-color: rgba(50%, 50%, 50%, 0.5);
+    }
+
+}
+
+/* responsive media 4 */
+@media screen and (max-width:1050px) {
+
+    .flex-style {
+        display: block;
+    }
+}

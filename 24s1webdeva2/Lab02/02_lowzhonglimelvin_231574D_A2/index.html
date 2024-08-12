@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> <!--to link css-->
+  <script src="script.js" defer></script> <!-- to link script -->
+  <title>A website about Hampters </title>
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="some web app!!!">
+  <!-- get icons from https://favicon.io/ -->
+  <link rel="icon" type="image/x-icon" href="icons/hamstericon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/hamstericon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/hamstericon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/hamstericon.png">
+  <!--for android-->
+  <link rel="manifest" href="icons/hamstericon.png">
+</head>
+
+
+
+<body>
+
+  <!-- Headers for the website -->
+  <h1>Hampters! A great Introduction</h1>
+  <img src="images/hamster1.jpg" class="pictures" alt="hamster">
+  <h2>Main Topic: Hamsters</h2>
+  <!-- small brief on hamster -->
+  <div class="flex">
+    <img src="images/hamsterpicture2.jpg" class="pictures" alt="hamster2">
+    <p class="text">
+      Hamsters are rodents, making them familiar to rats.
+      <br>
+      They are popular small pets.
+      <br>
+      Physically, they are stout-bodied
+      with distinguishing features that include elongated cheek pouches extending to their shoulders, which they use to
+      carry food back to their burrows, as well as a short tail and fur-covered feet.
+    </p>
+  </div>
+  <h3>Subtopics: Hamster History and How to take care </h3>
+  <!-- End of Headers -->
+
+  <nav> <!--menu system-->
+    <button id="hamIcon">
+      <img src="icons/hamburger_icon.svg.webp" alt="Hamburger Icon" width="100">
+    </button>
+    <div id="container">
+      <ul>
+        <li>
+          <!-- Sections for pages -->
+          <button id="page1btn" class="btnStyle">Hamster History</button>
+          <button id="page2btn" class="btnStyle">Taking Care</button>
+          <button id="page3btn" class="btnStyle">HamHam Game! <br>(+ credits)</button>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- menu system -->
+
+  <!-- container -->
+  <div class="containerpage containercolor">
+    <!-- start page 1 (content: history of hamster) -->
+    <div class="page" id="page1">
+      <h2>Ham History </h2>
+      <p>
+        Their evolutionary history is recorded by 15 extinct fossil genera and extends back 11.2 million to 16.4
+        million years to the Middle Miocene Epoch in Europe and North Africa; in Asia it extends 6 million to 11
+        million years. Four of the seven living genera include extinct species.
+      </p><br>
+      <img src="images/hamsterfossil.jpeg" class="pictures" alt="ancienthamsterbones">
+      <a href="https://en.wikipedia.org/wiki/Hamster#Description" target="_blank"> Source for ancient ham </a> 
+
+      <h2>Etymology </h2>
+      <p>
+        The name "hamster" is a loanword from the German, which itself derives from earlier Middle High German
+        hamastra. It is possibly related to Old Church Slavonic khomestoru, which is either a blend of the root of
+        Russian хомяк (khomyak) "hamster" and a Baltic word (cf. Lithuanian: staras "hamster");[9] or of Persian
+        origin (cf. Avestan: hamaēstar "oppressor").[10] The collective noun for a group of hamsters is "horde".[11]
+        In German, the verb hamstern is derived from Hamster. It means "to hoard".[12]
+      </p><br>
+
+    </div>
+
+    <!-- start page 2 (content: good care for hamster) -->
+
+    <div class="page" id="page2">
+      <h2>Living for royalty</h2>
+
+      <h3>Step 1: Living quarters</h3>
+      <p>Provide a wide housing (40 x 17.5 inches per hamster)</p> <br>
+      <img src="images/hamsterhouse.jpg" class="pictures" alt="hamsterhousing">
+      <a href="https://www.reddit.com/r/hamsters/comments/syu3jl/what_do_you_think_about_our_setup_the_cage_is/"
+        target="_blank"> Source for housing</a> 
+
+      <h3>Step 2: Diet</h3>
+      <p>Learn about important edible food (high nutritions & variety)</p>
+      <img src="images/hamsterfoodlist.png" class="pictures" alt="listofhamsterfood">
+      <a href="https://www.animallama.com/hamsters/hamster-food-list/" target="_blank"> Source for food</a> 
+
+      <h3>Step 3: entertainment! (fun for the whole family)</h3>
+      <img src="images/playhamster.png" class="pictures" alt="hamsterfun">
+      <a href="https://medium.com/@centr.psy23/house-of-hamsters-how-to-play-a-game-and-become-a-hamster-59e1297486f2"
+        target="_blank"> Source for fun</a> 
+
+    </div>
+
+    <!-- start of page 3 (content: Hamtaro Feeding Time (game)) -->
+    <div class="page" id="page3">
+      <h2>Hamtaro Feeding Time!</h2>
+      <p>
+        Help the hungry Hamtaro pick out the good food. <br>
+        Beware! bad food may hurt his stomach<br>
+        Look at the picture and click/tap on good food for points!
+        Bad food reduces points<br>
+      </p>
+
+      <h3 id="points">Points: </h3>
+
+      <!-- create space for game -->
+      <div id="flex">
+        <img class="good" src="images/broccoli.jpg" alt="broccoli">
+        <audio id="yum">
+          <source src="audios/yumsfx.mp3" type="audio/mp3">
+        </audio>
+
+
+        <img class="bad" src="images/choco.jpeg" alt="chocolate">
+        <audio id="vomit">
+          <source src="audios/vomit.mp3" type="audio/mp3">
+        </audio>
+
+      </div>
+
+      <h1>credits to everything, thanks for reaching the end</h1>
+
+      <h4>videos</h4>
+      <video id="video" controls>
+        <source src="videos/dancinghamster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <a href="https://www.tiktok.com/@pers.daily/video/7332890732459511070" target="_blank" max-width ="30"> <br>hamster dancing by
+        pers.daily</a> <br>
+
+
+
+      <h4>pictures</h4>
+      <a href=" https://www.pinterest.com/pin/broccoli-transparent-png-clip-art-image--807129564443717713/"
+        target="_blank"> <br>broccoli pic by Jong ypo</a><br>
+
+      <a href=" https://www.vecteezy.com/png/25065293-chocolate-png-with-ai-generated" target="_blank"> <br>choco
+        (legally I am able to not credit AI artists)</a> <br>
+
+      <a href="https://www.burgesspetcare.com/blog/hamsters/hamster-behaviour-explained/"
+        target="_blank"><br>hamsterpicture2 by this website</a> <br>
+
+      <a href="https://www.reddit.com/r/hamsters/comments/xvjc42/he_will_finally_sleep_in_my_hand_now_that_hes/"
+        target="_blank"> <br>hamster1 picture</a> <br>
+
+      <p>the other pics has been credited below their respective pictures</p>
+
+
+      <h4>audio</h4>
+      <a href="https://pixabay.com/sound-effects/search/yum/" target="_blank"> "yum yum yum" by pixabay</a> <br>
+      <a href="https://pixabay.com/sound-effects/search/yum/" target="_blank"> "gagging sound-effects" by pixabay</a>
+      
+
+      <h4>code</h4>
+      <p>Toggle Menu/pages/hamIcon: Mr Suen!</p>
+
+
+      <!-- end of pages -->
+    </div>
+
+  </div>
+
+  <!-- qr code -->
+  <div class="qr">
+    <img src="images/qrcode.png" alt="https://sorbetisbadatart.github.io/">
+  </div>
+
+
+
+</body>
+
+</html>

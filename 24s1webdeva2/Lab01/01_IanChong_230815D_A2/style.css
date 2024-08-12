@@ -1,0 +1,84 @@
+.page{width:100%;}
+*{margin: 0; font-family: 'Comic Sans MS';}
+.navformat{
+    display: flex;
+    flex-wrap: wrap;}
+.navbutton{
+    border-color: aqua;
+    cursor: default;
+    user-select: none;
+    display:inline-flex;
+    color: black;
+    background: purple;
+    width: 33.3%;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Navigation buttons */
+#titlehead{text-align: center;}
+#page1btn{background: red;}
+
+#page2btn{background: green;}
+#page3btn{ background: cyan;}
+#funbtn {width: 100%;}
+
+/* Header of each page */
+.pagehead{width: 100%; text-align: center;}
+
+/* TYPES OF HAMSTERS PAGE */
+.hamsterImg{width: 40%;}
+.page1content{display: flex;align-items: center;}
+.page1txt{width: 60%; text-align: center;font-size: 20px;}
+
+/* HAMSTER BEHAVIOUR PAGE */
+
+.page2txt{width: 100%; text-align: center;font-size: 20px;}
+
+iframe.vid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 80%;
+height: 80%;
+padding-left: 10%;
+}
+
+/* HAMSTER TRIVIA PAGE */
+#page3{background:cyan}
+.hideAns{display: none;}
+#qntxt{width: 20%; text-align: right;}
+
+/* Hamster Game Page */
+#page4{user-select: none;}
+
+
+
+/*CSS for responsive menu*/
+#hamIcon{display:none;}
+@media screen and (max-width:800px){
+#hamIcon{display: flex;} /* unhide menu icon */
+.navbutton{width: 100%;}
+.menuHide{display: none;}
+}
+
+
+
+#hamsterGame {border: 1px solid purple;}

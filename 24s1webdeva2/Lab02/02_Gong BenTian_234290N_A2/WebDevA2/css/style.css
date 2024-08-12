@@ -1,0 +1,1329 @@
+/* clear default css */
+* {
+    margin: 0;
+    padding: 0;
+
+    /* clear the style of the list */
+    list-style-type: none;
+
+    overflow-x: hidden;
+}
+
+/* change the font size of h1  */
+h1 {
+    font-size: 10vw;
+}
+
+/* change the font color  */
+h1,
+h2,
+h3,
+p {
+    color: wheat;
+}
+
+/* set the max width of the img to the width of the screen */
+img {
+    max-width: 100vw;
+}
+
+/* hide class, all the element in this hide will be hide */
+.hide {
+    display: none;
+}
+
+header,
+main,
+footer
+{
+    width: 100%;
+}
+
+#header {
+    
+    z-index: 2;
+
+    /* set to fixed position  */
+    position: fixed;
+    top: 0vw;
+
+    /* set to flex and set the element to center  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* set the size of the header */
+    width: 100%;
+    height: 20vw;
+
+    /* set the background */
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/fossil.webp");
+}
+
+header nav {
+
+    /* set to higher layer  */
+    z-index: 2;
+
+    /* set to fixed position  */
+    position: fixed;
+    top: 3vw;
+    left: 2.5vw;
+}
+
+#topNav p {
+
+    /* set to responsive font size */
+    font-size: 5vw;
+
+    text-align: left;
+
+    /* set the font color to black  */
+    color: black;
+
+    /* set the border  */
+    border: 0.3vw solid black;
+    border-radius: 15%;
+
+    /* set the background  */
+    background-color: rgb(245, 222, 179);
+}
+
+nav div#topNav>div {
+
+    /* set to flex, and set the child's position to center */
+    display: flex;
+    align-items: center;
+
+    /* set the margin to left some space between */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+label.radioButton {
+
+    /* set to flex and center the childs */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /* set the size of the button */
+    width: 13vw;
+    height: 13vw;
+
+    /* set the border */
+    border: 0.3vw dotted black;
+
+    /* make the button to a circle */
+    border-radius: 50%;
+
+    /* set the background  */
+    background: repeating-linear-gradient(to right, rgb(76, 196, 76) 0% 50%, white 50% 100%);
+    background-size: 500%;
+    background-position-x: 99%;
+    box-shadow: 1vw 1vw 3vw rgba(15, 15, 15, 0.25);
+}
+
+label.radioButton:hover {
+
+    /* player animation when hover */
+    animation: radioButtnHover 0.8s forwards;
+}
+
+/* style of nav button been selected */
+label.radioButtonSelected {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.3vw solid black;
+
+    width: 13vw;
+    height: 13vw;
+
+    border-radius: 50%;
+
+    background-color: rgb(76, 196, 76);
+    box-shadow: 1vw 1vw 3vw rgba(15, 15, 15, 0.25);
+}
+
+/* set the size of the icon image  */
+label.radioButton img,
+label.radioButtonSelected img {
+    width: 70%;
+    height: 70%;
+}
+
+/* the style of fold nav button been selected */
+label#foldNavButton.radioButtonSelected {
+    background-color: rgb(255, 49, 49);
+}
+
+#foldNavButton.radioButton img {
+
+    /* rotate the icon to 0 degree when not selected */
+    transform: rotate(0deg);
+    transition: rotate 0.5s;
+}
+
+#foldNavButton.radioButtonSelected img {
+
+    /* rotate the icon to 90 degree when selected */
+    transform: rotate(90deg);
+    transition: rotate 0.5s;
+}
+
+body {
+
+    /* set top offset for fixed header*/
+    position: relative;
+    top: 20vw;
+
+    /* set background  */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/flowers-8541890_640.jpg);
+}
+
+/* set the font size of the title */
+div.page h2 {
+    text-align: center;
+    font-size: 7vw;
+}
+
+/* set the font size of the sub title */
+div.page h3 {
+    text-align: center;
+    font-size: 6vw;
+}
+
+/* set the font size of the content */
+div.page p {
+
+    font-size: 5vw;
+}
+
+/* set the style of image show in the page */
+div.page img {
+
+    width: 90%;
+
+    margin-left: 5%;
+    margin-top: 1.5vw;
+
+    border-radius: 5%;
+}
+
+/* style of element in periods and human evolution page  */
+div.page#periods>div,
+div.page#humanEVO>div>div {
+
+    width: 90vw;
+
+    margin-left: 2.5vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+
+    padding: 2.5vw;
+
+    border: 0.3vw double green;
+
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+div.page#periods>div{
+
+    /* set the size of background */
+    background-size: 100% auto;
+
+    /* apply fade in animation to element in periods */
+    animation: fadeIn 1s forwards;
+}
+
+/* set the background image */
+div.page div#cambrianPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/cambrian.jpeg");
+}
+
+/* set the background image */
+div.page div#ordovicianPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/ordovician.jpg");
+}
+
+/* set the background image */
+div.page div#devonianPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/devonian.webp");
+}
+
+/* set the background image */
+div.page div#silurianPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/silurian.jpeg");
+}
+
+/* set the background image */
+div.page div#carboniferousPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/carboniferous.jpg");
+}
+
+/* set the background image */
+div.page div#permianPeriod {
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/permain.webp");
+}
+
+/* set the default for the element in human evolution page (prepare for animation) */
+div.page#humanEVO>div>div{
+
+    position: relative;
+    left: -50%;
+
+    opacity: 0%;
+}
+
+/* set the size of the element in periods and human evolution page */
+div.page p,
+div.page h2,
+div.page h3,
+div.page#periods>div>div,
+div.page#humanEVO>div>div>div {
+    width: 90%;
+
+    margin-left: 2.5%;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+
+    padding: 2.5%;
+
+    border-radius: 5%;
+
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* set the sub-sub title */
+div.page div div h3 {
+
+    font-size: 4vw;
+    background: none;
+}
+
+/* set the style of the remark of the image */
+div.page p.remark {
+
+    font-size: 3vw;
+
+    width: 90%;
+
+    margin-left: 2.5%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding: 2.5%;
+
+    background: none;
+}
+
+/* set the time table in periods page  */
+div.page#periods div.timeTable {
+    
+    display: grid;
+
+    margin-top: 1.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    padding: 0;
+
+    border: 0;
+    border-top: 0.3vw solid black;
+    border-left: 0.3vw solid black;
+
+    /* each row have 3 equal size column */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* left some gap vertically */
+    row-gap: 1vw;
+
+    background-color: transparent;
+}
+
+div.timeTable ul.timeTableSlot {
+
+    display: grid;
+
+    /* set up and down equal height cell  */
+    grid-template-rows: 1fr 1fr;
+}
+
+/* set the label and content of cell in time table  */
+div.timeTable ul.timeTableSlot li.timeLabel,
+div.timeTable ul.timeTableSlot li.timeSlot {
+
+    /* center the content element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column-start: auto;
+
+    font-size: 3vw;
+    text-align: center;
+
+    /* left some space from border  */
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    border-bottom: 0.3vw solid black;
+    border-right: 0.3vw solid black;
+}
+
+/* set the style of the label  */
+div.timeTable ul.timeTableSlot li.timeLabel {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background: linear-gradient(white 0%, rgb(76, 196, 76));
+}
+
+/* set the style of the time slot  */
+div.timeTable ul.timeTableSlot li.timeSlot {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    background: radial-gradient(white 0% 60%, rgb(76, 196, 76));
+
+    /* set the size bigger (preapre for aniamtion, so when selected just make the bacground smaller) */
+    background-size: 400%;
+
+    /* center the bakcground  */
+    background-position: 50% 50%;
+
+    transition: background-size 1s;
+}
+
+div.timeTable ul.timeTableSlot li.timeSlot.selected {
+    background-size: 100%;
+
+    transition: background-size 0.25s;
+}
+
+/* set the sub title in time line navigation */
+div#humanEVO>div#timeLine>form>h3{
+
+    width: 80%;
+
+    margin-left: 7.5%;
+}
+
+/* set size of the block in time line nav  */
+div#humanEVO>div#timeLine>form>div{
+
+    width: 90%;
+
+    margin-left: 10%;
+}
+
+/* set the style of the time line */
+div#humanEVO>div#timeLine>form input[type=range]{
+
+    width: 90%;
+
+    margin-left: 5%;
+
+    margin-top: 3.5vw;
+    margin-bottom: 3.5vw;
+
+    height: 3.5vw;
+
+}
+
+/* set the style of the number input  */
+div#humanEVO>div#timeLine>form input[type=number]{
+
+    display: inline;
+
+    flex-direction: row;
+
+    width: 65%;
+    height: 8vw;
+
+    text-align: center;
+    font-size: 4.5vw;
+
+}
+
+/* set the style of the number input unit */
+div#humanEVO>div#timeLine>form sub{
+
+    display: inline;
+    width: auto;
+
+    color: wheat;
+
+    font-size: 4vw;
+
+    padding: 0;
+    margin: 0;
+
+    background: none;
+
+}
+
+/* set the style of the button in time line nav */
+div#humanEVO>div#timeLine>form button{
+
+    width: 35%;
+    height: 8vw;
+
+    margin-top: 5vw;
+    margin-left: 32.5%;
+
+    font-size: 4.5vw;
+}
+
+/* set the style of return top button  */
+div#returnTop{
+
+    /* set to fixed positon (bottom right) */
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+
+    /* set the size */
+    width: 11vw;
+    height: 11vw;
+
+    border: 0.3vw solid black;
+    border-radius: 50%;
+    
+    background-color: white;
+}
+
+/* set the size of the icon */
+div#returnTop>img{
+
+    width: 80%;
+    height: 80%;
+
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+/* set the style of the mini game  */
+div#miniGame:not(.hide){
+
+    display: grid;
+
+    margin-top: 5vw;
+
+    width: 100vw;
+    grid-template-columns:  1fr 50vw 1fr;
+}
+
+/* set the cell for game status */
+div#miniGame>div#gameStatus{
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* set the cell for creature intro */
+div#miniGame>div#creatureIntro{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+div#miniGame>div#creatureIntro>div{
+
+    /* set the flow to right to make the creature intro close to game field  */
+    float: right;
+}
+
+/* set the style of hte creature intro and game status */
+div#miniGame>div#creatureIntro>div,
+div#miniGame>div#gameStatus>div{
+
+    display: grid;
+
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+    background-color: white;
+}
+
+/* set the style of the content in creature intro and game status */
+div#miniGame>div#creatureIntro>div>p,
+div#miniGame>div#gameStatus>div>p{
+
+    /* set font size  */
+    font-size: 3vw;
+
+    /* set font color  */
+    color: black;
+
+    width: 100%;
+
+    border: 0.2vw solid black;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+
+    background: wheat;
+    
+}
+
+/* set the text of the label to center */
+div#miniGame>div#creatureIntro>div>p:first-of-type,
+div#miniGame>div#gameStatus>div>p:first-of-type{
+
+    text-align: center;
+}
+
+/* set the style of the stage progress */
+div#miniGame>div#gameStatus>div#progress>p:nth-child(2){
+
+    width: 0%;
+
+    background: gold;
+
+    transition: width 0.5s;
+}
+
+/* set the style of the game field  */
+div#miniGame>div#gameField{
+
+    /* set the cell for game field  */
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* center itself  */
+    align-self: center;
+    justify-self: center;
+
+    border: 0.3vw solid black;
+
+    width: 45vw;
+    height: 45vw;
+    
+    background-color: rgb(165, 165, 165);
+    overflow: hidden;
+}
+
+/* set the style of the player  */
+div#miniGame>div#gameField>div#player{
+
+    position:relative;
+
+    top: 48%;
+    left: 48%;
+
+    width: 4%;
+    height: 4%;
+
+    border-radius: 50%;
+    
+    background: radial-gradient(gold 50%, black 50%);
+}
+
+/* set the style of the food */
+div#miniGame>div#gameField>div.food{
+
+    position: relative;
+
+    width: 2%;
+    height: 2%;
+
+    border-radius: 50%;
+    
+    background: radial-gradient(green 50%, black 50%);
+}
+
+/* set the style of the creature image  */
+div#miniGame>div#creatureImage{
+    
+    display: flex;
+
+    height: 30vw;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    border: 0.3vw solid black;
+    background: white;
+}
+
+/* set the size of the creature image  */
+div#miniGame>div#creatureImage>img{
+    
+    margin:  0;
+
+    max-height: 90%;
+    max-width: 90%;
+
+}
+
+/* set the cell for game control ui  */
+div#miniGame>div#gameControl{
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* set the style for game control button  */
+div#miniGame>div#gameControl>div>button{
+
+    width: 35%;
+    height: 7.5vw;
+
+    margin-top: 1vw;
+    font-size: 3vw;
+}
+
+div#miniGame>div#gameControl>div>button:first-child{
+
+    margin-left: 5%;
+}
+
+div#miniGame>div#gameControl>div>button:last-child{
+
+    float: right;
+    margin-right: 5%;
+}
+
+
+/* set the style for evolute buttons  */
+div#miniGame>div#gameField>div#evoluteButtons{
+
+    position: relative;
+    z-index: 2;
+    margin-top: 33%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+/* set the style for evolute button  */
+div#miniGame>div#gameField>div#evoluteButtons>button{
+
+    width: 40%;
+    height: 55%;
+
+    margin-top: 8%;
+    font-size: 2.5vw;
+}
+
+div#miniGame>div#gameField>div#evoluteButtons>button:first-child{
+
+    margin-left: 5%;
+}
+
+div#miniGame>div#gameField>div#evoluteButtons>button:last-child{
+
+    float: right;
+    margin-right: 5%;
+}
+
+footer {
+
+    background-color: rgb(56, 56, 56);
+}
+
+footer>h1{
+
+    display: none;
+}
+
+footer>img{
+
+    display: none;
+}
+
+
+/* desktop break point  */
+@media screen and (min-width: 801px) {
+
+    #header {
+
+        /* set position to default  */
+        position: initial;
+        
+        /* set to a fixed font size */
+        font-size: 60px;
+
+        /* set fixed height  */
+        height: 200px;
+    }
+
+    header nav {
+        
+        /* set position back to default  */
+        position: initial;
+    }
+
+    #topNav {
+
+        /* set to horizontal inline  */
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        border-top: 5px double wheat;
+        border-bottom: 5px double wheat;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav div#topNav>div {
+
+        /* set to vertical inline  */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    label.radioButton {
+
+        /* set button to fixed size  */
+        width: 120px;
+        height: 120px;
+
+        border: 3px dotted black;
+    }
+
+    label.radioButtonSelected {
+
+        /* set button to fixed size  */
+        width: 120px;
+        height: 120px;
+
+        border: 3px solid black;
+    }
+
+    #topNav p {
+
+        /* set to fixed size  */
+        width: 160px;
+
+        /* set to fixed font size  */
+        font-size: 22px;
+        text-align: center;
+
+        border-radius: 10%;
+
+        border: 3px solid black;
+    }
+
+    /* hide the nav button */
+    #foldNavButton
+    {
+        display: none;
+    }
+
+    body {
+
+        /* set position to default  */
+        position: initial;
+    }
+
+    div.page#periods:not(.hide){
+
+        /* turn the page to vertical parallel */
+        display: grid;
+
+        grid-template-columns: 30% 70%;
+    }
+
+    div.page#periods>h2
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /* reformate the time table to vertical */
+    div.page#periods div.timeTable {
+
+        display: grid;
+        justify-content: initial;
+        justify-self: center;
+
+        width: 85%;
+        max-width: 450px;
+
+        height: 620px;
+
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+
+        border: 3px double gold;
+
+        /* each row have 3 equal size column */
+        grid-template-columns: auto;
+        grid-template-rows: repeat(auto-fill, 400px);
+
+        row-gap: 0;
+    }
+
+    div.page#humanEVO>div#stageDetail{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* make the content element can be display in inline  */
+    div.page#humanEVO>div#stageDetail>div.evoStage,
+    div.page#periods>div:not(.hide) {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 0;
+
+        border: 3px double lightgreen;
+    }
+
+    /* put to content element in periods page to specific cell  */
+    div.page#periods>div:not(.hide, .timeTable) {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        width: 60vw;
+
+        margin-left: 0px;
+
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    /* set the max size of content element  */
+    div.page#periods>div>div {
+
+        max-width: 350px;
+
+        margin: 15px;
+    }
+
+
+    div.page div div h3,
+    div.page h3 {
+
+        width: 70%;
+
+        margin-left: 15%;
+        margin-right: 15%;
+
+        text-align: center;
+
+        /* set to fixed font size  */
+        font-size: 48px;
+    }
+
+    div.page h2 {
+
+        width: 80%;
+
+        margin-left: 10%;
+        margin-right: 10%;
+
+        text-align: center;
+
+        /* set to fixed font size  */
+        font-size: 54px;
+    }
+
+    div.page>h2
+    {
+        /* clear the padding  */
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    div.page p {
+
+        /* set fixed font size  */
+        font-size: 32px;
+    }
+
+    
+    div.page img {
+
+        width: 90%;
+
+        margin-left: 5%;
+        margin-top: 10px;
+
+        border-radius: 5%;
+    }
+
+    div.page p.remark {
+
+        /* set to a fixed font size */
+        font-size: 22px;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        padding-left: 6%;
+
+        width: 90%;
+    }
+
+    div.timeTable ul.timeTableSlot{
+
+        height: 400px;
+        grid-template-rows: 200px 200px;
+    }
+
+    div.timeTable ul.timeTableSlot li.timeLabel,
+    div.timeTable ul.timeTableSlot li.timeSlot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        grid-column-start: auto;
+
+        /* set to a fixed font size */
+        font-size: 28px;
+        text-align: center;
+
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+
+        border: 2px solid black;
+    }
+
+
+    div#humanEVO>div#timeLine>form>h3{
+
+        width: 70%;
+
+        /* set to a fixed font size */
+        font-size: 48px;
+    
+        margin-left: 12.5%;
+
+        margin-bottom: 35px;
+    }
+    
+    div#humanEVO>div#timeLine>form input[type=range]{
+    
+        width: 90%;
+    
+        margin-left: 5%;
+    
+        margin-top: 0;
+        margin-bottom: 35px;
+    
+        height: 3.5vw;
+    
+    }
+    
+    div#humanEVO>div#timeLine>form input[type=number]{
+    
+        /* set a max height to prevent become too big */
+        display: inline;
+
+        width: 83%;
+        height: 120px;
+
+        text-align: center;
+
+        /* set to a fixed font size */
+        font-size: 44px;
+    
+    }
+    
+    div#humanEVO>div#timeLine>form>div{
+    
+        width: 80%;
+    
+        margin-left: 10%;
+    }
+    
+    div#humanEVO>div#timeLine>form sub{
+    
+        display: inline;
+        vertical-align: bottom;
+    
+        color: wheat;
+
+        /* set to a fixed font size */
+        font-size: 18px;
+        text-align: end;
+    
+        padding: 0;
+        margin: 0;
+    
+        background: none;
+    
+    }
+    
+    div#humanEVO>div#timeLine>form button{
+    
+        text-align: center;
+        
+        width: 18%;
+        height: 90px;
+    
+        margin-top: 35px;
+        margin-bottom: 35px;
+
+        margin-left: 41%;
+
+        /* set to a fixed font size */
+        font-size: 44px;
+    }
+
+    div#humanEVO>div#stageDetail>div.evoStage>p,
+    div#humanEVO>div#stageDetail>div.evoStage>div{
+
+        /* set content to inline  */
+        display: inline;
+
+        width: 38%;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    div#returnTop
+    {
+        /* set a max size to prevent become too big */
+        width: 120px;
+        height: 120px;
+
+        border: 3px solid black;
+    }
+
+
+    div#miniGame:not(.hide){
+
+        /* set a max width to prevent become too big */
+        margin-top: 20px;
+
+        max-width: 1000px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    div#miniGame>div#creatureIntro>div{
+    
+        /* set the float and left some margin between  */
+        float: left;
+        margin-left: 5%;
+    }
+
+    div#miniGame>div#creatureIntro{
+    
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    div#miniGame>div#gameStatus>div{
+
+        width: 28%;
+
+        /* set the float and left some margin between  */
+        float: inline-start;
+        margin: 0;
+
+    }
+
+    div#miniGame>div#gameStatus{
+
+        display: flex;
+
+        justify-content: space-evenly;
+        
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+    }
+    
+    div#miniGame>div#creatureIntro>div,
+    div#miniGame>div#gameStatus>div{
+
+        /* set a fixed margin  */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    div#miniGame>div#creatureIntro>div>p,
+    div#miniGame>div#gameStatus>div>p,
+    div#miniGame>div#gameStatus>div#progress>p:nth-child(2){
+    
+        /* set to a fixed font size */
+        font-size: 24px;
+
+        height: auto;
+    
+        border: 2px solid black;
+    }
+    
+    div#miniGame>div#gameField{
+
+        /* set a max size to prevent become too big */
+        max-width: 380px;
+        max-height: 380px;
+    
+        border: 2px solid black;
+    }
+    
+    div#miniGame>div#creatureImage{
+
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+    }
+
+    div#miniGame>div#creatureImage{
+    
+        /* set a max size to prevent become too big */
+        max-width: 380px;
+        max-height: 230px;
+    
+        justify-self: center;
+    
+        border: 2px solid black;
+    }
+    
+    div#miniGame>div#creatureImage>img{
+        
+        /* set a max size to prevent become too big */
+        width: 45vw;
+        max-height: 90%;
+        max-width: 90%;
+    }
+    
+    div#miniGame>div#gameControl>div>button{
+
+        /* set a max height and font size to prevent become too big */
+        max-height: 75px;
+    
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    
+    div#miniGame>div#gameField>div#evoluteButtons>button{
+
+        /* set to a fixed font size */
+        font-size: 24px;
+    }
+
+    footer
+    {
+        margin-top: calc(100vh - 230px);
+    }
+
+    footer>h1
+    {
+        display: block;
+        margin-left: 15px;
+        font-size: 36px;
+    }
+
+    footer>img
+    {
+        display: block;
+        margin: 15px;
+        width: 200px;
+    }
+}
+
+/* animation when hover on the nav button  */
+@keyframes radioButtnHover {
+    0% {
+        background-position-x: 99%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+
+}
+
+/* animaton for returntop enter  */
+@keyframes returnTopEnter{
+
+    0%{
+        right: -15vw;
+    }
+
+    100%{
+        right: 2vw;
+    }
+}
+
+/* animation to fade in  */
+@keyframes fadeIn{
+
+    0%{
+        position: relative;
+        left: 50%;
+        opacity: 0%;
+    }
+
+    100%{
+        position: relative;
+        left: 0%;
+        opacity: 100%;
+    }
+}

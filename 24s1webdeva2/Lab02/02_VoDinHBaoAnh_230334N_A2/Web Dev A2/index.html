@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROWLITEMALL</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--NAVIGATION-->
+    <header>
+        <div class="container">
+            <h1>CROWLITEMALL<button class="nav-toggle">&#9776;</button> </h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#home">Definition</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#facts">Fun Facts</a></li>
+                    <li><a href="#species_gallery">Species Worldwide</a></li>
+                    <li><a href="#footer">Bottom</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <!--INTRO-->
+        <section class="intro">
+            <!--Where the navigation link will send user-->
+            <a class="anchor" id="home"></a>
+            <!--Content-->
+            <div class="container">
+                <h2>Crow</h2>
+                <p> /krəʊ/</p>
+                <p> noun</p>
+                <p> plural noun: crows</p>
+                <p> A large bird with mostly glossy black plumage, </p>
+                <p>a heavy bill, and a raucous voice.</p>
+
+                <div id="intro_image">
+                    <img src="images/blackwhitecrow.jpg">
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!--ABOUT (TRIVIA)-->
+        <section class="about">
+
+            <!--Where the navigation link will send user-->
+            <a class="anchor" id="about"></a>
+
+            <!--Content-->
+            <div class="container">
+                <h2>About Crows</h2>
+
+                <!--image slideshow-->
+                <div class="slideshow" style="max-width:500px">
+                    <img class="auto_slide_image fade_out_animation" src="images/crow1.jpg" style="width:100%">
+                    <img class="auto_slide_image fade_out_animation" src="images/crow2.jpg" style="width:100%">
+                    <img class="auto_slide_image fade_out_animation" src="images/crow3.jpg" style="width:100%">
+                </div>
+                <!--Basic information-->
+                <p>Crows are highly intelligent and adaptable birds known for their glossy black plumage and distinctive
+                    cawing calls. They belong to the Corvidae family, renowned for their problem-solving abilities and
+                    complex social behaviors. Crows are omnivorous, feeding on a wide range of foods from insects and
+                    small animals to fruits and carrion. They are found in diverse habitats worldwide, often forming
+                    large, noisy flocks. Crows are known for their keen observational skills and have been observed
+                    using tools to obtain food, making them one of the most fascinating and resourceful avian species.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!--FUN FACTS-->
+        <section class="facts">
+            <!--Where the navigation link will send user-->
+            <a class="anchor" id="facts"></a>
+
+            <h2>Fun Fact:</h2>
+            <div class="container" id="fun_facts_slideshow">
+
+                <button onclick="plusDivs(-1)">&#10094;</button> <!--Left button-->
+                <div class="container">
+
+                    <p class="manual_slide_text">Fact #1: Crows are highly intelligent birds known for their
+                        problem-solving skills.</p>
+                    <p class="manual_slide_text">Fact #2: Crows have excellent memory and can recognize individual human
+                        faces.</p>
+                    <p class="manual_slide_text">Fact #3: Crows are social birds and often form large family groups to
+                        roost and forage together.</p>
+                    <p class="manual_slide_text">Fact #4: Crows are omnivorous and have a varied diet that includes
+                        insects, small mammals, seeds, fruits, and even garbage.</p>
+                    <p class="manual_slide_text">Fact #5: Crows are known for their complex vocalizations and can mimic
+                        sounds from their environment, including human speech.</p>
+                    <p class="manual_slide_text">Fact #6: Crows are found on every continent except Antarctica and South
+                        America.</p>
+                    <p class="manual_slide_text">Fact #7: Crows are monogamous and often mate for life.</p>
+                    <p class="manual_slide_text">Fact #8: Crows are adaptive and can thrive in urban as well as rural
+                        environments.</p>
+                    <p class="manual_slide_text">Fact #9: Crows use tools, such as sticks and twigs, to extract food
+                        from hard-to-reach places.</p>
+                    <p class="manual_slide_text">Fact #10: Crows are considered symbols of intelligence and are featured
+                        prominently in mythology and folklore around the world. </p>
+
+                </div>
+                <button onclick="plusDivs(1)">&#10095;</button> <!--Right button-->
+
+
+            </div>
+        </section>
+
+
+
+        <!--DIFFERENT SPECIES-->
+        <section class="gallery">
+
+            <!--Where the navigation link will send user-->
+            <a class="anchor" id="species_gallery"></a>
+
+            <div class="container">
+                <h2>Species Worldwide</h2>
+
+                <p>Common crow species in each continent:</p>
+                <p>(Click on continent names)</p>
+
+                <div class="map-grid">
+                    <img class="map" src="images/world_map.jpg">
+
+
+                    <!--North America-->
+                    <div class="map-marker" id="map_northamerica_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_northamerica_tooltip">
+                            American Crow:
+                            <img src="images/american_crow.jpg">
+                        </div>
+                    </div>
+
+                    <!--South America-->
+                    <div class="map-marker" id="map_southamerica_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_southamerica_tooltip">
+                            There are no crows in South America.
+                        </div>
+                    </div>
+
+
+                    <!--Asia-->
+                    <div class="map-marker" id="map_asia_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_asia_tooltip">
+                            Large Billed Crow:
+                            <img src="images/large_billed_crow.jpg">
+                        </div>
+                    </div>
+
+                    <!--Europe-->
+                    <div class="map-marker" id="map_europe_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_europe_tooltip">
+                            Hooded Crow:
+                            <img src="images/hooded_crow.jpg">
+                        </div>
+                    </div>
+
+                    <!--Oceania-->
+                    <div class="map-marker" id="map_oceania_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_oceania_tooltip">
+                            Torresian Crow:
+                            <img src="images/torresian_crow.jpg">
+                        </div>
+                    </div>
+
+
+                    <!--Africa-->
+                    <div class="map-marker" id="map_africa_marker">
+                        <!--Tooltip-->
+                        <div class="tooltip" id="map_africa_tooltip">
+                            Pied Crow:
+                            <img src="images/pied_crow.jpg">
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--FOOTER-->
+    <footer>
+            <!--Where the navigation link will send user-->
+            <a class="anchor" id="footer"></a>
+
+        <div class="container">
+            <p>&copy; 2024 Information about Crows</p>
+        </div>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

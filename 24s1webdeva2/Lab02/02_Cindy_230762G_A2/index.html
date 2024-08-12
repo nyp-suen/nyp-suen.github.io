@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+    <!-- get icons from https://favicon.io/ -->
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <!--for android-->
+    <link rel="manifest" href="Icons/site.webmanifest">
+</head>
+
+<body>
+    <header>
+    <h1 class ="logo">Cindy.</h1>
+    <a href='#' id="fullscreen-button">Toggle Fullscreen</a>
+    </header>
+
+    <section class="parallax"> 
+        <img src="images/hill1.png" id="hill1" alt="hill1">
+        <img src="images/hill2.png" id="hill2" alt="hill2">
+        <img src="images/hill3.png" id="hill3" alt="hill3">
+        <img src="images/hill4.png" id="hill4" alt="hill4">
+        <img src="images/hill5.png" id="hill5" alt="hill5">
+        <img src="images/plant.png" id="plant" alt="plant">
+        <img src="images/panda.png" id="panda" alt="panda">
+        <img src="images/tree.png" id="tree" alt="tree">
+        <h2 id="text">RED PANDA</h2>
+        <img src="images/leaf.png" id="leaf" alt="leaf">
+    </section>
+
+    <nav> <!--menu system-->
+
+        <a href='#' id="hamIcon">Menu</a>
+
+        <ul>
+            <li><a class="active" href='#' id="page1btn">About</a></li>
+            <li><a href='#' id="page2btn">Taxonomy</a></li>
+            <li><a href='#' id="page3btn">Behaviour and Ecology</a></li>
+            <li><a href='#' id="page4btn">Quiz</a></li>
+        </ul>
+
+    </nav>
+
+    
+    <div id="pagecontainer">
+
+        <div class="page" id="page1">
+
+            <section class="info">
+
+                <div class="about">
+
+                    <img src="images/RedPanda1.png" alt="Red Panda">
+                       
+                    <div>
+                        <h2>About Red Pandas</h2>
+                        <p>Red pandas are small, tree-dwelling mammals native to the eastern Himalayas and southwestern China. They are known for their striking red fur and bushy tails. Despite their name, red pandas are not closely related to giant pandas. Instead, they belong to their own unique family, Ailuridae.</p>
+                    </div>
+                        
+                </div>
+        
+                <div class="flex-container">
+        
+                    <div class="physical-characteristics">
+
+                        <h3>Physical Characteristics</h3>
+                        
+                        <p>Red pandas have a body length of 50 to 64 cm and a tail length of 28 to 59 cm. They weigh between 3.2 to 6.2 kg. Their fur is reddish-brown with a lighter face and darker belly. They have sharp claws and a semi-retractable thumb to help them climb trees.</p>
+                    
+                    </div>
+    
+                    <div class="red-panda-description">
+
+                        <h3>Red Panda Description</h3>
+
+                        <p>Red pandas are small, tree-dwelling mammals native to the temperate forests of the Himalayas, including Bhutan, Nepal, India, Myanmar, and China. They thrive in areas with a bamboo understory and primarily eat bamboo leaves, fruits, acorns, roots, and eggs. Mostly solitary except during mating season, red pandas are most active at dawn and dusk. They face threats from habitat loss, poaching, and inbreeding, making conservation crucial for their survival.</p>
+                        
+                        <p>The red panda's coat is red or orange-brown with a black belly and legs, white markings on the face, and a bushy tail with red and buff rings. This color pattern camouflages them in their habitat. Their dense undercoat is fluffy, and the longer guard hairs on their back help protect them from the cold. The soles of their paws are covered in fur, aiding in walking on snow.</p>
+                    
+                        <p>Red pandas have a small head with a reduced snout, triangular ears, and nearly evenly lengthed limbs. They measure 51–63.5 cm (20.1–25.0 in) in body length with a 28–48.5 cm (11.0–19.1 in) tail. They weigh between 3.2–15 kg (7.1–33.1 lb), depending on the subspecies and sex. Their curved, semi-retractile claws and flexible joints help them climb trees, while their non-prehensile tail aids in balance.</p>
+                    
+                        <p>The red panda's "false thumb," an extended wrist bone, helps them grip bamboo stalks. This feature is shared with the giant panda but is less developed. Their skull is wide, with a robust lower jaw, though they have smaller chewing muscles due to their diet of leaves and stems. Their digestive system is simple, suited to their herbivorous diet.</p>
+                    </div>
+        
+                </div>
+                
+            </section>
+        
+            <section class="fun-facts">
+                <h2>Fun Facts About Red Pandas</h2>
+                <ul>
+                    <li>Red pandas use their bushy tails as blankets to keep warm in winter.</li>
+                    <li>They communicate using a variety of sounds, including squeals, twitters, and huff-quacks.</li>
+                    <li>Red pandas can stand on their hind legs to appear larger when threatened.</li>
+                </ul>
+            </section>
+        
+            <section class="image-gallery">
+
+                <h2>Image Gallery</h2>
+
+                <div class="slider">
+
+                    <div class="slide active">
+                        <img src="images/RedPanda2.jpg" alt="Red Panda Image 2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/RedPanda3.jpg" alt="Red Panda Image 3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/RedPanda4.jpg" alt="Red Panda Image 4">
+                    </div>
+
+                </div>
+
+                <button class="prev" id="prevButton">&#10094;</button>
+                <button class="next" id="nextButton">&#10095;</button>
+            
+            </section>
+        
+            <section class="video-section">
+                
+                <h2>Video: Red Pandas in Action</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DrGPfNd1fCc?si=ZmSbXcP8ou0etgVr" class="no-border" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </section>
+
+        </div>
+
+        <div class="page" id="page2">
+
+        <section class="taxonomy">
+
+            <div class="grid-container">
+                
+                <div class="taxo-info">
+
+                    <h2>Taxonomy</h2>
+                    <p>The red panda (Ailurus fulgens) was named in 1825 by Frederic Cuvier. Although Thomas Hardwicke described it in 1821, his paper was published in 1827. In 1902, Oldfield Thomas described the Chinese red panda (Ailurus fulgens styani) from Sichuan.</p>
+            
+                </div>
+                
+                <div class="subspecies">
+
+                    <h3>Subspecies and Species</h3>
+                    <p>The red panda is the only species in the genus Ailurus, traditionally divided into two subspecies: the Himalayan red panda (A. f. fulgens) and the Chinese red panda (A. f. styani). A 2020 genetic analysis suggested these subspecies should be distinct species, with the Siang River as their boundary.</p>
+                
+                </div>
+
+                <div class="phylogeny">
+
+                    <h3>Phylogeny</h3>
+                    <p>Originally placed in the family Procyonidae with raccoons, the red panda was also thought to be related to the giant panda. In 1982, it was classified in its own family, Ailuridae. Later genetic studies placed it within the clade Musteloidea, alongside Procyonidae, Mustelidae, and Mephitidae.</p>
+                    
+                </div>
+
+                <div class="fossil">
+
+                    <h3>Fossil Record</h3>
+                    <p>The family Ailuridae evolved in Europe around 25 to 18 million years ago. Early members like Amphictis and Simocyon had teeth adapted for a carnivorous diet. The puma-sized Simocyon, a tree-climber, shared a "false thumb" with modern red pandas. Advanced ailurids, or "true" red pandas, appeared later. Magerictis from Spain is the earliest known true panda. Later species include Pristinailurus bristoli and Parailurus, likely omnivores. The modern genus Ailurus, dating from the Pleistocene, adapted to a bamboo diet with molar-like premolars and elevated cusps.</p>
+                
+                </div>
+
+                <div class="genomics">
+
+                    <h3>Genomics</h3>
+                    <p>In 2017, the full genome of the red panda was sequenced, revealing high genetic diversity. Comparisons with the giant panda genome showed similarities in limb development genes related to their false thumbs and adaptations for a bamboo diet. Despite their carnivorous digestive systems, both pandas reactivated taste receptor genes for detecting bitterness, though the specific genes differ.</p>
+                
+                </div>
+
+            </div>
+            
+        </section>
+
+        </div>
+
+        <div class="page" id="page3">
+
+            <section class="behaviour-ecology">
+
+                <div class="behaviour">
+                    
+                    <h3>Behaviour and Ecology</h3>
+                    <p>A red panda lies sleeping on a high branch of a tree, with tail stretched out behind and legs dangling on each side of the branch.</p>
+                    <p>The red panda is difficult to observe in the wild, and most studies on its behaviour have taken place in captivity. The red panda appears to be both nocturnal and crepuscular, sleeping in between periods of activity at night. It typically rests or sleeps in trees or other elevated spaces, stretched out prone on a branch with legs dangling when it is hot, and curled up with its hindlimb over the face when it is cold. It is adapted for climbing and descends to the ground head-first with the hindfeet holding on to the middle of the tree trunk. It moves quickly on the ground by trotting or bounding.</p>  
+
+                </div>
+
+
+                <div class="diet">
+                    <h3>Diet and Feeding</h3>
+                    <p>The red panda is largely herbivorous and feeds primarily on bamboo, mainly the genera Phyllostachys, Sinarundinaria, Thamnocalamus and Chimonobambusa. It also feeds on fruits, blossoms, acorns, eggs, birds and small mammals. Bamboo leaves may be the most abundant food item year-round and the only food they can access during winter. In Wolong National Nature Reserve, leaves of the bamboo species Bashania fangiana were found in nearly 94 per cent of analysed droppings, and its shoots were found in 59 per cent of the droppings found in June.</p>
+                </div>
+
+                <div class="communication">
+                    <h3>Communication</h3>
+                    <p>At least seven different vocalisations have been recorded from the red panda, comprising growls, barks, squeals, hoots, bleats, grunts and twitters. Growling, barking, grunting and squealing are produced during fights and aggressive chasing. Hooting is made in response to being approached by another individual. Bleating is associated with scent-marking and sniffing. Males may bleat during mating, while females twitter. During both play fighting and aggressive fighting, individuals curve their backs and tails while slowly moving their heads up and down. They then turn their heads while jaw-clapping, move their heads laterally and lift a forepaw to strike. They stand on their hind legs, raise the forelimbs above the head and then pounce. Two red pandas may "stare" at each other from a distance.</p>
+                </div>
+
+                <div class="social">
+                    <h3>Social Spacing</h3>
+                    <p>Adult pandas are generally solitary and territorial. Individuals mark their home range or territorial boundaries with urine, faeces and secretions from the anal and surrounding glands. Scent-marking is usually done on the ground, with males marking more often and for longer periods. In China's Wolong National Nature Reserve, the home range of a radio-collared female was 0.94 km2 (0.36 sq mi), while that of a male was 1.11 km2 (0.43 sq mi). A one-year-long monitoring study of ten red pandas in eastern Nepal showed that the four males had median home ranges of 1.73 km2 (0.67 sq mi) and the six females of 0.94 km2 (0.36 sq mi) within a forest cover of at least 19.2 ha (47 acres). The females travelled 419–841 m (1,375–2,759 ft) per day and the males 660–1,473 m (2,165–4,833 ft). In the mating season from January to March, adults travelled a mean of 795 m (2,608 ft) and subadults a mean of 861 m (2,825 ft). They all had larger home ranges in areas with low forest cover and reduced their activity in areas that were disturbed by people, livestock and dogs.</p>
+                </div>
+
+                <div class="mortality">
+                    <h3>Mortality and Diseases</h3>
+                    <p>The red panda's lifespan in captivity reaches 14 years. They have been recorded falling prey to leopards in the wild. Faecal samples of red panda collected in Nepal contained parasitic protozoa, amoebozoans, roundworms, trematodes and tapeworms. Roundworms, tapeworms and coccidia were also found in red panda scat collected in Rara and Langtang National Parks. Fourteen red pandas at the Knoxville Zoo suffered from severe ringworm, so the tails of two were amputated. Chagas disease was reported as the cause of death of a red panda kept in a Kansas zoo. Amdoparvovirus was detected in the scat of six red pandas in the Sacramento Zoo. Eight captive red pandas in a Chinese zoo suffered from shortness of breath and fever shortly before they died of pneumonia; autopsy revealed that they had antibodies to the protozoans Toxoplasma gondii and Sarcocystis species indicating that they were intermediate hosts. A captive red panda in the Chengdu Research Base of Giant Panda Breeding died of unknown reasons.</p>
+               </div>
+
+                <div class="reproduction">
+                    <h3>Reproduction and Parenting</h3>
+                    <p>Red pandas are long-day breeders, reproducing after the winter solstice as daylight grows longer. Mating thus takes place from January to March, with births occurring from May to August. Reproduction is delayed by six months for captive pandas in the southern hemisphere. Oestrous lasts a day, and females can enter oestrous multiple times a season, but it is not known how long the intervals between each cycle last.</p>
+        
+                    <p>As the reproductive season begins, males and females interact more, and will rest, move, and feed near each other. An oestrous female will spend more time marking and males will inspect her anogenital region. Receptive females make tail-flicks and position themselves in a lordosis pose, with the front lowered to the ground and the spine curved. Copulation involves the male mounting the female from behind and on top, though face-to-face matings as well as belly-to-back matings while lying on the sides also occur. The male will grab the female by the sides with his front paws instead of biting her neck. Intromission is 2–25 minutes long, and the couple groom each other between each bout.</p>
+        
+                    <p>Gestation lasts about 131 days. Prior to giving birth, the female selects a denning site, such as a tree, log or stump hollow or rock crevice, and builds a nest using material from nearby, such as twigs, sticks, branches, bark bits, leaves, grass and moss. Litters typically consist of one to four cubs that are born fully furred but blind. They are entirely dependent on their mother for the first three to four months until they first leave the nest. They nurse for their first five months. The bond between mother and offspring lasts until the next mating season. Cubs are fully grown at around 12 months and at around 18 months they reach sexual maturity. Two radio-collared cubs in eastern Nepal separated from their mothers at the age of 7–8 months and left their birth areas three weeks later. They reached new home ranges within 26–42 days and became residents after exploring them for 42–44 days.</p>
+               </div>
+
+            </section>
+        </div>
+        
+        <div class="page" id="page4">
+
+            <section class="quiz">
+
+                <div class="question" data-correct="C">
+                    <h3>1. What family do red pandas belong to?</h3>
+                    <div class="answer"><input type="radio" name="q1" value="A"> A) Ursidae</div>
+                    <div class="answer"><input type="radio" name="q1" value="B"> B) Canidae</div>
+                    <div class="answer"><input type="radio" name="q1" value="C"> C) Ailuridae</div>
+                    <div class="answer"><input type="radio" name="q1" value="D"> D) Felidae</div>
+                </div>
+
+                <div class="question" data-correct="A">
+                    <h3>2. What is the primary component of a red panda's diet?</h3>
+                    <div class="answer"><input type="radio" name="q2" value="A"> A) Bamboo</div>
+                    <div class="answer"><input type="radio" name="q2" value="B"> B) Fish</div>
+                    <div class="answer"><input type="radio" name="q2" value="C"> C) Insects</div>
+                    <div class="answer"><input type="radio" name="q2" value="D"> D) Fruits</div>
+                </div>
+
+                <div class="question" data-correct="C">
+                    <h3>3. Where are red pandas naturally found?</h3>
+                    <div class="answer"><input type="radio" name="q3" value="A"> A) Australia</div>
+                    <div class="answer"><input type="radio" name="q3" value="B"> B) Amazon Rainforest</div>
+                    <div class="answer"><input type="radio" name="q3" value="C"> C) Eastern Himalayas</div>
+                    <div class="answer"><input type="radio" name="q3" value="D"> D) Sahara Desert</div>
+                </div>
+
+                <div class="question" data-correct="B">
+                    <h3>4. How do red pandas use their tails?</h3>
+                    <div class="answer"><input type="radio" name="q4" value="A"> A) For flying</div>
+                    <div class="answer"><input type="radio" name="q4" value="B"> B) As blankets for warmth</div>
+                    <div class="answer"><input type="radio" name="q4" value="C"> C) For swimming</div>
+                    <div class="answer"><input type="radio" name="q4" value="D"> D) As weapons</div>
+                </div>
+
+                <div class="question" data-correct="A">
+                    <h3>5. When are red pandas most active?</h3>
+                    <div class="answer"><input type="radio" name="q5" value="A"> A) During dawn and dusk</div>
+                    <div class="answer"><input type="radio" name="q5" value="B"> B) At night</div>
+                    <div class="answer"><input type="radio" name="q5" value="C"> C) During the day</div>
+                    <div class="answer"><input type="radio" name="q5" value="D"> D) All day long</div>
+                </div>
+
+                <a href='#' class="button" id="checkAnswers">Submit Answers</a>
+                
+                <div id="results"></div>
+
+                <a href='#' class="retry" id="retryBtn">Retry</a>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/RedPanda1.png" alt="Logo">
+            </div>
+            <div class="footer-info">
+                <h3>Contact Us</h3>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Address: 123 Street, City, Country</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+    

@@ -1,0 +1,929 @@
+/* smaller screen */
+@media screen and (max-width: 800px) {
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+    /* setting the hues for neutral, wrong and correct for the answers */
+    :root {
+        --hue-neutral: 25;
+        --hue-wrong: 0;
+        --hue-correct: 145;
+    }
+
+    #container {
+        /* making a variable for the hue */
+        --hue: var(--hue-neutral);
+        background-color: chocolate;
+        border-style: solid;
+        border-width: 3px;
+        border-color: antiquewhite;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20%;
+        width: 800px;
+        width: 100%;
+        box-shadow: 0, 0, 20px 5px;
+        /* hue, saturation and brightness*/
+        background-color: hsl(var(--hue), 75%, 47%);
+        
+    }
+
+    /* styling the answer buttons */
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        margin: 20px, 0;
+    }
+    /* button styles */
+    .btn {
+        background-color: hsl(var(--hue), 100%, 50%);
+        border-radius: 5px;
+        padding: 5px, 10px;
+        outline: none;
+        border: 1px solid hsl(var(--hue), 100%, 30%);
+    }
+
+    .btn:hover {
+        border-color: black;
+    }
+
+    .btn.correct {
+        --hue: var(--hue-correct);
+        color: black;
+    }
+
+    .btn.wrong {
+        --hue: var(--hue-wrong);
+    }
+
+    .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px, 20px;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+    body { /* background colour */
+        background-image: linear-gradient(to bottom right, darkred, goldenrod);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* page styling for topic and subtopics */
+    .page{
+        width:80vw;height:auto;
+    }
+    nav ul li{
+        display:inline;
+        list-style-type: none;
+    }
+
+    .para {
+        margin-top: 10%;
+    }
+
+    * { /* text */
+        color: white;
+        font-family: "Raleway", "consolas", "sans-serif";
+        font-size: 44px;
+        text-align: center;
+    }
+
+
+
+    h1 { /* header 1 */
+        border-bottom: solid;
+        border-width: 5px;
+        border-color: antiquewhite;
+        padding-bottom: 7px;
+    }
+
+    .images { /* all images */
+        height: auto;
+        object-fit: contain;
+    }
+
+    #thecar { /* images at the paragraphs */
+        width: 66%;
+    }
+
+    #thecar2 {
+        width: 63%;
+    }
+
+    #thecarDBS { /* images at the paragraphs */
+        width: 66%;
+    }
+
+    #thecarDBSback {
+        width: 66%;
+    }
+
+    #thecarvanquish { /* images at the paragraphs */
+        width: 66%;
+    }
+
+    #thecarvanquishback {
+        width: 100%;
+    }
+
+    #QR {
+        width: 20%;
+    }
+
+
+    p { /* paragraps */
+        font-size: 19px;
+    }
+
+    h4 { /* header 4 */
+        font-size: 26px;
+        border-style: dotted;
+        border-width: 4px;
+        border-color: antiquewhite;
+        padding: 7px;
+    }
+
+    h5 {
+        font-size: 35px;
+        border-style: dotted;
+        border-width: 4px;
+        border-color: antiquewhite;
+    }
+
+    /* styles for form */
+    label {
+        font-size: 35px;
+    }
+
+    input[type="number"] {
+        width: 25%;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(99, 5, 5);
+        color: white;     
+        font-family: "Raleway", "consolas", "sans-serif";
+    }
+
+    input[type="button"] {
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(99, 5, 5);
+        color: white;     
+        font-family: "Raleway", "consolas", "sans-serif";
+        cursor: pointer;
+    }
+
+    .output{
+        color: white;
+        font-family: "Raleway", "consolas", "sans-serif";
+        font-size: 38px;
+        text-align: center;
+        border-style: solid;
+        border-width: 4px;
+        border-color: antiquewhite;
+    }
+
+    #map { /* map */
+        width: 80%;
+    }
+
+    #youtube { /* yt video */
+        width: 85%;
+        border: 0px;
+    }
+
+    /* Styling the image used to trigger the modal */
+    #dimensionsimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #dimensionsimg:hover {
+        opacity: 0.7;
+    }
+
+    /* the modal background */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black w/ opacity */
+    }
+
+    /* the content of the model (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* caption of the modal image */
+    #caption1 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* adds animation to zoom in to the modal */
+    .modal-content,
+    #caption1 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* close button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #modelimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #modelimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption2 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption2 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    #interiorimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #interiorimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption3 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 17.5px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption3 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    #engineimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #engineimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption4 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 17.5px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption4 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* styles for buttons */
+    button {
+        font-size: 26px;
+        color: white;
+        background: darkred;
+        border-radius: 8px;
+        transition: opacity .2s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: rgb(99, 5, 5);
+    }
+
+    #caption5 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption5 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+}
+
+
+/* bigger screens */
+@media screen and (min-width: 800px) {
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+    
+    :root {
+        --hue-neutral: 25;
+        --hue-wrong: 0;
+        --hue-correct: 145;
+    }
+
+    #container {
+        /* making a variable for the hue */
+        --hue: var(--hue-neutral);
+        background-color: chocolate;
+        border-style: solid;
+        border-width: 3px;
+        border-color: antiquewhite;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20%;
+        width: 800px;
+        width: 100%;
+        box-shadow: 0, 0, 20px 5px;
+        /* hue, saturation and brightness*/
+        background-color: hsl(var(--hue), 75%, 47%);
+        
+    }
+
+    /* styling the answer buttons */
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        margin: 20px, 0;
+    }
+    .btn {
+        background-color: hsl(var(--hue), 100%, 50%);
+        border-radius: 5px;
+        padding: 5px, 10px;
+        outline: none;
+        border: 1px solid hsl(var(--hue), 100%, 30%);
+    }
+
+    .btn:hover {
+        border-color: black;
+    }
+
+    .btn.correct {
+        --hue: var(--hue-correct);
+        color: black;
+    }
+
+    .btn.wrong {
+        --hue: var(--hue-wrong);
+    }
+
+    .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px, 20px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom right, darkred, goldenrod);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .page{
+        width:80vw;height:auto;
+    }
+    nav ul li{
+        display:inline;
+        list-style-type: none;
+    }
+
+    #para1 {
+        margin-top: 10%;
+    }
+
+    #para2 {
+        margin-top: 10%;
+    }
+
+    #para3 {
+        margin-top: 10%;
+    }
+
+    #para4 {
+        margin-top: 10%;
+    }
+
+    #para5 {
+        margin-top: 10%;
+    }
+
+    * {
+        color: white;
+        font-family: "Raleway", "consolas", "sans-serif";
+        font-size: 44px;
+        text-align: center;
+    }
+
+    h1 {
+        border-bottom: solid;
+        border-width: 5px;
+        border-color: antiquewhite;
+        padding-bottom: 7px;
+    }
+
+    .images {
+        height: auto;
+        object-fit: contain;
+    }
+
+    #thecar {
+        width: 66%;
+    }
+
+    #thecar2 {
+        width: 63%;
+    }
+
+    #thecarDBS { /* images at the paragraphs */
+        width: 66%;
+    }
+
+    #thecarDBSback {
+        width: 66%;
+    }
+
+    #QR {
+        width: 20%;
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    h4 {
+        font-size: 26px;
+        border-style: dotted;
+        border-width: 4px;
+        border-color: antiquewhite;
+        margin-top: -20%;
+        padding: 7px;
+    }
+
+    h5 {
+        font-size: 35px;
+        border-style: dotted;
+        border-width: 4px;
+        border-color: antiquewhite;
+    }
+
+    label {
+        font-size: 35px;
+    }
+
+    input[type="number"] {
+        width: 25%;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(99, 5, 5);
+        color: white;     
+        font-family: "Raleway", "consolas", "sans-serif";
+    }
+
+    input[type="button"] {
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(99, 5, 5);
+        color: white;     
+        font-family: "Raleway", "consolas", "sans-serif";
+        cursor: pointer;
+    }
+
+    .output{
+        color: white;
+        font-family: "Raleway", "consolas", "sans-serif";
+        font-size: 38px;
+        text-align: center;
+        border-style: solid;
+        border-width: 4px;
+        border-color: antiquewhite;
+    }
+
+    #map {
+        width: 100%;
+        height: 450px;
+        margin-left: 0%;
+    }
+
+    #mapbox {
+        margin-top: 24%;
+    }
+
+#videobox {
+    margin-top: 20%;
+    border: 0px;
+}
+
+    #intructions{
+        margin-top:20%;
+    }
+
+    #youtube {
+        width: 100%;
+        height: 450px;
+        margin-left: 0%;
+    }
+
+    /* Styling the image used to trigger the modal */
+    #dimensionsimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    #dimensionsimg:hover {
+        opacity: 0.7;
+    }
+
+    /* the modal background */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Black w/ opacity */
+    }
+
+    /* the content of the model (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* caption of the modal image */
+    #caption1 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* adds animation to zoom in to the modal */
+    .modal-content,
+    #caption1 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* close button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #modelimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    #modelimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption2 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption2 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    #interiorimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    #interiorimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption3 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 17.5px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption3 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    #engineimg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    #engineimg:hover {
+        opacity: 0.7;
+    }
+
+    #caption4 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 17.5px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption4 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+    button {
+        font-size: 26px;
+        color: white;
+        background: darkred;
+        border-radius: 8px;
+        transition: opacity .2s;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: rgb(99, 5, 5);
+    }
+
+    #endimg {
+        border-radius: 5px;
+        transition: 0.3s;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    #caption5 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    .modal-content,
+    #caption5 {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+}

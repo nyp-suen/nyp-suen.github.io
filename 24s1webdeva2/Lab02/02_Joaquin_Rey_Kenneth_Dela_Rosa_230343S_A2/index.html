@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>WebDevAssignment2_230343S</title>
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="ArtificialLife">
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<script src="script.js" defer></script>
+		<div id="main"> <!-- Enveloped everything for the margin when sidebar is open-->
+			<nav id="MainNavContainer">
+				<p class="nav-item1">Artificial Life</p>
+				<a class="nav-item2" id="full-screen-button">Fullscreen Button</a>
+				<a class="nav-item2" id="linkpage3">Simulations</a>
+				<a class="nav-item2" id="linkpage2">Emergence</a>
+				<a class="nav-item2" id="linkpage1">About</a>
+			</nav>
+			<div id="nav-expand-button">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div class="page"> <!-- About Page -->
+				<div class="index-wrapper">
+					<div class="index-grid-item1" id="index-explanation"> <!-- Added ids on both index grid items to change orders for later -->
+						<div class="centered">
+							<h2>What is Artificial Life?</h2>
+						</div>
+						<p>Artificial life (ALife or A-Life) is a field of study wherein researchers examine systems related to natural life, its processes, and its evolution, through the use of simulations with computer models, robotics, and biochemistry.</p>
+					</div>
+					<div class="index-grid-item1" id="index-image"> 
+						<img src="images/ArtificialLife1Image1.jpg" alt="ArtificalLifeImage1" class="index-grid-image centered">
+					</div>
+				</div>
+				<div class="centered"><h1>Techniques</h1></div>
+				<!-- Techniques are naturally display: none, only being visible using javascript -->
+				<div class="technique">
+					<div class="index-wrapper fade">
+						<div class="index-grid-item1">
+							<div class="centered"><h1>Cellular Automata</h1></div>
+							<p>Cellular automata (CA) are computational models used to simulate complex systems and processes in artificial life. They consist of a grid of cells, each of which can be in one of a finite number of states. The state of each cell changes over discrete time steps according to a set of rules that depend on the states of neighboring cells. CA are used to study how simple local interactions can lead to complex global behaviors, such as pattern formation, self-replication, and the emergence of life-like properties. The most famous example is <a href="https://playgameoflife.com">Conway's Game Of Life</a>, which demonstrates how simple rules can produce intricate and dynamic patterns.</p>
+						</div>
+						<div class="index-grid-item1">
+							<img src="images/GameOfLife.gif" alt="GameOfLifeImage" class="index-grid-image centered">
+						</div>
+					</div>
+					<div class="centered"><h2>1/3</h2></div>
+				</div>
+
+				<div class="technique">
+					<div class="index-wrapper fade">
+						<div class="index-grid-item1">
+							<div class="centered"><h1>Artificial Neural Networks</h1></div>
+							<p>Artificial neural networks (ANNs) are computational models inspired by the structure and function of biological neural networks in the brain. In the context of artificial life, ANNs are used to simulate learning, adaptation, and intelligent behavior. They consist of interconnected nodes (neurons) organized in layers, where each connection has a weight that adjusts during the learning process. ANNs are employed to model and understand processes such as perception, decision-making, and motor control in artificial agents, helping to explore how life-like behaviors can emerge from artificial systems through training and experience.</p>
+						</div>
+						<div class="index-grid-item1">
+							<img src="images/ArtificialNeuralNetwork.gif" alt="ArtificalNeuralNetwork" class="index-grid-image centered">
+						</div>
+					</div>
+					<div class="centered"><h2>2/3</h2></div>
+				</div>
+
+				<div class="technique">
+					<div class="index-wrapper fade">
+						<div class="index-grid-item1">
+							<div class="centered"><h1>Neuroevolution</h1></div>
+							<p>Neuroevolution is a technique in artificial life that combines neural networks and evolutionary algorithms to evolve the structure and weights of artificial neural networks. Instead of manually designing and training neural networks, neuroevolution automates this process by using evolutionary principles like selection, mutation, and crossover to optimize the networks. This approach is particularly useful for developing adaptive and robust behaviors in artificial agents, enabling them to solve complex tasks, learn, and adapt to changing environments through simulated evolution. Neuroevolution is often used in robotics, game AI, and adaptive systems to create life-like behaviors and intelligent problem-solving abilities.</p>
+						</div>
+						<div class="index-grid-item1">
+							<img src="images/NeuroevolutionImage.jpg" alt="NeuroevolutionImage" class="index-grid-image centered">
+						</div>
+					</div>
+					<div class="centered"><h2>3/3</h2></div>
+				</div>
+				
+				<!-- Using &lt; because the symbol '<' cannot be used-->
+				<div class="floatleft">
+					<button id="technique-left-button" class="technique-button"> &lt; </button>
+				</div>
+				<div class="floatright">
+					<button id="technique-right-button" class="technique-button"> > </button>
+				</div>
+				<div class="clearfix"></div> <!-- So that qr code wont be affected by the floated buttons and can start on a new line -->
+				<div class="centered">
+					<img src="images/QrCode.png" alt="QRCode" class="QRcode">
+					<h2>Sources:</h2>
+					<div class="flex flex-wrap">
+						<a class="Source" href="https://en.wikipedia.org/wiki/Artificial_life">Artificial Life Wiki</a>
+						<a class="Source" href="https://www.youtube.com/watch?v=mSy4z8nDLno">Artificial Life uses Machine Learning to learn how to survive</a>
+					</div>
+				</div>
+			</div>
+			<div class="page"> <!-- Emergence Page-->
+				<div class="centered">
+					<h1>What Is Emergence?</h1>
+				</div>
+				<div class="emergence-wrapper flex">
+					<img src="images/EmergenceStartingImage.jpg" alt="EmergenceStartingImage" class="emergence-image">		
+					<p>"In a nutshell, it describes small things forming bigger things that have different properties than the sum of their parts. Emergence is complexity arising from simplicity." - Kurzgesagt</p>
+				
+				</div>
+				<div class="centered">
+					<h1>How does Emergence occur?</h1>
+				</div>
+				<div class="emergence-wrapper flex">
+					<div> <!-- Div for all elements below to count as one element for flex -->
+						<p>Emergence happens when simple components interact according to basic rules, leading to the formation of complex systems with new properties that are not apparent from the individual parts alone.
+						</p>
+						<ul>
+							<li>Simple Rules: Each component follows simple, local rules or behaviors. These rules are often based on immediate interactions with neighboring components.</li>
+							<li>Interactions: Components interact with each other in a network or environment. These interactions can lead to feedback loops, where the output of one interaction influences subsequent interactions.</li>
+							<li>Scale: As the number of components and interactions increases, the complexity of the system grows. The large-scale behavior of the system is not just a sum of its parts but a product of the intricate web of interactions.</li>
+							<li>Self-Organization: The system self-organizes into patterns or structures without central control. This can lead to the formation of new, emergent properties that are qualitatively different from the behaviors of the individual components.</li>
+							<li>Adaptation and Evolution: In biological and artificial systems, emergence can also involve adaptation and evolution, where the system changes over time in response to environmental pressures or internal dynamics.</li>
+						</ul>
+					</div>
+					<img src="images/EmergenceComplexity.jpg" alt="EmergenceComplexity" class="emergence-image">		
+				</div>
+				<div class="centered">
+					<h1>Examples of Emergence</h1>
+				</div>
+				<div class="emergence-wrapper flex">
+					<img src="images/FractalImage.jpg" alt="FractalImage" class="emergence-image">		
+					<ul>
+						<li>Flocking Behavior: Birds in a flock follow simple rules of alignment, separation, and cohesion, leading to complex, coordinated group movements without a leader.</li>
+						<li>Ant Colonies: Individual ants follow basic pheromone trails and interaction rules, resulting in complex behaviors like foraging, nest building, and defense.</li>
+						<li>Consciousness: Neural interactions in the brain, governed by simple synaptic rules, result in the emergent property of consciousness and complex cognitive functions.</li>
+					</ul>
+				</div>
+				
+				<div class="centered">
+					<h1>Quiz</h1>
+				</div>
+				<div class="emergence-wrapper">
+					<div class="flex flex-wrap">
+						<p id="emergence-question-count">Questions: 0</p> <!-- Amount of questions Done -->
+						<p id="emergence-score">Score: 0</p> <!-- Score Slot-->
+						<p id="emergence-score-percentage">Score Percentage: 0%</p> <!-- Win Percentage Slot-->
+					</div>
+					<p id="emergence-question-slot">Questionsssssss</p> <!-- Question Slot -->
+					<div class="flex flex-wrap">
+						<a class="emergence-answer">1</a> <!-- Answer Slots -->
+						<a class="emergence-answer">2</a>
+						<a class="emergence-answer">3</a>
+						<a class="emergence-answer">4</a>
+					</div>
+					<a id="emergence-submit" class="TranslateButton">Submit</a> <!-- Submit Button-->
+				</div>
+				<div class="centered">
+					<img src="images/QrCode.png" alt="QRCode" class="QRcode">
+					<h2>Sources:</h2>
+					<div class="flex flex-wrap">
+						<a class="Source" href="https://www.youtube.com/watch?v=16W7c0mb-rE">Emergence – How Stupid Things Become Smart Together</a>
+						<a class="Source" href="https://www.youtube.com/watch?v=TlysTnxF_6c">What Is Emergence?</a>
+					</div>
+				</div>
+			</div>
+			<div class="page"> <!-- Simulations Page -->
+				<div id="simulation-wrapper">
+					<div class='simulation-grid-item' id="SimulationInteraction">
+						<hr>
+						<a id="randomise-forces-button" class="centered TranslateButton">Randomise Forces</a>
+						<a id="randomise-positions-button" class="centered TranslateButton">Randomise Positions</a>
+						<a id="add-new-type-button" class="centered TranslateButton">Add_Type</a>
+						<hr>
+						<h3>Mouse Attraction Value</h3>
+						<hr>
+						<input id="MouseAttractionValue" type="number" value="0.0" step="1">
+						<hr>
+						<h3>Mouse Range Value</h3>
+						<hr>
+						<input id="MouseRangeValue" type="number" value="10000.0" step="1000">
+						<hr>
+						<h3>Particle Attraction Intensity</h3>
+						<hr>
+						<input id="Intensity" type="number" value="0.01" step="0.1">
+						<hr>
+						<h3>Air Resistance</h3>
+						<hr>
+						<input id="AirResistance" type="number" value="0.3" step="0.1">
+						<hr>
+						<h3>Time Step</h3>
+						<hr>
+						<input id="dtMultiplier" type="number" value="0.001" step="0.001">
+						<hr>
+						<div id="TypeInteractionWrapper">
+						</div>
+						<div class="centered">
+							<img src="images/QrCode.png" alt="QRCode" class="QRcode">
+							<h2>Sources:</h2>
+							<div class="flex flex-wrap">
+								<a class="Source" href="https://www.youtube.com/watch?v=4vk7YvBYpOs&t=689s">Simulating Particle Life</a>
+								<a class="Source" href="https://www.youtube.com/watch?v=p4YirERTVF0&t=26s">How Particle Life Emergerges from simplicity</a>
+								<a class="Source" href="https://www.w3schools.com/html/html5_canvas.asp">Canvas Tutorial</a>
+							</div>
+						</div>
+					</div>
+					<div class='simulation-grid-item'>
+						<canvas id="ParticleLifeSimulation" class = "centered"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,884 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face
+{
+    font-family: PoppinsRegular;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+iframe
+{
+    border:0px;
+}
+
+form
+{
+    color:black;
+    margin-top:-90px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+}
+
+label
+{
+    font-size:35px;
+    font-family:PoppinsRegular;
+}
+
+input
+{
+    text-align:center;
+    font-size:25px;
+}
+
+button
+{
+    font-size:35px;
+    background-color:#e1b46d;
+    color:black;
+    border-radius:2.5%;
+    border:none;
+    width:30%;
+    height:20%;
+}
+
+body
+{
+    width:100%;
+
+    height:100vh;
+
+    margin:0;
+}
+
+h2
+{
+font-size:55px;
+font-family:PoppinsRegular;
+}
+
+h3
+{
+    font-size:35px;
+    font-family:PoppinsRegular;
+}
+
+h4
+{
+    font-size: 25px;
+    text-align:center;
+    font-family:PoppinsRegular;
+}
+
+p
+{
+    font-family:PoppinsRegular;
+}
+
+.dot
+{
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.green
+{
+    color:green;
+}
+
+.red
+{
+    color:red;
+}
+
+#page2{background-color:black;height:100vh;color:white;} 
+#page3{background:black;height:100vh;color:white;}
+#page4{background:black;height:100vh;color:white;}
+
+header{
+
+    height:auto;
+    
+    width: 100%;
+
+    position:relative; 
+
+    background-color: black;
+
+    z-index: 5;  /* ensure thats its in front of everything else */
+}
+
+.ptr /* changes cursor to pointer when hovering over buttons on navigation bar */
+{
+    cursor:pointer;
+}
+
+.nav-container{
+    width:100%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+nav
+{
+    flex:1; /* ensures that nav is of same length regardless of content in nav */
+    display:flex;
+}
+
+.nav-SymbolnBtn
+{
+    width:20%;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    padding-left:15px;
+}
+
+.nav-SymbolnBtn p
+{
+    font-size:60px;
+    
+    color:white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    justify-content: center;
+
+    margin:4px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    height: auto;
+    justify-content:right;
+    align-items:right;
+    width:80%;
+}
+
+nav ul p
+{
+    font-size:30px;
+    
+    color:white;
+
+    text-decoration: none;
+
+    padding:38px 48px;
+
+    font-weight: bold;
+
+    justify-content: center;
+}
+
+/* for hamburger icon */
+#hamIcon 
+{
+    position:relative;
+    display: none;
+
+    padding: 1vh;
+    border: 1px grey;
+
+    width:6vh;
+
+    background-color: black;
+}
+
+#hamIcon .bar 
+{
+    width: 100%;
+    height: 5px;
+
+    display: block;
+    background-color: aliceblue;
+    margin: 6px 0px;
+
+    transition: 0.4s;
+}
+
+.is-active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.is-active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.intro-container
+{
+    position:relative;
+    width:100%;
+    height:800px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.menuHide
+{
+    display:block;
+}
+
+.intro-txt
+{
+    color:white;
+    font-size: 80px;
+    position:relative;
+    top:-42%;
+    letter-spacing: 3px;
+}
+
+.intro-txt :first-child
+{
+    height:100%;
+    width:100%;
+    border-right: 5px blue solid;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: typing 2s steps(38),
+    cursor 0.4s step-end infinite alternate;
+}
+
+.content
+{
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+#page2 .content
+{
+    background-color:black;
+}
+
+#page1
+{
+height:100vh;
+}
+
+#page1 .img-box img
+{
+    width:400px;
+    height:400px;
+}
+
+.title-box
+{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#page2 .content .title-box
+{
+    margin-top:10px;
+}
+
+.text-box
+{
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+#page2 .text-box
+{
+    justify-content:right;
+    column-gap:8%;
+}
+
+#page2 .text-box .text-box 
+{
+    width:60%;
+    height:100%;
+    justify-content:left;
+    order:3;
+    margin-right:2%;
+}
+
+#page2 .text-box:nth-child(3) .text-box
+{
+    order:1;
+}
+
+.text-box p
+{
+    text-align:center;
+    margin:10px;
+    font-size:25px;
+}
+
+.img-box
+{
+    height:auto;
+    width:30%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    order:2;
+}
+
+#page2 .img-box
+{
+    width:25%;
+}
+
+#page2 .img-box:first-of-type
+{
+    width:30%;
+}
+
+#chaturanga
+{
+    margin-right:28px;
+}
+
+#page2 .content .text-box:nth-child(3) .img-box
+{
+    margin-right:5%;
+}
+
+.pawn
+{
+    opacity:0;
+}
+
+#pawnBtn1
+{
+    margin-right:262px;
+    margin-top:-60px;
+}
+
+#pawnBtn2
+{
+    margin-right:188px;
+    margin-top:-16px;
+}
+
+#pawnBtn3
+{
+    margin-right:112px;
+    margin-top:-14px;
+}
+
+#pawnBtn4
+{
+    margin-right:37px;
+    margin-top:-15px;
+}
+
+#pawnBtn5
+{
+    margin-left:38px;
+    margin-top:-14px;
+}
+
+#pawnBtn6
+{
+    margin-left:113px;
+    margin-top:-16px;
+}
+
+#pawnBtn7
+{
+    margin-left:189px;
+    margin-top:-15px;
+}
+
+#pawnBtn8
+{
+    margin-left:263px;
+    margin-top:-15px;
+}
+
+.horse
+{
+    opacity:0;
+}
+
+#horseBtn1
+{
+    margin-right:190px;
+    margin-top:18px;
+}
+
+#horseBtn2
+{
+    margin-left:190px;
+    margin-top:-15px;
+}
+
+.bishop
+{
+    opacity:0;
+}
+
+#bishopBtn1
+{
+    margin-right:112px;
+    margin-top:-12px;
+}
+
+#bishopBtn2
+{
+    margin-left:112px;
+    margin-top:-15px;
+}
+
+#queen
+{
+    opacity:0;
+    margin-right:38px;
+    margin-top:-14px;
+}
+
+#king 
+{
+    opacity:0;
+    margin-left:38px;
+    margin-top:-14px;
+}
+
+.rook
+{
+    opacity:0;
+}
+
+#rookbtn1
+{
+    margin-right:263px;
+    margin-top:-12px;
+}
+
+#rookbtn2
+{
+    margin-left:263px;
+    margin-top:-15px;
+}
+
+#page2 .content .text-box:nth-child(3) .img-box .text-box
+{
+    width:220px;
+    height:auto;
+    background-color:burlywood;
+    border-radius:2.5%;
+    color:black;
+    margin-top:60px;
+    margin-bottom:25px;
+    margin-left:10px;
+}
+
+#page2 .content .text-box:nth-child(3) .img-box .text-box p
+{
+    font-size:20px;
+    justify-content:center;
+}
+
+#page2 .content .text-box:nth-child(3) .img-box .text-box img
+{
+    margin-left:60px;
+}
+
+#page3 .content
+{
+    row-gap:50px;
+    background-color:black;
+}
+
+#page3 .text-box > .text-box
+{
+    width:50%;
+    flex-direction:column;
+    row-gap:40px;
+}
+
+#page3 .content .text-box:nth-child(10) /* background color for quiz/form box */
+{
+    background-color:#ffe4c4;
+    height:400px;
+    width:80%;
+    border-radius:1%;
+}
+
+#page3 .content .text-box:nth-child(10) .text-box 
+{
+    width:90%;
+    height:90%;
+    margin-top:-2px;
+    color:black;
+}
+
+#page4 .title-box
+{
+    background-color:black;
+}
+
+#FormPage p
+{
+    color:red;
+}
+
+#Backend .img-box
+{
+    width:100%;
+}
+
+.description-txt
+{
+    height:100%;
+    width:30%;
+    order:3;
+}
+
+#leftarrow
+{
+    position:relative;
+    height:auto;
+    width:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    left:-5.5%;
+    order:1;
+}
+
+#rightarrow
+{
+    position:relative;
+    height:auto;
+    width:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right:-5.25%;
+    order:4;
+}
+
+.chessboard
+{
+    width:600px;
+    height:80vh;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    background-color:red;
+}
+
+
+.square
+{
+    width:12.5%;
+    height:12.5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.white
+{
+    background-color: #ebecd0;
+}
+
+.black
+{
+    background-color: #739552;
+}
+
+.coordinate
+{
+    position:absolute;
+    left:4%;
+    top:74%;
+}
+
+.rank
+{
+    left:86%;
+    top:3%;
+}
+
+.whiteText
+{
+    color:#ebecd0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blackText
+{
+    color:#739552;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#SorryMsg
+{
+    display:none;
+}
+
+#qr-Container
+{
+    flex-direction:column;
+}
+
+.fadein
+{
+    animation-name: fadein;
+    animation-duration:1s;
+}
+
+@keyframes fadein
+{
+    0%
+    {
+        opacity:0;
+        transform:translateX(-10%);
+    }
+
+    100%
+    {
+        opacity:1;
+        transform:translateX(0%);
+    }
+}
+
+.fadeup
+{
+    animation-name: fadeup;
+    animation-duration:1s;
+}
+
+@keyframes fadeup
+{
+    0%
+    {
+        opacity:0;
+        transform:translateY(10%);
+    }
+
+    100%
+    {
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+.piece
+{
+    width:100%;
+    z-index:1;
+    cursor:pointer;
+}
+
+.piece img
+{
+    max-width:100%;
+    width:100%;
+    height:auto;
+}
+
+.flex-direction-change
+{
+    flex-direction:column;
+}
+
+#fullscreenToggle
+{
+   position:relative;
+   left:35%;
+}
+
+@media screen and (min-width:901px) /* animation only plays on screen width of more than 901 px */
+{
+    @keyframes cursor
+{
+    50%
+    {
+        border-color:transparent;
+    }
+}
+
+@keyframes typing
+{
+    from
+    {
+        width:0%;
+    }
+}
+}
+
+@media screen and (max-width:900px) /* fits better in my opinion */
+{
+nav
+{
+    flex-wrap:wrap;
+};
+nav ul li{display:block;margin-left:120px;} /*make a menu items vertical*/
+#hamIcon{display: block;} /* unhide menu icon */
+nav ul{display:none;width:100%;} /*hide the menu item list*/
+.nav-SymbolnBtn
+{
+    padding-left:0px;
+    justify-content:center;
+    margin-left:20px;
+    width:100%;
+}
+.intro-container
+{background-image: url(images/mobilebgnew.png);background-position:center,center;}
+.intro-txt
+{
+    margin-top:180px;
+}
+#leftarrow
+{
+    width:30%;
+    margin-bottom:35px;
+}
+.img-box
+{
+    width:35%;
+}
+.description-txt
+{
+    order:4;
+    width:100%;
+    height:400px;
+}
+#rightarrow
+{
+    order:3;
+    width:25%;
+    margin-bottom:35px;
+    margin-right:20px;
+}
+#page2 .text-box
+{
+    justify-content:center;
+}
+#page2 .img-box
+{
+    width:100%;
+}
+#page2 .text-box .text-box
+{
+    width:100%;
+}
+#page2 .text-box:nth-child(3) .text-box
+{
+    order:3;
+}
+.intro-txt :first-child
+{
+    font-size:20px;
+    border-right:0px;
+    white-space:normal;
+}
+.chessboard /* make chessboard 'disappear' */
+{
+    display:none;
+}
+#SorryMsg
+{
+    display:block;
+}
+#SorryMsg .img-box
+{
+    width:100%;
+}
+#qr-Container
+{
+    display:none;
+}
+.coordinate
+{
+    top:65%;
+}
+
+.rank
+{
+    top:-5%;
+    left:82%;
+}
+
+#page3 .text-box > .text-box
+{
+    width:100%;
+}
+
+#page1 .img-box img
+{
+    width:300px;
+    height:300px;
+}
+.whiteText
+{
+    font-size: 9px;
+    margin-top:3.2px;
+}
+.blackText
+{
+    font-size: 9px;
+    margin-top:3px;
+}
+label
+{
+    font-size:23px;
+}
+input
+{
+    width:100%;
+}
+button
+{
+    font-size:25px;
+    height:20%;
+    width:80%;
+}
+#page3 .content .text-box:nth-child(10)
+{ 
+    height:500px;
+}
+#fullscreenToggle
+{
+    display:none;
+}
+}
+  
+
+
+
+
+

@@ -1,0 +1,361 @@
+@font-face {
+    font-family: JuneBug;
+    src: url('fonts/Kollektif.TTF');
+}
+
+* {
+    color: #f1e0e0;
+    font-family: Kollektif;
+}
+
+body {
+    background-color: #353232;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+.backdrop {
+    background: #f1e0e0 url(images/expensivebread.jpg) center center/cover no-repeat;
+    width: 100%;
+    height: 50rem;
+}
+
+.pickgradient {
+    background: linear-gradient(to top, rgba(53, 50, 50, 100) 10%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 0;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer .pickgradient {
+    background: linear-gradient(to top, rgba(43, 40, 40, 100) 10%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+footer .pickgradient div {
+    width: 100%;
+    height: 10rem;
+}
+
+.feedback {
+    background-color: #2B2828;
+    position: relative;
+    padding: 2px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    padding: 1%;
+    font-size: 18px;
+    background-color: #353232;
+}
+
+input[type="email"] {
+    padding: 1%;
+
+    background-color: #353232;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #353232;
+}
+
+#thankYouMessage {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #353232;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar div {
+    text-align: center;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+.navbar button:hover {
+    background-color: #575757;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Content */
+.boxcontainer {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxcontainer div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxcontainer div {
+    padding: 2%;
+    /* padding = x */
+    flex: 46%;
+}
+
+.boxcontainer#id1 div {
+    flex: 46%;
+    /* flex = wantedValue - x * 2 */
+}
+
+.boxcontainer#id3 .content3 {
+    flex: 96%;
+}
+
+.boxcontainer#id4 h1,
+.boxcontainer#id4 h2,
+.boxcontainer#id4 p {
+    text-align: center;
+}
+
+/* Style for Phone Size */
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 150%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .navbar div {
+        flex: 50%;
+    }
+
+    .boxcontainer#id1 div {
+        flex: 100%;
+    }
+
+    .boxcontainer#id2 .content1 {
+        order: 1;
+        flex: 96%;
+    }
+
+    .boxcontainer#id2 .content2 {
+        order: 0;
+        flex: 96%;
+    }
+
+    .boxcontainer#id2 .content3 {
+        order: 2;
+        flex: 96%;
+    }
+
+    .boxcontainer#id2 .content4 {
+        order: 3;
+        flex: 96%;
+    }
+
+    .boxcontainer#id3 .content1,
+    .boxcontainer#id3 .content2 {
+        flex: 96%;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 20%;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.animated-element {
+    animation-name: slideDown;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    align-items: center;
+}
+
+.panel {
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+    overflow: hidden;
+    max-height: 5rem;
+
+    filter: grayscale(1);
+}
+
+.panel:hover {
+    filter: grayscale(0.5);
+}
+
+.panel.expanded {
+    max-height: 30rem;
+    filter: grayscale(0);
+}
+
+.panel div div h2,
+.panel div div h3 {
+    text-align: center;
+}
+
+.panel .pickgradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, 100) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Bread Game */
+.ingredientList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(5.5rem, 100%), 1fr));
+    align-items: start;
+    justify-items: center;
+    row-gap: 2.2em;
+}
+
+.bakingMethods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    align-items: start;
+    justify-items: center;
+    row-gap: 4.2em;
+}
+
+.ingredient,
+.bakingMethod {
+    border: 4px solid #ccc;
+    cursor: pointer;
+    background-color: #575757;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+
+.bakingMethod {
+    width: 10rem;
+    height: 10rem;
+}
+
+.selected {
+    border-color: yellow;
+}
+
+#makeBread,
+#nextOrder {
+    border: 4px solid #ccc;
+    cursor: pointer;
+    background-color: #575757;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+
+#result,
+#order {
+    border: 4px solid #ccc;
+    background-color: #575757;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+}
+
+#crafting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#orderbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#orderresultbox {
+    display: none;
+    justify-items: center;
+}
+
+#orderresultbox.correct {
+    display: grid;
+}
+
+/* 
+Disables antialising on images
+Source: https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images 
+*/
+img.sprite {
+    /* image-rendering: optimizeSpeed; Parse Error */
+    /* Firefox                        */
+    image-rendering: -moz-crisp-edges;
+    /* Opera                          */
+    image-rendering: -o-crisp-edges;
+    /* Chrome (and eventually Safari) */
+    image-rendering: -webkit-optimize-contrast;
+    /* Universal support since 2021   */
+    image-rendering: pixelated;
+    /* IE8+                           */
+    -ms-interpolation-mode: nearest-neighbor;
+}

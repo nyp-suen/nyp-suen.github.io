@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shark</title>
+  <link rel="stylesheet" href="css/mycss.css">
+  <script src="js/myjs.js" defer></script>
+  <link rel="icon" href="Images/F_tplZsacAAfGhD.jpg">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navBar">
+    <!-- Link to an external video -->
+    <a href="https://youtu.be/6-Y14rMfnMI?si=ymXNGIzLX8RS12PX" target="_blank">
+      <img src="Images/logo.jpg" class="Img" alt="Shark Logo">
+    </a>
+    <!-- Navigation buttons -->
+    <ul>
+      <li><button id="Homebtn">Home</button></li>
+      <li><button id="Historybtn">History</button></li>
+      <li><button id="Breedsbtn">Breeds</button></li>
+      <li><button id="Quizbtn">Game</button></li>
+    </ul>
+  </nav>
+
+  <!-- Home section -->
+  <div id="Home" class="page">
+    <!-- Banner section with a video background -->
+    <div class="banner">
+      <video autoplay loop muted>
+        <source src="Images/zenless-zone-zero-ellen-joe-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h1>SHARK</h1>
+    </div>
+    <!-- Decorative wave section -->
+    <div class="wave-container">
+      <div class="wave"></div>
+    </div>
+  </div>
+
+  <!-- History section -->
+  <div id="History" class="page">
+    <!-- Timeline for shark evolution -->
+    <div class="timeline">
+      <!-- First timeline entry -->
+      <div class="circle"></div>
+      <div class="timelineContainer">
+        <div class="textbox">
+          <h2>Early Evolution</h2>
+          <small>Over 400 million years ago</small>
+          <p>
+            Silurian Period: The earliest shark-like fossils date back to the Silurian period, over 420 million years ago. These early sharks were primitive and quite different from modern sharks.<br>
+            Devonian Period (419-359 million years ago): Known as the "Age of Fishes," this period saw the diversification of early sharks, which evolved into more distinct forms and began to resemble the sharks we know today.
+          </p>
+          <span class="leftArrow"></span>
+        </div>
+      </div>
+      <!-- Second timeline entry -->
+      <div class="circle right"></div>
+      <div class="timelineContainer rightContainer">
+        <div class="textbox">
+          <h2>Development of Modern Sharks</h2>
+          <small>200 million years ago</small>
+          <p>
+            Mesozoic Era: During the Mesozoic era, particularly in the Jurassic and Cretaceous periods, modern sharks began to emerge. The Heterodontiformes (bullhead sharks) and Lamniformes (mackerel sharks) are examples of shark orders that appeared during this time.
+          <span class="RightArrow"></span>
+          </p>
+        </div>
+      </div>
+      <!-- Third timeline entry -->
+      <div class="circle"></div>
+      <div class="timelineContainer">
+        <div class="textbox">
+          <h2>Survival through Mass Extinctions</h2>
+          <small>66 million years ago</small>
+          <p>
+            Cretaceous-Paleogene Extinction Event: Sharks survived the mass extinction event that wiped out the dinosaurs around 66 million years ago. This extinction event led to the decline of many marine predators, allowing sharks to dominate the oceans.
+          <span class="leftArrow"></span>
+          </p>
+        </div>
+      </div>
+      <!-- Fourth timeline entry -->
+      <div class="circle right"></div>
+      <div class="timelineContainer rightContainer">
+        <div class="textbox">
+          <h2>Rise of Apex Predators</h2>
+          <small>50 million years ago</small>
+          <p>
+            Eocene Epoch: During this epoch, sharks such as the Otodus megalodon emerged. The megalodon was one of the largest and most powerful predators to have ever lived, dominating the oceans until its extinction around 3.6 million years ago.
+          <span class="RightArrow"></span>
+          </p>
+        </div>
+      </div>
+      <!-- Fifth timeline entry -->
+      <div class="circle"></div>
+      <div class="timelineContainer">
+        <div class="textbox">
+          <h2>Modern Shark Diversity</h2>
+          <small>2023-Present</small>
+          <p>
+            Cenozoic Era: Over the past 50 million years, sharks have continued to diversify and adapt to various marine environments. Today, there are over 500 species of sharks, ranging from the small dwarf lanternshark to the large whale shark, showcasing their incredible adaptability and resilience.
+          <span class="leftArrow"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Breeds" class="page">
+    <div class="gallery">
+      <div class="searchBar">
+          <i class="searhing"></i>
+          <input type="text" placeholder="Search for breed">
+      </div>
+      <div class="Container">
+        <div class="Boxes" data-name="Blacknose Shark">
+          <img src="Images/blacknose-shark-carcharhinus-acronotu.jpg" alt="Shark Logo">
+          <h3>Blacknose Shark</h3>
+          <p>Size and Shape: up to 5 feet (1.5 meters)</p><br>
+          <p>Coloration and Markings: black or dusky blotch on the tip of their snout</p><br>
+          <p>Fins: two dorsal fins ,pectoral fins are relatively long and narrow</p><br>
+          <p>Teeth: triangular, serrated teeth</p><br>
+          <p>Head and Snout Shape: long and pointed snout</p><br>
+          <p>Behavioral Characteristics: shallow coastal waters and estuaries</p><br>
+          <p>Habitat and Geographic Range: western Atlantic Ocean</p><br>
+          <p>Spines and Denticles: dermal denticles (tiny tooth-like scales) that cover their skin</p><br>
+        </div>
+        <div class="Boxes" data-name="Blacktip Reef Shark">
+          <img src="Images/blacktip-reef-shark-carcharhinus-melanopterus.jpg" class="Img" alt="Shark Logo">
+          <h3>Blacktip Reef Shark</h3><br>
+          <p>Size and Shape: Up to 6 feet (1.8 meters) in length</p><br>
+          <p>Coloration and Markings: Grey with a white underside and distinctive black tips on dorsal and caudal fins</p><br>
+          <p>Fins: Two dorsal with prominent black tips on the first dorsal fin. </p><br>
+          <p>Teeth: Thin, pointed teeth </p><br>
+          <p>Head and Snout Shape: Short and blunt snout</p><br>
+          <p>Behavioral Characteristics: Prefers shallow coral reefs</p><br>
+          <p>Habitat and Geographic Range: Indo-Pacific region</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and streamline their body for efficient swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Blacktip shark">
+          <img src="Images/blacktip-shark-carcharhinus-limbatus.jpg" class="Img" alt="Shark Logo">
+          <h3>Blacktip Shark</h3><br>
+          <p>Size and Shape: Up to 6 feet (1.8 meters) in length</p><br>
+          <p>Coloration and Markings: Grey to bronze body with distinctive black tips on dorsal and caudal fins</p><br>
+          <p>Fins: Two dorsal fins with prominent black tips on both.</p><br>
+          <p>Teeth: Sharp, triangular teeth </p><br>
+          <p>Head and Snout Shape: Pointed snout and streamlined head</p><br>
+          <p>Behavioral Characteristics: Often found in shallow coastal waters and coral reefs</p><br>
+          <p>Habitat and Geographic Range: Coastal waters of tropical and subtropical regions worldwide</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and enhance swimming efficiency</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Blue Shark">
+          <img src="Images/blue-shark-prionace-glauca.jpg" class="Img" alt="Shark Logo">
+          <h3>Blue Shark</h3><br>
+          <p>Size and Shape: Up to 10 feet (3 meters) in length</p><br>
+          <p>Coloration and Markings: Metallic blue on top, white underside, with dark-tipped fins</p><br>
+          <p>Fins: Long, slender pectoral fins and curved caudal fin</p><br>
+          <p>Teeth: Smooth-edged, triangular teeth for grasping slippery prey</p><br>
+          <p>Head and Snout Shape: Long, conical snout with a pointed tip</p><br>
+          <p>Behavioral Characteristics: Graceful swimmer, curious towards divers</p><br>
+          <p>Habitat and Geographic Range: Deep offshore waters worldwide, temperate to tropical</p><br>
+          <p>Spines and Denticles: Dermal denticles reduce drag, enhance swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Bluntnose Sixgill Shark">
+          <img src="Images/bluntnose-sixgill-shark-hexanchus-griseus.jpg" class="Img" alt="Shark Logo">
+          <h3>Bluntnose Sixgill Shark</h3><br>
+          <p>Size and Shape: Can reach lengths up to 16 feet (4.9 meters), with a robust, cylindrical body</p><br>
+          <p>Coloration and Markings: Dark grey to brownish-grey body, with no distinctive markings</p><br>
+          <p>Fins: One dorsal fin set far back on the body, six gill slits on each side</p><br>
+          <p>Teeth: Lower teeth are prominently serrated, upper teeth smaller and less serrated</p><br>
+          <p>Head and Snout Shape: Broad, rounded snout, typical of deep-sea sharks</p><br>
+          <p>Behavioral Characteristics: Primarily nocturnal, inhabits deep waters down to 8,200 feet (2,500 meters)</p><br>
+          <p>Habitat and Geographic Range: Found in deep ocean waters worldwide, from temperate to tropical zones</p><br>
+          <p>Spines and Denticles: Dermal denticles are small and overlapping, aiding in reducing drag</p><br>
+      </div>
+      
+      <div class="Boxes" data-name=" Brown ShyShark">
+          <img src="Images/brown-shyshark-haploblepharus-fuscus.jpg" class="Img" alt="Shark Logo">
+          <h3>Brown Shyshark</h3><br>
+          <p>Size and Shape: Typically grows up to 2.5 feet (0.8 meters), slender body with a short, blunt snout</p><br>
+          <p>Coloration and Markings: Brown to greyish-brown body with scattered dark spots and lighter underside</p><br>
+          <p>Fins: Two dorsal fins positioned towards the rear of the body, pelvic fins set far back</p><br>
+          <p>Teeth: Small, pointed teeth adapted for catching small fish and crustaceans</p><br>
+          <p>Head and Snout Shape: Short and blunt snout, characteristic of shysharks</p><br>
+          <p>Behavioral Characteristics: Nocturnal and secretive, often resting on rocky reefs during the day</p><br>
+          <p>Habitat and Geographic Range: Found along the coast of South Africa, in shallow temperate waters</p><br>
+          <p>Spines and Denticles: Covered in small dermal denticles, providing protection and reducing drag</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Bull Shark">
+          <img src="Images/bull-shark-carcharhinus-leucas.jpg" class="Img" alt="Shark Logo">
+          <h3>Bull Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 7 to 11 feet (2.1 to 3.4 meters) in length, robust and stocky body</p><br>
+          <p>Coloration and Markings: Grey to light brown body with a white underside, no distinctive markings</p><br>
+          <p>Fins: Large first dorsal fin, triangular pectoral fins, and a broad, triangular caudal fin</p><br>
+          <p>Teeth: Broad, triangular teeth with serrated edges, suitable for a wide range of prey</p><br>
+          <p>Head and Snout Shape: Short and broad snout, characteristic of bull sharks</p><br>
+          <p>Behavioral Characteristics: Known for its ability to inhabit both freshwater and saltwater environments</p><br>
+          <p>Habitat and Geographic Range: Found in coastal waters worldwide, often seen in rivers and estuaries</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and enhance swimming efficiency</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Carribbean Reef Shark">
+          <img src="Images/caribbean-reef-shark-carcharhinus-perezii.jpg" class="Img" alt="Shark Logo">
+          <h3>Caribbean Reef Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 6 to 9 feet (1.8 to 2.7 meters) in length, streamlined and agile body</p><br>
+          <p>Coloration and Markings: Grey to grey-brown body with a white underside, often with black tips on fins</p><br>
+          <p>Fins: Long, curved pectoral fins, triangular dorsal fin, and a pointed caudal fin with a black margin</p><br>
+          <p>Teeth: Sharp, triangular teeth adapted for catching fish, squid, and crustaceans</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, typical of reef-dwelling sharks</p><br>
+          <p>Behavioral Characteristics: Often seen in groups near coral reefs, active both day and night</p><br>
+          <p>Habitat and Geographic Range: Found in shallow coastal waters of the western Atlantic Ocean and Caribbean Sea</p><br>
+          <p>Spines and Denticles: Covered in small dermal denticles, providing protection and reducing drag</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Copper Bronze Whaler Shark">
+          <img src="Images/copper-bronze-whaler-shark-carcharhinus-brachyurus.jpg" class="Img" alt="Shark Logo">
+          <h3>Copper Bronze Whaler Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 10 to 11 feet (3 to 3.4 meters) in length, slender and streamlined body</p><br>
+          <p>Coloration and Markings: Coppery-bronze body with a white underside, sometimes with dusky tips on fins</p><br>
+          <p>Fins: Triangular first dorsal fin, long and curved pectoral fins, and a pointed caudal fin</p><br>
+          <p>Teeth: Sharp, triangular teeth adapted for catching a variety of prey including fish and cephalopods</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, characteristic of whaler sharks</p><br>
+          <p>Behavioral Characteristics: Often forms large schools, known for its curious and active behavior</p><br>
+          <p>Habitat and Geographic Range: Found in temperate and subtropical waters worldwide, often near coastlines and offshore islands</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and reduce drag, aiding in efficient swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Dusky Shark">
+          <img src="Images/dusky-shark-carcharhinus-obscurus.jpg" class="Img" alt="Shark Logo">
+          <h3>Dusky Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 10 to 14 feet (3 to 4.3 meters) in length, with a stout and streamlined body</p><br>
+          <p>Coloration and Markings: Grey to bronze body with a white underside, no distinctive markings</p><br>
+          <p>Fins: Triangular first dorsal fin, long and curved pectoral fins, and a pointed caudal fin</p><br>
+          <p>Teeth: Broad, triangular teeth with serrated edges, suitable for a variety of prey including bony fish and squid</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, characteristic of requiem sharks</p><br>
+          <p>Behavioral Characteristics: Often found in deeper offshore waters, occasionally near the coast</p><br>
+          <p>Habitat and Geographic Range: Found in temperate and tropical waters worldwide, from coastal to offshore habitats</p><br>
+          <p>Spines and Denticles: Covered in small dermal denticles, providing protection and reducing drag</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Galapagos Shark">
+          <img src="Images/galapagos-shark-carcharhinus-galapagensis.jpg" class="Img" alt="Shark Logo">
+          <h3>Galapagos Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 8 to 10 feet (2.4 to 3 meters) in length, with a slender and streamlined body</p><br>
+          <p>Coloration and Markings: Grey to bronze body with a white underside, often with dusky tips on fins</p><br>
+          <p>Fins: Triangular first dorsal fin, long and curved pectoral fins, and a pointed caudal fin</p><br>
+          <p>Teeth: Sharp, triangular teeth adapted for catching a variety of prey including fish and cephalopods</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, characteristic of requiem sharks</p><br>
+          <p>Behavioral Characteristics: Often seen in groups near underwater volcanic islands, active both day and night</p><br>
+          <p>Habitat and Geographic Range: Found in tropical and subtropical waters around the Galapagos Islands and other Pacific Ocean islands</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and reduce drag, aiding in efficient swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Great Hammerhead Shark">
+          <img src="Images/great-hammerhead-shark-sphyrna-mokarran.jpg" class="Img" alt="Shark Logo">
+          <h3>Great Hammerhead Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 13 to 20 feet (4 to 6 meters) in length, with a distinctive hammer-shaped head</p><br>
+          <p>Coloration and Markings: Grey to brownish-grey body with a white underside, no distinctive markings</p><br>
+          <p>Fins: Large first dorsal fin, long and curved pectoral fins, and a broad, triangular caudal fin</p><br>
+          <p>Teeth: Triangular teeth with serrated edges, suitable for crushing and grasping a variety of prey including fish and rays</p><br>
+          <p>Head and Snout Shape: Broad and flattened head with lateral extensions, characteristic of hammerhead sharks</p><br>
+          <p>Behavioral Characteristics: Often solitary, occasionally forms small groups during mating season</p><br>
+          <p>Habitat and Geographic Range: Found in coastal and offshore waters worldwide, tropical to temperate regions</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and reduce drag, aiding in efficient swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Grey Reef Shark">
+          <img src="Images/grey-reef-shark-carcharhinus-amblyrhynchos.jpg" class="Img" alt="Shark Logo">
+          <h3>Grey Reef Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 5 to 6 feet (1.5 to 1.8 meters) in length, slender and streamlined body</p><br>
+          <p>Coloration and Markings: Grey body with a white underside, often with darker tips on fins</p><br>
+          <p>Fins: Long, curved pectoral fins, triangular dorsal fin, and a pointed caudal fin with a black margin</p><br>
+          <p>Teeth: Sharp, triangular teeth adapted for catching fish and cephalopods</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, typical of reef-associated sharks</p><br>
+          <p>Behavioral Characteristics: Often seen in groups near coral reefs, active both day and night</p><br>
+          <p>Habitat and Geographic Range: Found in shallow coastal waters of the Indo-Pacific region, especially around coral reefs</p><br>
+          <p>Spines and Denticles: Covered in small dermal denticles, providing protection and reducing drag</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Lemon Shark">
+          <img src="Images/lemon-shark-negaprion-brevirostris.jpg" class="Img" alt="Shark Logo">
+          <h3>Lemon Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 7 to 10 feet (2.1 to 3 meters) in length, with a robust and streamlined body</p><br>
+          <p>Coloration and Markings: Yellow to olive-grey body with a lighter underside, no distinctive markings</p><br>
+          <p>Fins: Large first dorsal fin, long and curved pectoral fins, and a broad, triangular caudal fin</p><br>
+          <p>Teeth: Sharp, triangular teeth with serrated edges, suitable for a variety of prey including fish and crustaceans</p><br>
+          <p>Head and Snout Shape: Short and rounded snout, characteristic of requiem sharks</p><br>
+          <p>Behavioral Characteristics: Often found in shallow coastal waters, occasionally in deeper offshore areas</p><br>
+          <p>Habitat and Geographic Range: Found in tropical and subtropical waters of the western Atlantic Ocean</p><br>
+          <p>Spines and Denticles: Dermal denticles provide protection and reduce drag, aiding in efficient swimming</p><br>
+      </div>
+      
+      <div class="Boxes" data-name="Leopard Shark">
+        <img src="Images/leopard-shark-triakis-semifasciata.jpg" class="Img" alt="Shark Logo">
+        <h3>Leopard Shark</h3><br>
+        <p>Size and Shape: Typically grows up to 4 to 5 feet (1.2 to 1.5 meters) in length, slender and cylindrical body</p><br>
+        <p>Coloration and Markings: Grey to brown body with distinct dark saddle-like markings and spots</p><br>
+        <p>Fins: Long, pointed pectoral fins, triangular dorsal fin, and a notched caudal fin with a white trailing edge</p><br>
+        <p>Teeth: Small, pointed teeth suited for crushing shellfish and small fish</p><br>
+        <p>Head and Snout Shape: Short and bluntly rounded snout</p><br>
+        <p>Behavioral Characteristics: Often found in shallow coastal waters and bays, known for its docile nature</p><br>
+        <p>Habitat and Geographic Range: Prefers temperate coastal waters of the eastern Pacific Ocean, from Oregon to Mexico</p><br>
+        <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+    </div>
+    
+    <div class="Boxes" data-name="Oceanic Whitetip Shark">
+        <img src="Images/oceanic-whitetip-shark-carcharhinus-longimanus.jpg" class="Img" alt="Shark Logo">
+        <h3>Oceanic Whitetip Shark</h3><br>
+        <p>Size and Shape: Typically grows up to 6 to 10 feet (1.8 to 3 meters) in length, robust and cylindrical body</p><br>
+        <p>Coloration and Markings: Bronze to grey body with distinct white markings on the tips of dorsal and pectoral fins</p><br>
+        <p>Fins: Long, rounded pectoral fins that resemble wings, rounded first dorsal fin, and a broad, rounded caudal fin</p><br>
+        <p>Teeth: Triangular teeth with serrated edges, adapted for catching pelagic prey including fish and squid</p><br>
+        <p>Head and Snout Shape: Short and bluntly rounded snout, characteristic of requiem sharks</p><br>
+        <p>Behavioral Characteristics: Often solitary, found in open ocean waters, known for its scavenging behavior</p><br>
+        <p>Habitat and Geographic Range: Prefers warm oceanic waters worldwide, common in tropical and subtropical regions</p><br>
+        <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+    </div>
+    
+    <div class="Boxes" data-name="Pacific Sharpnose Shark">
+      <img src="Images/pacific-sharpnose-shark-rhizoprionodon-longurio.jpg" class="Img" alt="Shark Logo">
+      <h3>Pacific Sharpnose Shark</h3><br>
+      <p>Size and Shape: Typically grows up to 3 to 4 feet (0.9 to 1.2 meters) in length, slender and streamlined body</p><br>
+      <p>Coloration and Markings: Grey to brown body with faint white spots and dusky fin edges</p><br>
+      <p>Fins: Long, pointed pectoral fins, triangular dorsal fin, and a pointed caudal fin with a white trailing edge</p><br>
+      <p>Teeth: Small, sharp teeth suitable for catching small fish and crustaceans</p><br>
+      <p>Head and Snout Shape: Short and pointed snout, typical of requiem sharks</p><br>
+      <p>Behavioral Characteristics: Often found in shallow coastal waters, known for its schooling behavior</p><br>
+      <p>Habitat and Geographic Range: Prefers warm temperate to tropical waters of the eastern Pacific Ocean, from California to Ecuador</p><br>
+      <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+    </div>
+    <div class="Boxes" data-name="Pyjama Shark">
+          <img src="Images/pyjama-shark-poroderma-africanum.jpg" class="Img" alt="Shark Logo">
+          <h3>Pyjama Shark</h3><br>
+    <p>Size and Shape: Typically grows up to 3 to 4 feet (0.9 to 1.2 meters) in length, slender and cylindrical body</p><br>
+    <p>Coloration and Markings: Cream to light brown body with dark vertical bands resembling pyjama stripes</p><br>
+    <p>Fins: Long, pointed pectoral fins, low triangular dorsal fin, and a notched caudal fin with a white trailing edge</p><br>
+    <p>Teeth: Small, pointed teeth adapted for catching small fish, crustaceans, and mollusks</p><br>
+    <p>Head and Snout Shape: Short and bluntly rounded snout, characteristic of catsharks</p><br>
+    <p>Behavioral Characteristics: Nocturnal and sedentary, often resting on rocky reefs during the day</p><br>
+    <p>Habitat and Geographic Range: Found along the coast of South Africa, in shallow temperate waters</p><br>
+    <p>Spines and Denticles: Covered in small dermal denticles, providing protection and reducing drag</p><br>
+    </div>
+    <div class="Boxes" data-name="Sand Tiger Shark">
+          <img src="Images/sand-tiger-shark-carcharias-taurus.jpg" class="Img" alt="Shark Logo">
+          <h3>Sand Tiger Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 7 to 10.5 feet (2.1 to 3.2 meters) in length, slender and grey-brown body</p><br>
+          <p>Coloration and Markings: Grey-brown body with a distinctive jagged teeth appearance, often with spots or blotches</p><br>
+          <p>Fins: Long, pointed pectoral fins, low triangular dorsal fin, and a notched caudal fin with a white trailing edge</p><br>
+          <p>Teeth: Pointed, protruding teeth visible when mouth is closed, giving a fierce appearance</p><br>
+          <p>Head and Snout Shape: Long, pointed snout with a flattened appearance</p><br>
+          <p>Behavioral Characteristics: Usually seen near the bottom, sometimes in groups, known for its docile temperament despite its appearance</p><br>
+          <p>Habitat and Geographic Range: Found in temperate and tropical waters worldwide, often near coral reefs, shipwrecks, and sandy bottoms</p><br>
+          <p>Spines and Denticles: Dermal denticles are small and overlapping, aiding in reducing drag</p><br>
+    </div>
+        <div class="Boxes" data-name="Scalloped Hammerhead Shark">
+          <img src="Images/scalloped-hammerhead-shark-sphyrna-lewini.jpg" class="Img" alt="Shark Logo">
+          <h3>Scalloped Hammerhead Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 6 to 10 feet (1.8 to 3 meters) in length, with a distinctive hammer-shaped head</p><br>
+          <p>Coloration and Markings: Grey to olive-green body with a white underside, distinctive scalloped edges on the head</p><br>
+          <p>Fins: Long, pointed pectoral fins, rounded first dorsal fin, and a notched caudal fin with a white trailing edge</p><br>
+          <p>Teeth: Triangular teeth with serrated edges, suited for catching small fish and cephalopods</p><br>
+          <p>Head and Snout Shape: Broad and flattened head, with eyes positioned at the tips of the hammer-shaped extensions</p><br>
+          <p>Behavioral Characteristics: Often found in coastal waters, sometimes forming large schools, known for its migratory behavior</p><br>
+          <p>Habitat and Geographic Range: Prefers warm coastal waters worldwide, common in tropical and subtropical regions</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Sharptooth Lemon Shark">
+          <img src="Images/sharptooth-lemon-shark-negaprion-acutidens.jpg" class="Img" alt="Shark Logo">
+          <h3>Sharptooth Lemon Shark</h3><br>
+    <p>Size and Shape: Typically grows up to 8 to 10 feet (2.4 to 3 meters) in length, robust and streamlined body</p><br>
+    <p>Coloration and Markings: Yellow to olive-brown body with a lighter underside, no prominent markings</p><br>
+    <p>Fins: Long, broad pectoral fins, triangular first dorsal fin, and a notch in the upper caudal fin lobe</p><br>
+    <p>Teeth: Sharp, triangular teeth with serrated edges, adapted for a varied diet including fish and crustaceans</p><br>
+    <p>Head and Snout Shape: Short, bluntly rounded snout, characteristic of requiem sharks</p><br>
+    <p>Behavioral Characteristics: Often found in shallow coastal waters and mangrove habitats, known for its adaptability</p><br>
+    <p>Habitat and Geographic Range: Prefers subtropical and tropical waters worldwide, commonly found in the Atlantic and Pacific Oceans</p><br>
+    <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Silky Shark">
+          <img src="Images/silky-shark-carcharhinus-falciformis.jpg" class="Img" alt="Shark Logo">
+          <h3>Silky Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 8 to 10 feet (2.4 to 3 meters) in length, slender and streamlined body</p><br>
+          <p>Coloration and Markings: Metallic bronze to grey body, with a white underside and no prominent markings</p><br>
+          <p>Fins: Long, pointed pectoral fins, long and low first dorsal fin, and a crescent-shaped caudal fin</p><br>
+          <p>Teeth: Triangular teeth with smooth edges, adapted for catching small to medium-sized fish</p><br>
+          <p>Head and Snout Shape: Long, pointed snout with a rounded tip</p><br>
+          <p>Behavioral Characteristics: Often seen in large schools, found in open ocean waters, active both day and night</p><br>
+          <p>Habitat and Geographic Range: Prefers warm oceanic waters worldwide, common in tropical and subtropical regions</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Silvertip Shark">
+          <img src="Images/silvertip-shark-carcharhinus-albimarginatus.jpg" class="Img" alt="Shark Logo">
+          <h3>Silvertip Shark</h3><br>
+    <p>Size and Shape: Typically grows up to 6 to 10 feet (1.8 to 3 meters) in length, slender and streamlined body</p><br>
+    <p>Coloration and Markings: Grey to bronze body with prominent white tips on dorsal and caudal fins</p><br>
+    <p>Fins: Long, pointed pectoral fins, triangular dorsal fin, and a notched caudal fin with a white trailing edge</p><br>
+    <p>Teeth: Triangular teeth with serrated edges, suitable for catching a variety of prey including fish and cephalopods</p><br>
+    <p>Head and Snout Shape: Short and broadly rounded snout, characteristic of requiem sharks</p><br>
+    <p>Behavioral Characteristics: Often found near coral reefs and drop-offs, known for its solitary habits</p><br>
+    <p>Habitat and Geographic Range: Prefers tropical and subtropical waters, common in the Indian and Pacific Oceans</p><br>
+    <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Smooth Hammerhead">
+          <img src="Images/smooth-hammerhead-sphyrna-zygaena.jpg" class="Img" alt="Shark Logo">
+          <h3>Smooth Hammerhead Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 10 to 14 feet (3 to 4.3 meters) in length, with a streamlined body</p><br>
+          <p>Coloration and Markings: Grey to bronze body, distinctive smooth hammer-shaped head</p><br>
+          <p>Fins: Long, pointed pectoral fins, triangular first dorsal fin, and a notched caudal fin</p><br>
+          <p>Teeth: Triangular teeth with serrated edges, adapted for catching a variety of prey including fish and squid</p><br>
+          <p>Head and Snout Shape: Wide and flattened hammer-shaped head</p><br>
+          <p>Behavioral Characteristics: Often found in coastal and offshore waters, known for its migratory patterns</p><br>
+          <p>Habitat and Geographic Range: Prefers warm temperate and tropical waters worldwide</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Smoothhound Shark">
+          <img src="Images/smoothhound-mustelus-mustelus.jpg" class="Img" alt="Shark Logo">
+          <h3>Smoothhound Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 3 to 5 feet (0.9 to 1.5 meters) in length, slender and cylindrical body</p><br>
+          <p>Coloration and Markings: Grey to brown body with a lighter underside, no prominent markings</p><br>
+          <p>Fins: Long, pointed pectoral fins, triangular dorsal fin, and a notched caudal fin</p><br>
+          <p>Teeth: Small, pointed teeth adapted for crushing shellfish and small fish</p><br>
+          <p>Head and Snout Shape: Short and bluntly rounded snout</p><br>
+          <p>Behavioral Characteristics: Often found near the seabed in coastal waters, known for its bottom-dwelling habits</p><br>
+          <p>Habitat and Geographic Range: Prefers temperate and subtropical coastal waters, common in the Atlantic and Pacific Oceans</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Spinner Shark">
+          <img src="Images/spinner-shark-carcharhinus-brevipinna.jpg" class="Img" alt="Shark Logo">
+          <h3>Spinner Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 7 to 9 feet (2.1 to 2.7 meters) in length, slender and streamlined body</p><br>
+          <p>Coloration and Markings: Grey to bronze body with a white underside, no prominent markings</p><br>
+          <p>Fins: Long, pointed pectoral fins, triangular dorsal fin, and a well-developed caudal fin</p><br>
+          <p>Teeth: Triangular teeth with serrated edges, adapted for catching small fish and cephalopods</p><br>
+          <p>Head and Snout Shape: Pointed and conical snout</p><br>
+          <p>Behavioral Characteristics: Known for its acrobatic spinning leaps out of the water, often found in coastal waters</p><br>
+          <p>Habitat and Geographic Range: Prefers warm temperate and tropical waters worldwide, common in the Atlantic and Indo-Pacific Oceans</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Tiger Shark">
+          <img src="Images/tiger-shark-galeocerdo-cuvier.jpg" class="Img" alt="Shark Logo">
+          <h3>Tiger Shark</h3><br>
+          <p>Size and Shape: Typically grows up to 10 to 14 feet (3 to 4.3 meters) in length, robust and cylindrical body</p><br>
+          <p>Coloration and Markings: Dark grey to light greenish body with vertical stripes and spots, distinctive tiger-like markings</p><br>
+          <p>Fins: Long, rounded pectoral fins, triangular first dorsal fin, and a broad, rounded caudal fin</p><br>
+          <p>Teeth: Large, triangular teeth with serrated edges, adapted for hunting a wide range of prey including sea turtles and mammals</p><br>
+          <p>Head and Snout Shape: Broad and bluntly rounded head</p><br>
+          <p>Behavioral Characteristics: Known for its scavenging behavior and ability to eat almost anything, often found in coastal and offshore waters</p><br>
+          <p>Habitat and Geographic Range: Prefers warm temperate and tropical waters worldwide, common in the Atlantic, Pacific, and Indian Oceans</p><br>
+          <p>Spines and Denticles: Covered in dermal denticles for protection and streamlined movement</p><br>
+        </div>
+        <div class="Boxes" data-name="Gawr Gura">
+          <img src="Images/480px-Gawr_Gura_-_Portrait_01.png" class="Img" alt="Shark Logo">
+          <h3>Gawr Gura VTuber</h3><br>
+          <p>Size and Shape: About 3'9" (or 119 cm) tall, with a big head and a big mouth!</p><br>
+          <p>Coloration and Markings: Aqua blue with white tummy and sharp teeth!</p><br>
+          <p>Fins: Cute, tiny fins that are not just for swimming, they're for styling!</p><br>
+          <p>Teeth: Rows and rows of sharp teeth, perfect for "accidentally" biting things!</p><br>
+          <p>Head and Snout Shape: A big, round head and a snout that's perfect for sniffing out snacks!</p><br>
+          <p>Behavioral Characteristics: Always hungry, loves to sing about sharks and snacks, and sometimes plays scary games that make her scream!</p><br>
+          <p>Habitat and Geographic Range: Livestreaming from the depths of the internet, known to appear suddenly in chat feeds worldwide!</p><br>
+          <p>Fun Fact: Often mistaken for a fish but actually a very talented singing shark!</p><br>
+        </div>
+        <div class="Boxes" data-name="_blank">
+          <img src="Images/logo.jpg" class="Img" alt="Shark Logo">
+        </div>
+        <div class="Boxes" data-name="_blank">
+          <img src="Images/logo.jpg" class="Img" alt="Shark Logo">
+        </div>
+        <div class="Boxes" data-name="_blank">
+          <img src="Images/logo.jpg" class="Img" alt="Shark Logo">
+        </div>
+        <div class="Boxes" data-name="_blank"> 
+          <img src="Images/logo.jpg" class="Img" alt="Shark Logo">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Quiz section -->
+  <div id="Quiz" class="page">
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </div>
+
+</body>
+</html>

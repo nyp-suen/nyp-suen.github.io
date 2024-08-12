@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch From Home Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="some web app!!!">
+    <!-- get icons from https://favicon.io/ -->
+    <link rel="icon" type="image/x-icon" href="Icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <!--for android-->
+    <link rel="manifest" href="Icons/site.webmanifest">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <h1 id="titlehead">HAMSTERS!!!</h1>
+    <button id="fstoggle">fullscreen</button>
+    </header>
+    <nav> <!--menu system-->
+        <p class="navbutton" id="hamIcon">Menu</p>
+        <div class="navformat menuHide">
+            <p class="navbutton" id="page1btn">Types Of Hamsters</p>
+            <p class="navbutton" id="page2btn">Hamster Behaviours</p>
+            <p class="navbutton" id="page3btn">Hamster Trivia Quiz</p>
+            <br><p class="navbutton" id="funbtn">Hamster Pet Simulator</p>
+            <!-- <button class="navbutton" id="page2btn">2</button>
+            <button class="navbutton" id="page3btn">3</button>
+            <button class="navbutton" id="funbtn">Epilepsy Test</button> -->
+        </div>
+        
+    </nav>
+    <div id="pagecontainer">
+        <div class="page" id="page1">
+            <!-- Hamster Types -->
+            <h2 class="pagehead"><b>[Hamster Types]</b></h2>
+            <div class="page1content">
+                <img src="images/SyrianHamster.jpg" alt="Syrian Hamster" class="hamsterImg">
+                <p class="page1txt"><b>Syrian Hamsters</b><br>The Syrian hamster(also known as golden hamster) can grow up to 5 times larger than dwarf hamsters. 
+                    They have expandable cheek pouches which stretches from its cheek to its shoulders.
+                    <br><a href="https://en.wikipedia.org/wiki/Golden_hamster">Source</a></p>
+            </div>
+            <br>
+            <div class="page1content">
+                <p class="page1txt"><b>Chinese Hamsters</b><br>The Chinese hamster is primarily nocturnal but will stay awake for brief periods throughout the day. It appears "long and thin" and have a relatively long tail compared to other hamsters.
+                <br><a href="https://en.wikipedia.org/wiki/Chinese_hamster">Source</a></p>
+                <img src="images/ChineseHamster.jpg" alt="Syrian Hamster" class="hamsterImg">
+            </div>
+            <br>
+            <div class="page1content">
+                <img src="images/DwarfHamster.jpg" alt="Syrian Hamster" class="hamsterImg">
+                <p class="page1txt"><b>Dwarf Hamsters</b><br>The dwarf hamster is one of the most common hamster to be kept as a pet. It can grow up to half the size of a Syrian hamster.
+                <br><a href="https://en.wikipedia.org/wiki/Winter_white_dwarf_hamster">Source</a></p>
+            </div>
+            
+        </div>
+        <div class="page" id="page2"> 
+            <!-- Hammster Behaviours -->
+            <div>
+                <h2 class="pagehead"><b>[Behaviours]</b></h2>
+                <p class="page2txt"><b>Normal:<br><br>Being active at night</b><br>
+                Hamsters are nocturnal animals, meaning that they are less active during daytime and more active during nighttime<br>
+                <b>Stuffing Cheeks</b><br>Hamsters have pouches within their cheeks that can stretch up to their shoulders to store food, bedding and sometimes their children<br><br>
+                <b>Abnormal:<br><br>Hibernation</b><br>Normal for wild hamsters but abnormal for domesticated hamsters. Can happen when there is a sudden drop in the room temperature<br>
+                <b>Refusing to eat or drink</b><br>When a hamster refuses to eat or drink, it may be a sign that the hamster have an underlying condition<br>
+                <br><a  href="https://www.burgesspetcare.com/blog/hamsters/hamster-behaviour-explained/">Source here</a></p>
+                <br><br>
+            </div>
+            <h2 class="page2txt"><b>More Behaviours:</b></h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9UaYPn7HHDw?si=X8wlONd_8cwiq96g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <h2 class="pagehead"><b>[Quiz]</b></h2>
+            <!-- Hammster Trivia Quiz -->
+            <form id="trivia" action="#" method="get">
+                <label for="qn1">What is the average life span of a hamster?</label><br>
+                <input name="Qn1" id="qn1" type="text"  required ><br><br>
+
+                <label for="qn2">How many species of hamsters are commonly kept as pets?</label><br>
+                <input name="Qn2" id="qn2" type="number"  required ><br><br>
+
+                <label>What does a hamster mainly eat?</label><br>
+                <input name="Qn3" id="qn3optn1" type="radio" value="Meat" required >
+                <label for="qn3optn1">Meat</label><br>
+                <input name="Qn3" id="qn3optn2" type="radio" value="Bread and crackers" required >
+                <label for="qn3optn2">Bread and crackers</label><br>
+                <input name="Qn3" id="qn3optn3" type="radio" value="Seeds and vegetables" required >
+                <label for="qn3optn3">Seeds and vegetables</label><br><br>
+
+                <label>Tick the statements that are correct</label><br>
+                <input name="Qn4" id="qn4optn1" type="checkbox"> <label for="qn4optn1">A Hamster is smart</label><br>
+                <input name="Qn4" id="qn4optn2" type="checkbox"> <label for="qn4optn2">A Hamster requires daily exercise</label><br><br>
+
+                <button type="submit">Submit</button> <button type="reset">Reset</button>
+            </form><br>
+            <div class="hideAns" id="AnsSheet">
+                <h2><b>ANSWERS:</b></h2>
+                <p>Question 1: <br>Correct Answer: 2-3 years</p><p id="ans1">Your Answer:</p><br>
+                <p>Question 2: <br>Correct Answer: 5</p><p id="ans2">Your Answer:</p><br>
+                <p>Question 3: <br>Correct Answer: Seeds and vegetables</p><p id="ans3">Your Answer:</p><br>
+                <p>Question 4: <br>Correct Answer: Both statements are correct</p><p id="ans4">Your Answer:</p>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <!-- Hamster Simulator -->
+            <h2 class="pagehead"><b>[Hamster Game]</b></h2>
+            <p><b>Click on an empty space to spawn food for the hamster</b></p>
+            <p><b>Click on the hamster to grab it</b></p>
+            <p><b>When the hamster is grabbed, it will drop the remaining food stored in its cheek pouches</b></p>
+            <canvas id="hamsterGame" height="500"></canvas>
+        </div>
+    </div>
+</body>
+    

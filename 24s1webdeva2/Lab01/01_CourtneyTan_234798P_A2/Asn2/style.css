@@ -1,0 +1,561 @@
+
+.page{width:100%;height:92.5vh;}
+nav div {padding: 0; margin: 0; list-style: none; display:flex; justify-content: center; background-color: antiquewhite;}
+#page1{background-image: url("image/background2.jpeg"); background-repeat: no-repeat; background-size: cover;}
+#page2{background-image: url("image/wall.jpg"); background-repeat: no-repeat; background-size: cover;}
+#page3{background-image: url("image/backgroundimage.jpeg"); background-repeat: no-repeat; background-size: cover;}
+#page4{background-image: url("image/backgroundimage.jpeg"); background-repeat: no-repeat; background-size: cover;}
+
+#pagecontainer{
+    overflow:hidden;
+}
+
+
+/* CSS FOR NAV MENU */
+nav{
+    position:sticky;
+}
+
+
+nav div button{
+    background-color: beige;
+    color: black;
+    text-transform: uppercase;
+    
+}
+
+nav div button:hover{
+    background-color: rgb(225, 225, 197);
+}  
+
+
+#hamIcon{display:none;}
+
+.menuHide{
+    display:block;
+}
+
+body{
+    margin:0;
+    color: white;
+   
+}
+
+html {
+    background-image: url("image/Catrain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+button{
+    background-color:beige;
+    color: black;
+    border : none;
+    padding: 20px 16px;
+    font-size: 25px;
+}
+
+/* CSS for Page3 */
+.slider {
+    height: 100vh;
+    position:relative;
+}
+
+.slider .list .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+
+
+
+.slider .list .item .CatImg{
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    width:100%;
+   
+    object-fit: cover;
+    z-index: 1;
+    
+}
+.slider .list .item .CatImg img{
+    width:75%;
+}
+.slider .list .item::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, #000 20%, transparent
+    );
+}
+
+.slider .list .item .content{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+   
+    z-index: 1;
+}
+
+.slider .list .item .content p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+
+}
+
+.slider .list .item .content h2{
+    font-size: 100px;
+    margin: 0;
+    max-width: 80px;
+}
+
+.slider .list .item .content p:nth-child(3){
+    max-width: 250px;
+}
+.slider .list .item.active{
+    opacity: 1;
+    z-index: 10;
+}
+
+@keyframes showContent{
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.slider .list .item.active p:nth-child(1),
+.slider .list .item.active h2,
+.slider .list .item.active p:nth-child(3)
+{
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+
+}
+
+@keyframes showcatimg{
+    to{
+        transform: translateX(0);
+        filter: blur(0);
+        opacity:1;
+    }
+}
+.slider .list .item.active .CatImg{
+    transform: translateX(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+}
+.slider .list .item.active h2{
+    animation-delay: 1s;
+}
+
+.slider .list .item.active p:nth-child(3){
+    animation-duration: 1.3s;
+}
+
+.slider .list .item.active form{
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s .7s ease-in-out 1 forwards;
+
+}
+
+.slider .list .item.active form{
+    animation-duration: 1.5s;
+}
+
+.arrows{
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+
+.arrows button{
+    background-color: antiquewhite;
+    border: none;
+    font-family: monospace;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: white;
+    transition: .5s;
+}
+
+.arrows button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+form {
+    position: absolute;
+    top: 100%;
+}
+form label {
+font-size: large;
+}
+/* CSS for page 2 */
+.card{
+    width: 100px;    
+    height: 100px;
+
+  
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    color: black;
+}
+
+.card img{
+    width: 150%;
+}
+.container #backgroundimage{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sofa{
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+#trashcan{
+    width: 20%;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+
+.card{
+    /*starting positon of all moveable items*/  
+    top:80%;
+    left:50%;
+}
+
+
+#catbehavior {
+    position: absolute;
+    align-items: center;
+    max-width: 50%;
+    justify-content: center;
+    top: 20%;
+}
+#catbehavior p{
+   
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    max-width: 1000px;;
+    font-size: x-large;
+}
+
+.container #pusheen{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+/* CSS for start screen */
+#game {
+    width:700px;
+    height: 200px;
+    border: 3px solid black;
+    background-color: antiquewhite;
+    margin: auto;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#cat{
+    width: 10%;
+    
+    position: relative; 
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 500ms;
+}
+
+#obstacle {
+    width: 50px;
+
+    
+   
+    position: relative;
+    top: 150px;
+    left: 580px;
+}
+.moveobstacle{
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+    0% {left: 580px;}
+    100%{left:-100px;}
+}
+
+@keyframes jump{
+    0%{top:150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top:150px;}
+}
+
+#title{
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+    color: #646464;
+    
+}
+
+#title h2{
+    font-size: 250px;
+    color: beige;
+}
+
+#gamestartinfo{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  
+}
+/* CSS for page 1 */
+.ball {
+    background-image: url("image/bubble2.png");
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-style: none;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    font-weight: bolder;
+    text-shadow: 0px 0px 5px rgb(105, 105, 105);
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    font-size: 100%;
+    color:rgb(156, 187, 131);
+
+}
+
+.ball p{
+    max-width: 50%;
+}
+
+
+
+#page1 #catbubbles {
+    position: absolute;
+    left: 80%;
+    bottom: 1px;
+    width:20%;
+    
+
+ 
+    
+    
+}
+
+#page1 #background {
+    position: absolute;
+   
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+
+#page1 h1{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    max-width: 80px;
+    font-size: 120px;
+ 
+    text-align: center;
+}
+/* CSS for page4 */
+#page4 #catreco{
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: black;
+}
+
+#page4 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+}
+
+/* CSS for responsive */
+
+
+@media screen and (max-width:800px){
+
+    #hamIcon{display: block; font-size: x-large;  background-color: antiquewhite;color: black} /* unhide menu icon */
+    nav div{display:none; } /*hide the menu item list*/
+    nav{
+        background-color: antiquewhite;  
+      
+    }
+
+    #page4 img {
+        width: 50%;
+    }
+    .slider .list .item .content p{
+        font-size: 10px;
+    }
+
+    .slider .list .item .content h2{
+        font-size: 60px;
+    }
+
+    .slider .list .item .content{
+        top: 10%;
+    }
+    
+    .slider .list .item .CatImg{
+        top: 60%;
+        left: 35%;
+        z-index: -1;
+    }
+    
+    .item::after{
+        z-index: -2;
+    }
+    nav div button{
+        font-size: 10px;
+       
+    }
+    .slider .list .item .CatImg img{
+        width:100%;
+        height: 50%;
+        
+    
+    }
+    .arrows{
+        top: 10%;
+    }
+    #title{
+       top: 30%;
+        left : 50%;
+        color: white;
+        /* Hellu *0-0 um am here to help :D/
+        /* what issue again the bubbles?. ah ;-; im gonna help as much as i can :d
+        ill be in javascript
+        /*just sizing issue for now, for cats mainly, Im tryna solve the rest. :cries:*/
+    }
+
+    #title h2{
+        font-size: 100px;
+        
+    }
+    
+    #game {
+        width:400px;
+     
+    }
+
+    
+
+    #title p{
+        color: white;
+    }
+
+    #game{
+        left: 50%;  
+    }
+    html{
+      
+     
+        object-fit: cover;
+    }
+    
+    #catbehavior{
+        top: 20%;
+        
+    }
+
+    #catbehavior p{
+        
+        font-size: 10px;
+    }
+
+    #sofa{
+        top: 70%;
+        left: 30%;
+        width: 80%;
+    }
+
+    #trashcan{
+        top:70%;
+        width: 40%;
+        left: 0%;
+    }
+
+    .card{
+        width: 40px;
+        height: 40px;
+    }
+
+    .container #pusheen{
+        width: 15%;
+        top: 80%;
+    }
+
+    #page1 #catbubbles {
+        width: 30%;
+        left: 60%;
+    }
+
+
+.ball {
+    font-size: 9px;
+}
+
+#page1 h1{
+font-size: 90px;;
+}
+
+html{
+    background-size: 100vh 100vh;
+}
+    }
+

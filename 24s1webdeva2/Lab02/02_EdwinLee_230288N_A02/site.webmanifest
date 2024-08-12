@@ -1,0 +1,35 @@
+{
+  "name": "HappyHour",
+  "short_name": "HappyHour",
+  "description": "Assigment 2 for Web Development, Alcohol",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5bbad5",
+  "icons": [
+    {
+      "src": "images/cat.jpg",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/cat.jpg",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/cat.jpg",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/cat.jpg",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

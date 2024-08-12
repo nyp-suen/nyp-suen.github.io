@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+.nav {
+    display: flex;
+
+}
+
+.Hamberger_menu {
+    display: none;
+}
+
+.Mobile_nav {
+    display: none;
+}
+
+/* title to the side */
+.Titles {
+
+    display: flex;
+    flex-direction: column;
+    color: pink;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 30%;
+    /* margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0; */
+}
+
+/* title to the side */
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(192, 192, 192, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: background-color 0.3s;
+    padding: 2em 0;
+}
+
+.Leftnav {
+    display: flex;
+    flex-direction: row;
+    /* background-image: url("../images/operamask.jpg"); */
+}
+
+/* line up the nav */
+.Rightnav>ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+li>img {
+    position: relative;
+    width: 10%;
+    height: 10%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    padding: 5%;
+}
+
+/* hover to make it change color*/
+.menu:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.background-image-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*background base*/
+.background {
+    /* display: none; */
+    opacity: 0;
+    z-index: -3;
+    transition: opacity 3s;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* change background from nothing to slected*/
+.background-Selected {
+    display: flex;
+    position: absolute;
+    opacity: 1;
+    z-index: -2;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(223, 156, 0);
+    padding-left: 2.5%;
+
+}
+
+.Left_Content {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5% 2.5% 2.5% 0%;
+    flex: 4;
+    background-color: red;
+    font-size: 20px;
+
+
+
+}
+
+.Left_Content>p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
+    margin: 2.5%;
+}
+
+/* To see which content is slected and give it a color */
+.selected {
+    background-color: black;
+    color: white;
+    background: linear-gradient(to left top, yellow, orange);
+}
+
+.hover {
+    background-color: black;
+    color: white;
+    background: linear-gradient(to left top, yellow, orange);
+}
+
+.Description {
+    /* display: flex;
+    flex-direction: row; */
+    margin: 2.5% 2.5% 2.5% 0%;
+    flex: 6;
+    background-color: red;
+    padding: 2.5%;
+    border-radius: 5%;
+}
+
+.Title_Content {
+    display: flex;
+    flex-direction: row;
+    margin: 2.5% 2.5% 0% 0%;
+    flex: 100%;
+    background-color: rgb(223, 156, 0);
+}
+
+.Container_Content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2.5% 2.5% 0% 0%;
+    flex: 100%;
+    background-color: rgb(223, 156, 0);
+}
+
+
+.solid-bg {
+    background-color: rgba(192, 192, 192, 1)
+}
+
+.Sector {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.Sector.active {
+    opacity: 1;
+    height: auto;
+}
+
+.Sector_Selected {
+    display: block;
+}
+
+/* cards  */
+.cards {
+    display: flex;
+    flex: 40%;
+    background-color: transparent;
+    /* width: 90%; */
+    /* width: 300px; */
+    height: 500px;
+    margin-right: 10%;
+    margin-bottom: 4%;
+    /* margin: 2.5%; */
+    perspective: 1000px;
+}
+
+/* cards content*/
+.cards_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* .cards_front .cards_back{
+    position: absolute;
+    width:100%;
+    height:100%;
+} */
+
+/* cards front back*/
+.cards_front {
+    background-color: #bbb;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* backface-visibility: hidden; */
+}
+
+.cards_front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards_back {
+    /* background-color: #2980b9; */
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cards_back iframe {
+    width: 100%;
+    height: 50%;
+    /* flex-grow: 1; */
+    border: none;
+}
+
+/* controll pannel for minigame */
+.panel {
+    min-height: 100vh;
+    width: auto;
+    margin: 2.5% 2.5% 2.5% 0;
+    background-color: antiquewhite;
+}
+
+.audio_controll {
+    margin: 2.5% 2.5% 2.5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 8;
+    background-color: red;
+    padding: 2.5%;
+    border-radius: 5%;
+}
+
+/* controll pannel button to play sound */
+.controll_button {
+    padding: 5%;
+    margin: 5%;
+    height: 3em;
+    flex: 20%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(187, 246, 232);
+    opacity: 0.2;
+}
+
+.playing {
+    opacity: 1;
+}
+
+.quiz {
+    background-color: rgb(223, 156, 0);
+    padding-bottom: 5%;
+}
+
+.quiz_title {
+    margin: 0% 0% 0% 2.5%;
+}
+
+
+.Form {
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(203, 95, 0);
+    padding: 5%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.QR{
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:800px) {
+    .Titles {
+
+        display: flex;
+        flex-direction: column;
+        color: pink;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 30%;
+        font-size: 10px;
+        /* margin-top: auto;
+        margin-bottom: auto;
+        top: 0;
+        bottom: 0; */
+    }
+
+    .nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .Mobile_nav {
+
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .Mobile_nav>ul>li {
+
+        display: block;
+        /* flex-direction: column; */
+        width: 100%;
+        padding: 2.5%;
+
+
+    }
+
+    .Hamberger_menu {
+        display: flex;
+        justify-content: center;
+        /* Center align the hamburger menu */
+        align-items: center;
+        /* Center align the hamburger menu vertically */
+        position: relative;
+        flex-direction: row-reverse;
+    }
+
+
+    .Hamberger_menu>img {
+        /* position: relative; */
+        width: 20%;
+    }
+
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgba(192, 192, 192, 0.2);
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        transition: background-color 0.3s;
+        padding: 0;
+    }
+
+    .Leftnav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Leftnav ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        /* background-image: url("../images/operamask.jpg"); */
+    }
+
+    .Rightnav>ul {
+        /* display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-around; */
+        display: none;
+    }
+
+    li>img {
+        position: relative;
+        width: 10%;
+        height: 10%;
+    }
+
+
+    .menu {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .menu:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .background-image-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .background {
+        /* display: none; */
+        opacity: 0;
+        z-index: -3;
+        transition: opacity 3s;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .background-Selected {
+        display: flex;
+        position: absolute;
+        opacity: 1;
+        z-index: -2;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .Content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(223, 156, 0);
+        padding-left: 2.5%;
+    }
+
+    .Left_Content {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5% 2.5% 2.5% 0%;
+        flex: 90%;
+        background-color: red;
+        font-size: 10px;
+
+
+    }
+
+    .Left_Content>p {
+        padding: 5%;
+        height: 100%;
+        margin: 0%;
+    }
+
+    .selected {
+        background-color: black;
+        color: white;
+        background: linear-gradient(to left top, yellow, orange);
+    }
+
+    .hover {
+        background-color: black;
+        color: white;
+        background: linear-gradient(to left top, yellow, orange);
+    }
+
+    .Description {
+        /* display: flex;
+        flex-direction: row; */
+        margin: 2.5% 2.5% 2.5% 0%;
+        flex: 95%;
+        background-color: red;
+        padding: 2.5%;
+        border-radius: 5%;
+        min-height: 500px;
+    }
+
+    .Title_Content {
+        display: flex;
+        flex-direction: row;
+        margin: 2.5% 2.5% 0% 0%;
+        flex: 100%;
+        background-color: rgb(223, 156, 0);
+    }
+
+    .Container_Content {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5% 2.5% 0% 0%;
+        flex: 100%;
+        background-color: rgb(223, 156, 0);
+    }
+
+    .solid-bg {
+        background-color: rgba(192, 192, 192, 1)
+    }
+
+    .Sector {
+        display: none;
+    }
+
+    .Sector_Selected {
+        display: block;
+    }
+
+    .cards {
+        background-color: transparent;
+        width: 90%;
+        /* margin: 2.5%; */
+        perspective: 1000px;
+        flex: 90%;
+    }
+
+    .cards_inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    /* .cards_front .cards_back{
+        position: absolute;
+        width:100%;
+        height:100%;
+        backface-visibility: hidden;
+    } */
+
+    .cards_front {
+        background-color: #bbb;
+        color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* backface-visibility: hidden; */
+    }
+
+    .cards_front img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cards_back {
+        /* background-color: #2980b9; */
+        background-color: transparent;
+        color: white;
+        transform: rotateY(180deg);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .panel {
+        min-height: 100vh;
+        width: auto;
+        margin: 2.5% 2.5% 2.5% 0;
+        background-color: antiquewhite;
+    }
+
+    .audio_controll {
+        margin: 2.5% 2.5% 2.5% 0%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 8;
+        background-color: red;
+        padding: 2.5%;
+        border-radius: 5%;
+    }
+
+    .controll_button {
+        padding: 5%;
+        margin: 5%;
+        height: 3em;
+        flex: 40%;
+        justify-content: center;
+        text-align: center;
+        background-color: rgb(187, 246, 232);
+        opacity: 0.2;
+    }
+
+    .playing {
+        opacity: 1;
+    }
+
+    .quiz {
+        background-color: rgb(223, 156, 0);
+        padding-bottom: 5%;
+    }
+
+    .quiz_title {
+        margin: 0% 0% 0% 2.5%;
+    }
+
+
+    .Form {
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: rgb(203, 95, 0);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+
+    }
+
+    .result {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .QR{
+        display: flex;
+        background-color: bisque;
+        align-items: center;
+        justify-content: center;
+    }
+}

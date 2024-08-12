@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prac12b</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="#top"></div>
+    <nav>
+        <a href="#top" class="title">Blindness</a>
+        <div id="anchors">
+            <a href="#main1">Types</a>
+            <a href="#sim">Simulation</a>
+            <a href="#minigame">Minigame</a> 
+        </div>
+        <img id="menu" src="images/menuicon.png" width="70px" height="auto">
+    </nav>
+    <h1 id="intro1">"A blind man"</h1>
+    <div id="intro2">
+        <div>
+            <img src="images/blindman.png" alt="a man with a walking stick and sunglasses" width="300px">
+            <br><h2>^<br>|<br>Is this what you think of?</h2>
+        </div>
+        <div>
+            <img src="images/black.png" alt="a pitch black image"width="300px">
+            <br><h2>^<br>|<br>Is this what you think he sees?</h2>
+        </div>
+    </div>
+    <div id="main1">
+        Visual Impairments can come in many forms.<br>All the term means is any kind of vision loss, including your common Myopia (short-sightedness), which is present in 83% of young adults in Singapore.<br>
+        <br>But most people understand the milder kinds.<br>
+        <br>The ones people misunderstand are the more severe ones. Case in point: Blindness
+        <br>Blindness ranges in causes, symptoms and severity.
+        <br>Generally, it is categorized into 3 types:
+    </div>
+    <div id="main2">
+        <button id="total">Total Blindness</button>
+        <div>
+            <div class="totalBcontent">
+                <p>
+                <br>Complete loss of vision and NO perception of light.
+                <br>
+                <br>The stereotypical form of blindness people assume the term automatically refers to.
+                <br>In reality, only about 15% of blind people suffer total blindness.
+                <br>This is, of course, the most severe and extreme version of blindness of all, and there are people in the world who unfortunately suffer from this.
+                </p>
+            </div>
+            <div class="totalBcontent">
+                <img src="images/blackcircle.png" alt="a pitch black circle">
+            </div>
+        </div>
+        <br>
+        <button id="partial">Partial Blindness</button>
+        <div>
+            <div class="partialBcontent">
+                <p>
+                <br>Heavily inhibited range/quality of vision, but still having at least some.
+                <br>
+                <br>Partial Blindness, also known as "low vision", refers to any eye condition that reduces your range of vision.
+                <br>There are several eye conditions that cause this, here are some examples:
+                <br><br>*Image credits: Perkins School for the Blind
+                </p>
+            </div>
+            <div class="partialBcontent">
+                <img src="images/partialblindness.png" alt="examples of the different kinds of partial blindness">
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <button id="legal">Legal Blindness</button>
+            <button id="legaltext">Legal Blindness</button>
+        </div>
+        <br>
+        <div>
+            <div class="legalBcontent">
+                <p>
+                    Central vision with a degree of 20/200 at best, that CANNOT be corrected.
+                    <br>
+                    <br>Legal Blindness is a term that can also be applied to Partial Blindness, but it mostly refers to vision with an extremely high degree, 20/200 or worse.
+                    <br>The difference between this and regular short or long-sightedness is that it only counts if it cannot be corrected by anything like glasses or contact lenses.
+                    <br>Legal Blindness also applies if your field of vision is less than 20 degrees.
+                    <br><br>*Image credits: Burlington County Eye Physicians
+                </p>
+            </div>
+            <div class="legalBcontent">
+                <img src="images/legalblindness.jpg" alt="a comparison of regular vision to the blurred vision of legal blindness"> 
+            </div>
+        </div>
+    </div>
+
+    <br><h1 id="sim">Try the buttons below to experience for yourself what these kinds of partial blindness look like</h1>
+    <div class="centered">
+        <button class="simbuttons" id="glaucomaBtn">Glaucoma</button>
+        <br>
+        <button class="simbuttons" id="macularBtn">Macular Degeneration</button>
+    </div>
+    <div>
+        <h1 id="minigame">Minigame</h1>
+        <h1>A shape will appear in the box below, click it as fast as you can!
+            <br>Try this game with either of the simulations, and see how hard this simple game can be when you can't see that well.
+        </h1>
+        <div id="gamestart">Start/Stop</div>
+        <div id="gamearea">
+            <div id="gamemessage">Find and press the element!</div>
+            <div id="target">Press!</div>
+        </div>
+    </div>
+
+    <div id="glaucoma"></div>
+    <div id="macular"></div>
+    <button class="mobilecontrols" id="leftBtn">Left</button>
+    <button class="mobilecontrols" id="upBtn">Up</button>
+    <button class="mobilecontrols" id="downBtn">Down</button>
+    <button class="mobilecontrols" id="rightBtn">Right</button>
+    <button class="mobilecontrols" id="resetBtn">Reset</button>
+    <div class="controls">WASD to look around, Esc to reset</div>
+</body>
+ 

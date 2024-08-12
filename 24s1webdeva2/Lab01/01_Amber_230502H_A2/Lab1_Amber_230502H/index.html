@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea</title>
+
+    <!-- mobile fullscreen -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Tea">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="colourable">
+    <audio id="bgm">
+        <source src="music/yume_no_kissaten_mitsukiyo.ogg" type="audio/ogg">
+        Debug no audio
+    </audio>
+
+    <header class="showBlock colourable centerTxt">
+        <h1 id="title" class="colourable">Tea</h1>
+    </header>
+    <div id="pagecontainer" class="autoMargin">
+        <!-- Cover page -->
+        <div class="page showBlock centerTxt" id="page0">
+            <h2 class="colourable">~Boil some tea, Check out this site~</h2>
+            <nav class="w100 autoMargin">
+                <!--menu systtm-->
+                <h3 class="colourable" id="hamIcon"><u>Menu</u></h3>
+                <ul class="w100 showFlex flexwrap">
+                    <li id="page1btn" class="centerTxt">
+                        <img src="image/button.png" alt="button icon" class="button centerTxt" />
+                        <p class="colourable">Teas</p>
+                    </li>
+                    <li id="page2btn" class="centerTxt">
+                        <img src="image/button.png" alt="button icon" class="button centerTxt" />
+                        <p class="colourable">Destain</p>
+                    </li>
+                    <li id="page3btn" class="centerTxt">
+                        <img src="image/button.png" alt="button icon" class="button centerTxt" />
+                        <p class="colourable">Game</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Types of tea + benefits -->
+        <div class="page hideBlock colourable" id="page1">
+            <h2 class="colourable"><u>Types Of Tea</u></h2>
+            <h3>Green Tea</h3>
+            <!-- transition this height -->
+            <div class="showFlex flexwrap w100 collapsable">
+                <div>
+                    <u class="colourable">Gyokuro</u>
+                    <img src="image/gyokuro.jpg" alt="goykuro tea" class="w100" />
+                    <p class="colourable">
+                        A type of shaded green tea from Japan.
+                        The leaves are almost completely shaded from sunlight for about 20 days
+                        from the time when the new shoots start to grow. <br /><br />
+                        Steep for 2 minutes at 40-70C, using 5g of leaves per 150ml water.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Increase mental alertness</li>
+                        <li class="colourable">Calming</li>
+                        <li class="colourable">Block absorption of bad cholestrol</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <u class="colourable">Genmaicha</u>
+                    <img src="image/genmaicha.jpg" alt="genmaicha tea" class="w100" />
+                    <p class="colourable">
+                        A Japanese tea consisting of green tea mixed with roasted popped brown rice.
+                        Some rice grains pop during the roasting process and look like popcorn. <br /><br />
+                        Steep for 0.5-1 minute at 80-100C, using 6g of leaves per 200ml water.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Help digestion</li>
+                        <li class="colourable">Improve immune system</li>
+                        <li class="colourable">Keep skin young</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Oolong Tea</h3>
+            <!-- transition this height -->
+            <div class="showFlex flexwrap w100 collapsable">
+                <div>
+                    <u class="colourable">Tie Guan Yin</u>
+                    <img src="image/tie_guan_yin.jpg" alt="tie guan yin tea" class="w100" />
+                    <p class="colourable">
+                        A tea named after the Chinese Goddess of mercy, Guanyin.
+                        Sometimes, the leaves may go through a roasting and scenting process after drying.<br /><br />
+                        Steep for 3-5 minutes at 95C, using 2g of leaves per 200ml water.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Improve heart health</li>
+                        <li class="colourable">Lower cholestrol levels</li>
+                        <li class="colourable">Lower risk of cancer</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <u class="colourable">Jin Xuan</u>
+                    <img src="image/jin_xuan.jpg" alt="jin xuan tea" class="w100" />
+                    <p class="colourable">
+                        A tea from Taiwan that has some taste enhancement due to oxidisation.
+                        The yield is around 20% higher than other traditional tea varieties.<br /><br />
+                        Steep for 3-5 minutes at 85-90C, using 4g of leaves per 200ml water.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Lower blood sugar</li>
+                        <li class="colourable">Improve lung health</li>
+                        <li class="colourable">Keep skin healthy</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>Herbal Tea</h3>
+            <!-- transition this height -->
+            <div class="showFlex flexwrap w100 collapsable">
+                <div>
+                    <u class="colourable">Ginger Tea</u>
+                    <img src="image/ginger.jpg" alt="ginger tea" class="w100" />
+                    <p class="colourable">
+                        A tea made from ginger root, often paired with things like tumeric, lemon, or honey.
+                        It has a history as herbal medicine used in various parts of Asia.<br /><br />
+                        Boil 1 tablespoon of chopped ginger in 300ml water for 7-12 minutes.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Help digestion</li>
+                        <li class="colourable">Regulate blood sugar</li>
+                        <li class="colourable">Relieve menstural cramps</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <u class="colourable">Roselle Tea</u>
+                    <img src="image/roselle.jpg" alt="rosele tea" class="w100" />
+                    <p class="colourable">
+                        A sour tea made from roselle flowers, which are native to Africa, and cultivated in tropical regions.
+                        Also known as hibiscus tea or red sorrel tea.<br /><br />
+                        Boil 3-4 flowers in 250ml water for 5 minutes.
+                    </p>
+                    <u class="colourable">Benefits</u>
+                    <ul>
+                        <li class="colourable">Improve immune system</li>
+                        <li class="colourable">Reduce constipation</li>
+                        <li class="colourable">Lower cholestrol</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- How to clean tea stains -->
+        <div class="page hideBlock colourable" id="page2">
+            <h2 class="colourable"><u>How to clean tea stains</u></h2>
+            <div class="showFlex flexwrap autoMargin">
+                <p class="colourable">
+                    Tea leaves stubborn stains because it naturally contains tannin, which is used in dyes.
+                    But don't worry if your cup stains, just follow these steps to clean it:
+                </p>
+                <ol class="fb100">
+                    <li>
+                        <h3 class="colourable">Wet the stained areas with water</h3>
+                        <div class="animGrid autoMargin">
+                            <img src="image/stained.jpg" alt="stained cup" class="stainedCup w100" />
+                            <img src="image/water.png" alt="water" id="water" class="pg2Anim relative" />
+                            <img src="image/waterdrop.png" alt="waterdrop" id="waterdrop" class="pg2Anim relative" />
+                        </div>
+                        <p class="colourable">
+                            Water will help the cleaning agent stick to areas of the
+                            cup that need to be cleaned.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="colourable">Cover the stained areas with baking soda</h3>
+                        <div class="animGrid autoMargin">
+                            <img src="image/stained.jpg" alt="stained cup" class="stainedCup w100" />
+                            <img src="image/bakingsoda.png" alt="baking soda" id="bakingsoda" class="pg2Anim relative" />
+                            <img src="image/cloud.png" alt="baking soda cloud" class="pg2Anim relative cloud" />
+                            <img src="image/cloud.png" alt="baking soda cloud" class="pg2Anim relative cloud" />
+                            <img src="image/cloud.png" alt="baking soda cloud" class="pg2Anim relative cloud" />
+                            <img src="image/cloud.png" alt="baking soda cloud" class="pg2Anim relative cloud" />
+                        </div>
+                        <p class="colourable">
+                            Baking soda is an alkali and reacts with the acidic stains,
+                            helping to remove them.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="colourable">Leave for 2 hours</h3>
+                        <div class="animGrid autoMargin">
+                            <img src="image/stained.jpg" alt="stained cup" class="stainedCup w100 pg2Anim relative" />
+                            <div class="pg2Anim relative" id="clock">
+                                <img src="image/clock.png" alt="timer" id="timer" class="relative" />
+                                <img src="image/clockhand.png" alt="timerhand" id="timerhand" class="relative" />
+                            </div>
+                        </div>
+                        <p class="colourable">
+                            Wait for the baking soda to absorb the stain.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="colourable">Scrub off the baking soda and wash the cup normally</h3>
+                        <div class="animGrid autoMargin">
+                            <img src="image/stained.jpg" alt="stained cup" class="stainedCup w100" />
+                            <img src="image/sponge.png" alt="sponge" class="pg2Anim relative" id="sponge" />
+                        </div>
+                        <p class="colourable">
+                            The stain will be lighter. Repeat the process to lighten the stain until it is gone.
+                        </p>
+                    </li>
+                </ol>
+                <!-- interactable -->
+                <h3 class="colourable">Try it yourself</h3>
+                <div class="w100"></div>
+                <div class="animGrid autoMargin" id="cleanGrid">
+                    <img src="image/stained.jpg" alt="stained cup" class="stainedCup w100" />
+                    <div id="stainOverlay" class="w100 relative"></div>
+                    <img src="image/star.png" alt="well done" id="star" class="w100" />
+                </div>
+                <div id="equipment" class="autoMargin colourable">
+                    <div class="equipCell showFlex w100 colourable">
+                        <img src="image/water.png" alt="water" class="w100"/>
+                    </div>
+                    <div class="equipCell showFlex w100 colourable">
+                        <img src="image/bakingsoda.png" alt="baking soda" class="w100"/>
+                    </div>
+                    <div class="equipCell showFlex w100 colourable">
+                        <img src="image/sponge.png" alt="sponge" class="w100"/>
+                    </div>
+                </div>
+                <img src="image/water.png" alt="water" id="equip0" class="equip" />
+                <img src="image/bakingsoda.png" alt="baking soda" id="equip1" class="equip" />
+                <img src="image/sponge.png" alt="sponge" id="equip2" class="equip" />
+
+            </div>
+        </div>
+        <!-- Game -->
+        <div class="page hideBlock" id="page3">
+            <!-- Board for the game -->
+            <div id="board" class="autoMargin colourable">
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div class="cell colourable"></div>
+                <div id="gameOver" class="hideGameOver showFlex flexwrap colourable">
+                    <h3></h3>
+                    <div class="w100"></div>
+                    <button class="colourable relative">Replay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="settings">
+        <img src="image/settings.png" alt="settings" class="w100" />
+    </div>
+    <div id="options" class="collapsed">
+        <div id="ctrls" class="w100 showFlex flexwrap">
+            <img src="image/mute.png" alt="muted" id="soundCtrl" />
+            <img src="image/minimise.png" alt="minimised" id="screenCtrl" />
+        </div>
+        <h3 class="centerTxt">Theme</h3>
+        <form id="theme">
+            <label for="purple" class="purple">Purple</label>
+            <input name="colour" id="purple" value="purple" type="radio" checked="checked" class="purple">
+            <label for="pink" class="pink">Pink</label>
+            <input name="colour" id="pink" value="pink" type="radio" class="pink">
+            <label for="blue" class="blue">Blue</label>
+            <input name="colour" id="blue" value="blue" type="radio" class="blue">
+        </form>
+    </div>
+    <footer class="showBlock minHeight colourable centerTxt">
+        <button class="colourable relative">Home</button>
+    </footer>
+</body>
+
+</html>

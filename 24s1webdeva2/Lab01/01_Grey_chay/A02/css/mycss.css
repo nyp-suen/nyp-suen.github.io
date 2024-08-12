@@ -1,0 +1,382 @@
+/* Reset margin, padding, and set box-sizing for all elements */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styling */
+.navBar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation bar list styling */
+.navBar ul {
+    display: flex; /* Use flexbox for the div */
+    justify-content: space-evenly; /* Distribute space evenly between items */
+    align-items: center; /* Align items vertically */
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+    list-style: none;
+}
+
+/* Logo image styling */
+.navBar .Img {
+    max-width: 100px; /* Maintain max-width */
+    margin-right: 20px; /* Add margin between image and text */
+    cursor: pointer;
+}
+
+/* Navigation links styling */
+nav ul li {
+    flex: 1; /* Allow links to grow and take equal space */
+    text-align: center;
+    color: black;
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Background music button styling */
+#bgm {
+    opacity: 100%;
+}
+
+/* Button styling inside navigation */
+nav button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Banner section styling */
+.banner {
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+}
+
+/* Banner video styling */
+.banner video {
+    position: absolute;
+}
+
+/* Banner heading styling */
+.banner h1 {
+    font-size: 138px;
+    mix-blend-mode: screen;
+    background: white;
+    transform: scale(0.77, 1.0);
+}
+
+/* Section styling */
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section heading styling */
+section h2 {
+    position: relative;
+    color: black;
+}
+
+/* Wave background styling */
+.wave {
+    position: relative;
+    background: linear-gradient(to bottom, #00d4ff, #006994);
+}
+
+/* Wave background image styling */
+.wave::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(/Images/wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Breeds section styling */
+#Breeds {
+    overflow-x: hidden;
+}
+
+/* Gallery section styling */
+.gallery {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(59, 68, 68);
+}
+
+/* Search bar styling */
+.searchBar {
+    position: relative;
+    padding-top: 2%;
+    height: 50px;
+    max-width: 30vw;
+    margin: 0 auto;
+    margin-bottom: 5%; /* Adjust this value to set the distance between the search bar and the boxes */
+}
+
+/* Search bar input field styling */
+.searchBar input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    padding-left: 5%;
+}
+
+/* Gallery container styling */
+.gallery .Container {
+    width: 100vw;
+    height: 100%;
+    padding-top: 3%;
+    padding-right: 1vw;
+    background-color: rgb(59, 68, 68);
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-evenly;
+}
+
+/* Gallery box styling */
+.gallery .Boxes {
+    background-color: white;
+    padding: 10px; /* Add padding inside the box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px; /* Space between boxes */
+    width: 24%;
+}
+@media screen and (max-width: 600px){
+   .gallery .Boxes {
+    width: 100%;
+    }
+}
+/* Paragraph inside gallery box styling */
+.gallery .Boxes p {
+    margin-top: 0;
+    margin-bottom: 0; /* Remove default margin */
+    text-align: left; /* Align text to the left */
+    text-align: justify; /* Justify text */
+    width: 100%; /* Ensure paragraph takes full width */
+}
+
+/* Image inside gallery box styling */
+.gallery .Boxes img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 10px; /* Space below image */
+}
+
+/* Gallery box heading styling */
+.gallery .Boxes h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Duplicate image styling (might be redundant) */
+.gallery .Boxes img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Timeline section styling */
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: 100px auto;
+}
+
+/* Timeline container box styling */
+.timelineContainer {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    opacity: 0; /* Ensure starting opacity is 0 */
+    animation: movedown 1s linear forwards;
+}
+
+/* Animation for moving down */
+@keyframes movedown {
+    0% {
+        opacity: 0; /* Ensure opacity starts at 0 */
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-32px);
+    }
+}
+
+/* Text box styling inside timeline container */
+.textbox {
+    padding: 20px 30px;
+    background: gray;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Styling for containers on the right side of the timeline */
+.rightContainer {
+    right: -50.6%;
+}
+
+/* Grey circle for the timeline */
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    left: calc(50% - 20px); /* Center circle on timeline */
+    z-index: 10;
+}
+
+/* Circle position for right containers */
+.circle.right {
+    left: auto;
+    right: calc(50% - 20px); /* Center circle on timeline */
+}
+
+/* Line along the timeline */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 0%; /* Start from 0 height */
+    background: rgb(22, 30, 61);
+    top: 0%;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+/* Animation for the timeline line */
+@keyframes moveline {
+    0% {
+        height: 0vh; /* Start from 0% of the viewport height */
+    }
+    100% {
+        height: 100vh; /* End at 100% of the viewport height */
+    }
+}
+
+/* Text box heading styling */
+.textbox-h2 {
+    font-weight: 600;
+    margin-left: -2%;
+    color: whitesmoke;
+}
+
+/* Small text inside text box */
+.textbox small {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+/* Paragraph text inside text box */
+.textbox p {
+    color: whitesmoke;
+}
+
+/* Arrow pointing to the left */
+.leftArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid gray;
+    right: -15px;
+}
+
+/* Arrow pointing to the right */
+.RightArrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid gray;
+    left: -15px;
+}
+
+/* Canvas element styling */
+canvas {
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .Container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .textbox {
+        font-size: 13px;
+    }
+    .textbox small {
+        margin-bottom: 10px;
+    }
+    .Container {
+        left: 60px;
+    }
+    .rightContainer {
+        left: 0px;
+    }
+    .circle, .circle.right {
+        left: 10px;
+    }
+    .RightArrow, .leftArrow {
+        border-right: 15px;
+        border-left: 0;
+    }
+
+}

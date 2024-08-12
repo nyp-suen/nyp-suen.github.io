@@ -1,0 +1,741 @@
+html{
+	padding:0 0;
+	margin:0 0;
+	overflow-x: hidden;
+}
+
+body{
+	margin: 0 0;
+}
+
+.page{width:100vw;height: fit-content;
+}
+
+*{
+	font-family:'Times New Roman', Times, serif;
+}
+
+#qrcontainer{
+	align-items: center;
+	text-align: center;
+}
+
+/*Header*/
+
+#head{
+	background-color: rgb(105, 100, 56);
+	height:10vh;
+	margin: 0 0;
+}
+
+#logo{
+	float:left;
+}
+
+.navbtn {
+	padding:1vh 1vw;
+	background-color: coral;
+	float:right;
+	margin:1vh 1vw;
+	font-size: 250%;
+}
+
+#menubtn{
+	display: none;
+}
+
+#menuhide{
+	clear:none;
+	float:none;
+}
+
+#pagecontainer{
+	clear:both;
+	height: 10vh;
+}
+
+#navbtncontainer{
+	display: block;
+}
+
+/*Body*/
+body{
+	background-color:bisque;
+}
+
+/*Rules Page Grid Layout*/
+#rules-grid {
+	display: grid;
+	grid-template-rows: fit-content(300px) fit-content(300px) fit-content(300px);
+		grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+	width: 100%;
+	height: 100%;
+}
+
+.grid.rules{
+	border: 0.1vh solid rgb(43, 43, 43);
+}
+
+#rules-grid1 {
+	grid-area: span 1/ span 1;
+	background-color: rgba(42,138,143, 0.5);
+	
+}
+#rules-grid2 {
+	grid-area: span 2/span 2;
+	background-color: rgba(45,78,38, 0.5);
+}
+
+#rules-grid3 {
+	grid-area: span 1/span 3;
+	background-color: rgba(144,107,9, 0.5);
+}
+
+#rules-grid4 {
+	grid-area: 2 / 1 / 3 / 2;
+	background-color: rgba(178,73,3, 0.5);
+}
+
+
+section{
+    padding: 1vh 1vw;
+	height: fit-content;
+}
+
+/*SetUp Grid*/
+
+#setup-grid {
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 20% 80%;
+	gap: 0;
+	width: 100%;
+	height: 100%;
+	border: 0.1vh solid rgb(43, 43, 43);
+}
+#setup-grid1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(243,207,180, 0.5);
+}
+#setup-grid2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(126,71,109, 0.5);
+}
+
+.button.setup{
+	width: 100%;
+	text-align: center;
+}
+
+/*Gameplay Grid*/
+
+#gameplay-grid {
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 20% 80%;
+	gap: 0;
+	width: 100%;
+	height: 100%;
+	border: 0.1vh solid rgb(43, 43, 43);
+}
+#gameplay-grid1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(243,207,180, 0.5);
+}
+#gameplay-grid2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(126,71,109, 0.5);
+}
+
+.button.gameplay{
+	width: 100%;
+	text-align: center;
+}
+
+/*Strategy Page*/
+
+#page2{
+	overflow-x:hidden;
+}
+
+#strategyintro{
+	text-align: center;
+	align-items: center;
+}
+
+.strategybtn{
+	float:left;
+	margin:1vh 1vw;
+	padding: 0.1vh 0.1vw;
+	width:12%;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+#strategybtncontainer + section {
+	clear:both;
+}
+
+#strategydesccontainer{
+	float:left;
+	width: 50%;
+	flex-wrap:wrap
+}
+
+.strategydesc{
+	width: 50%;
+}
+
+.strategycontent{
+	width:50%;
+	height:45%;
+	float:left;
+	margin: 1vh 1vw;
+}
+
+#strategypicture{
+	width: 40%;
+	float: right;
+}
+
+.support-slidescreen{
+animation: slidescreen 1s ease-in-out 0s 1 ;
+}
+
+@keyframes slidescreen {
+	from{
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	to{
+		transform:translateX(0px);
+		opacity: 100;
+	}
+}
+
+.strat-wrap{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*Variants Page*/
+.variants-tab{
+	width:50%;
+	float:left;
+	height: fit-content;
+	align-items: center;
+}
+
+.var-name,.var-title,.var-category{
+	float:left;
+}
+
+.var-title{
+font-weight: bold;
+width: 100%;
+text-align: center;
+}
+
+.var-name{
+width: 10%;
+margin: 0 1vw;
+}
+
+.var-name > img{
+	width: 100%;
+}
+
+#var-shelf{
+	display: inline-block;
+	text-align:center;
+}
+
+.break{
+	clear:both;
+}
+
+.var-wrap{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+
+/*Mini Monopoly*/
+#board-grid {
+	display: grid;
+	grid-template-rows: repeat(5, 8vw);
+	grid-template-columns: repeat(5, 8vw);
+	gap: 0;
+	width: fit-content;
+	height: fit-content;
+}
+#tile1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(104,225,133, 0.5);
+}
+#tile2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(243,187,2, 0.5);
+}
+#tile3 {
+	grid-area: 1/3/2/4;
+	background-color: rgba(105,204,131, 0.5);
+}
+#tile4 {
+	grid-area: 1/4/2/5;
+	background-color: rgba(245,9,103, 0.5);
+}
+#tile5 {
+	grid-area: 1/5/2/6;
+	background-color: rgba(64,243,202, 0.5);
+}
+#tile6 {
+	grid-area: 2/5/3/6;
+	background-color: rgba(125,24,49, 0.5);
+}
+#tile7 {
+	grid-area: 3/5/4/6;
+	background-color: rgba(14,168,52, 0.5);
+}
+#tile8 {
+	grid-area: 4/5/5/6;
+	background-color: rgba(232,145,116, 0.5);
+}
+#tile9 {
+	grid-area: 5/5/6/6;
+	background-color: rgba(220,150,24, 0.5);
+}
+#tile10 {
+	grid-area: 5/4/6/5;
+	background-color: rgba(32,38,217, 0.5);
+}
+#tile11 {
+	grid-area: 5/3/6/4;
+	background-color: rgba(45,91,27, 0.5);
+}
+#tile12 {
+	grid-area: 5/2/6/3;
+	background-color: rgba(225,2,153, 0.5);
+}
+#tile13 {
+	grid-area: 5/1/6/2;
+	background-color: rgba(113,58,33, 0.5);
+}
+#tile14 {
+	grid-area: 4/1/5/2;
+	background-color: rgba(62,188,156, 0.5);
+}
+#tile15 {
+	grid-area: 3/1/4/2;
+	background-color: rgba(240,254,77, 0.5);
+}
+#tile16 {
+	grid-area: 2/1/3/2;
+	background-color: rgba(36,65,137, 0.5);
+}
+#tile17 {
+	grid-area: 3/2/4/3;
+	background-color: rgba(95,6,85, 0.5);
+}
+#tile18 {
+	grid-area: 3/4/4/5;
+	background-color: rgba(17,92,146, 0.5);
+}
+#tile19 {
+	grid-area: 3/3/4/4;
+	background-color: rgba(88,34,100, 0.5);
+}
+#tile20 {
+	grid-area: 2 / 2 / 5 / 5;
+	background-color: rgba(9,208,31, 0.5);
+}
+
+.mini-split{
+	width:50%;
+	height: 50vh;
+	float:left;
+}
+
+.mini-contain{
+	position: relative;
+}
+
+.squareimg{
+	position: absolute;
+	width: 100%;
+}
+
+/*Mini Monopoly Interaction*/
+
+#info-grid {
+	display: grid;
+	grid-template-rows: min-content 50%;
+	grid-template-columns: repeat(3, 16vw);
+	gap: 0;
+	width: 100%;
+	height: 100%;
+}
+#info1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(245,44,169, 0.5);
+}
+#info2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(122,20,222, 0.5);
+}
+#info3 {
+	grid-area: 2 / 1 / 5 / 3;
+	background-color: rgba(214,101,223, 0.5);
+}
+#info4 {
+	grid-area: 1 / 3 / 5 / 4;
+	background-color: rgba(53,71,176, 0.5);
+}
+
+#options-info{
+	text-align: center;
+}
+
+.mini-btn{
+	margin: 0 0;
+	width: 100%;
+	height: 100%;
+}
+
+#control-grid {
+	display: grid;
+	grid-template-rows: repeat(2, 50%);
+	grid-template-columns: repeat(3, 33.3%);
+	gap: 0;
+	width: 100%;
+	height: 100%;
+}
+#control1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(172,172,168, 0.5);
+}
+#control2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(25,51,67, 0.5);
+}
+#control3 {
+	grid-area: 1/3/2/4;
+	background-color: rgba(1,193,15, 0.5);
+}
+#control4 {
+	grid-area: 2/1/3/2;
+	background-color: rgba(39,112,99, 0.5);
+}
+#control5 {
+	grid-area: 2/2/3/3;
+	background-color: rgba(235,114,199, 0.5);
+}
+#control6 {
+	grid-area: 2/3/3/4;
+	background-color: rgba(89,48,16, 0.5);
+}
+
+#sell-grid {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+	width: 100%;
+	height: 100%;
+}
+#sell1 {
+	grid-area: 1/1/2/2;
+	background-color: rgba(214,96,197, 0.5);
+}
+#sell2 {
+	grid-area: 1/2/2/3;
+	background-color: rgba(79,205,162, 0.5);
+}
+#sell3 {
+	grid-area: 1/3/2/4;
+	background-color: rgba(111,210,69, 0.5);
+}
+#sell4 {
+	grid-area: 2/1/3/2;
+	background-color: rgba(111,174,40, 0.5);
+}
+#sell5 {
+	grid-area: 2/2/3/3;
+	background-color: rgba(139,177,150, 0.5);
+}
+#sell6 {
+	grid-area: 2/3/3/4;
+	background-color: rgba(220,187,161, 0.5);
+}
+#sell7 {
+	grid-area: 3/1/4/2;
+	background-color: rgba(157,75,217, 0.5);
+}
+#sell8 {
+	grid-area: 3/2/4/3;
+	background-color: rgba(98,158,118, 0.5);
+}
+#sell9 {
+	grid-area: 3/3/4/4;
+	background-color: rgba(188,48,42, 0.5);
+}
+#sell10 {
+	grid-area: 4/1/5/2;
+	background-color: rgba(32,39,145, 0.5);
+}
+#sell11 {
+	grid-area: 4/2/5/3;
+	background-color: rgba(122,246,107, 0.5);
+}
+#sells12 {
+	grid-area: 4/3/5/4;
+	background-color: rgba(165,138,200, 0.5);
+}
+#sell13 {
+	grid-area: 5/2/6/3;
+	background-color: rgba(143,209,182, 0.5);
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+label, input, button {
+	margin: 10px 0;
+}
+
+#game-setting{
+	align-items: center;
+}
+
+/*Global Changes*/
+
+h2,p{
+	text-align: center;
+}
+
+.button{
+	border-radius: 15px;
+	background-color: rgba(100, 36, 80, 0.5);
+}
+
+.button:hover{
+	background-color: rgba(255, 0, 174, 0.5);
+}
+
+h2{
+ font-size: 200%;
+}
+
+.glow{
+	animation: glow 1s ease 0s 1;
+	animation-fill-mode: forwards;  
+
+}
+
+@keyframes glow {
+	to {
+	  box-shadow: 0 0 10px 10px #fbff24;
+	}
+}
+
+@media (max-width: 800px){
+	#rules-grid {
+		display: grid;
+		grid-template-rows: fit-content(300px) fit-content(300px) fit-content(300px);
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.grid.rules{
+		border: 0.1vh solid rgb(43, 43, 43);
+	}
+	
+	#rules-grid1 {
+		grid-area: span 1/ span 1;
+		background-color: rgba(42,138,143, 0.5);
+		
+	}
+	#rules-grid2 {
+		grid-area: span 1/span 2;
+		background-color: rgba(45,78,38, 0.5);
+	}
+	
+	#rules-grid3 {
+		grid-area: span 1/span 2;
+		background-color: rgba(144,107,9, 0.5);
+	}
+	
+	#rules-grid4 {
+		grid-area: span 1/ span 1;
+		background-color: rgba(178,73,3, 0.5);
+	}
+
+	.variants-tab{
+		width:100%;
+		float:left;
+		align-items: center;
+	}
+
+	.mini-split{
+		width:100%;
+		height: min-content;
+	}
+
+	#info-grid {
+		display: grid;
+		grid-template-rows: min-content 50vh 75vh;
+		grid-template-columns: repeat(2, 50vw);
+		gap: 0;
+		width: 100%;
+		height: 100%;
+	}
+	#info1 {
+		grid-area: 1/1/2/2;
+		background-color: rgba(245,44,169, 0.5);
+	}
+	#info2 {
+		grid-area: 1/2/2/3;
+		background-color: rgba(122,20,222, 0.5);
+	}
+	#info3 {
+		grid-area: span 1 / span 2;
+		background-color: rgba(214,101,223, 0.5);
+	}
+	#info4 {
+		grid-area: span 1 / span 2;
+		background-color: rgba(53,71,176, 0.5);
+	}
+
+	#board-grid {
+		display: grid;
+		grid-template-rows: repeat(5, 20vw);
+		grid-template-columns: repeat(5, 20vw);
+		gap: 0;
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.strategybtn{
+		float:left;
+		padding: 0.1vh 0.1vw;
+		width:45%;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+	#strategypicture{
+		width: 100%;
+		float: left;
+	}
+
+	.strategycontent{
+		width: 100%;
+	}
+
+	#strategydesccontainer{
+		width: 100%;
+		float: left;
+		padding: 0 0;
+	}
+
+	.strategydesc{
+		width: 100%;
+	}
+
+	#menubtn{
+		display: block;
+	}
+
+	#menuhide{
+		clear:both;
+		float:right;
+	}
+
+	#navbtncontainer{
+		display: none;
+	}
+
+	#setup-grid {
+		display: grid;
+		grid-template-rows: 60% 40%;
+		grid-template-columns: 100%;
+		gap: 0;
+		width: 100%;
+		height: 100%;
+		border: 0.1vh solid rgb(43, 43, 43);
+	}
+	#setup-grid1 {
+		grid-area: 1/1/1/1;
+		background-color: rgba(243,207,180, 0.5);
+		flex-wrap: wrap;
+	}
+	#setup-grid2 {
+		grid-area: 2/1/2/1;
+		background-color: rgba(126,71,109, 0.5);
+	}
+
+	.button.setup{
+		width: 20%;
+		text-align: center;
+		margin: 0 0;
+	}
+
+	.button.button.gameplay{
+		width: fit-content;
+		text-align: center;
+		margin: 1vw 1vh;
+		padding: 1vw 1vh;
+
+	}
+
+	#setupbtncontainer{
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	#gameplaybtncontainer{
+		text-align: center;
+
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	#gameplay-grid1 h2{
+		margin: 0 0 ;
+	}
+
+	#setup-grid1 h2{
+		margin: 0 0 ;
+	}
+
+	#gameplay-grid {
+		display: grid;
+		grid-template-rows: fit-content(300px) fit-content(300px);
+		grid-template-columns: 100%;
+		gap: 0;
+		width: 100%;
+		height: 100%;
+		border: 0.1vh solid rgb(43, 43, 43);
+	}
+	#gameplay-grid1 {
+		grid-area: 1/1/1/1;
+		background-color: rgba(243,207,180, 0.5);
+	}
+	#gameplay-grid2 {
+		grid-area: 2/1/2/1;
+		background-color: rgba(126,71,109, 0.5);
+	}
+
+	#head{
+		height:13vh;
+	}
+}

@@ -1,0 +1,1 @@
+If running locally, make sure to open chrome via command prompt, with the --allow-file-access-from-files flag. This is so the json can be read locally.
